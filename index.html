@@ -198,10 +198,9 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
     <a href="#mineralogia">Mineralogia</a>
     <a href="#origens">Origens</a>
     <a href="#campo">Campo Energético</a>
-    <a href="#ritual">Ritual &amp; Ativação</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
     <a href="#glossario">Glossário</a>
-    <a href="https://eusounos.com/quem-somos" target="_blank">Sobre a Criadora</a>
+    <a href="#artigos">Artigos</a>
+    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
   </nav>
 </header>
 
@@ -291,8 +290,7 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
     </div>
   </div>
 
-  <!-- Kunzita - artigo em breve -->
-  <div class="article-card" style="cursor:default;">
+  <div class="article-card" onclick="location.href='kunzita.html'" style="cursor:pointer;">
     <div class="card-visual mineral-bg-kunzita" style="aspect-ratio: 16/9;">
       <div class="card-visual-mineral" style="font-size:50px;"><span>Kz</span></div>
       <div class="card-number" style="color:rgba(255,255,255,0.4);">№ 03</div>
@@ -304,13 +302,12 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
       <p class="card-deck stone" style="font-size:11px;">Clivagem perfeita em dois eixos. Pleocroísmo que muda de rosa a lilás. E um campo que dissolve o que foi necessário e agora pode ser depositado.</p>
       <div class="card-meta">
         <span class="card-read-time">7 min · Chakra Cardíaco</span>
-        <span class="card-arrow" style="opacity:0.3;">→</span>
+        <span class="card-arrow">→</span>
       </div>
     </div>
   </div>
 
-  <!-- Pirita - artigo em breve -->
-  <div class="article-card" style="cursor:default;">
+  <div class="article-card" onclick="location.href='pirita.html'" style="cursor:pointer;">
     <div class="card-visual mineral-bg-pirita" style="aspect-ratio: 16/9;">
       <div class="card-visual-mineral" style="font-size:50px;"><span>Py</span></div>
       <div class="card-number">№ 04</div>
@@ -322,7 +319,7 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
       <p class="card-deck stone" style="font-size:11px;">Pyr, do grego: fogo. Ao ser atritada, produz faíscas. É literalmente o mineral do fogo interior que manifesta.</p>
       <div class="card-meta">
         <span class="card-read-time">5 min · Plexo Solar</span>
-        <span class="card-arrow" style="opacity:0.3;">→</span>
+        <span class="card-arrow">→</span>
       </div>
     </div>
   </div>
@@ -425,7 +422,7 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
           <div class="sidebar-mineral-sub">Play-of-color · Brasil</div>
         </div>
       </div>
-      <div class="sidebar-mineral-item" style="cursor:default;opacity:0.5;">
+      <div class="sidebar-mineral-item" onclick="location.href='kunzita.html'">
         <div class="sidebar-mineral-num">04</div>
         <div>
           <div class="sidebar-mineral-name">Kunzita</div>
@@ -481,7 +478,7 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
         </div>
         <div class="save-card-icon">◆</div>
       </div>
-      <div class="save-card" style="cursor:default;">
+      <div class="save-card" onclick="location.href='larimar.html'">
         <div class="save-card-bg mineral-bg-larimar"></div>
         <div class="save-card-content">
           <div class="save-card-mineral">Larimar · #04</div>
@@ -554,6 +551,87 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
 </section>
 </main>
 
+
+<!-- ══ TODOS OS ARTIGOS ══ -->
+<div id="artigos" style="background: var(--paper); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 50px 40px;">
+    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 36px;">
+      <div style="flex:1; height:2px; background:var(--ink);"></div>
+      <span style="font-family:'Cinzel Decorative',serif; font-size:11px; letter-spacing:4px; text-transform:uppercase; color:var(--ink); white-space:nowrap;">◆ &nbsp; Todos os Artigos &nbsp; ◆</span>
+      <div style="flex:1; height:2px; background:var(--ink);"></div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--cream-deep); border: 1px solid var(--cream-deep);">
+
+      <a href="labradorita.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Mineralogia Profunda</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A LABRADORITA não tem cor. Ela cria cor.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">8 min · Terceiro Olho</p>
+      </a>
+
+      <a href="hematita.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Anatomia de um Mineral</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A HEMATITA é o mineral do sangue e da terra.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">7 min · Chakra Raiz</p>
+      </a>
+
+      <a href="turmalina-negra.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Ciência &amp; Campo</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">TURMALINA NEGRA: piezoeletricidade e proteção.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">8 min · Chakra Raiz</p>
+      </a>
+
+      <a href="opala-piaui.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Origens &amp; Minas</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A OPALA DO PIAUÍ e o Nordeste mineralógico.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">9 min · Chakra Sacral</p>
+      </a>
+
+      <a href="ametrino.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Origens &amp; Minas</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A única mina do mundo: AMETRINO boliviano.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">8 min · Coronário · Plexo Solar</p>
+      </a>
+
+      <a href="obsidiana-arco-iris.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Ciência &amp; Campo</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A OBSIDIANA ARCO-ÍRIS também cria cor.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">7 min · Chakra Raiz</p>
+      </a>
+
+      <a href="calcita-das-fadas.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Origens &amp; Minas</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A CALCITA DAS FADAS: cada anel é um ciclo.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">7 min · Coronário</p>
+      </a>
+
+      <a href="prophecy-stone.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Ciência &amp; Campo</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A PROPHECY STONE: por fora igual. Por dentro, outro mineral.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">8 min · Terceiro Olho · Raiz</p>
+      </a>
+
+      <a href="kunzita.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Mineralogia Profunda</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">KUNZITA: fragilidade e profundidade no mesmo cristal.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">7 min · Chakra Cardíaco</p>
+      </a>
+
+      <a href="pirita.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Geometria &amp; Campo</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">A PIRITA forma cubos perfeitos. Só geometria.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">7 min · Plexo Solar</p>
+      </a>
+
+      <a href="larimar.html" style="text-decoration:none; background:var(--paper); padding:24px 20px; display:block; transition:background 0.2s;" onmouseover="this.style.background='var(--white)'" onmouseout="this.style.background='var(--paper)'">
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:3px; text-transform:uppercase; color:var(--burgundy); margin:0 0 8px 0;">Origens &amp; Minas</p>
+        <p style="font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--ink); line-height:1.3; margin:0 0 8px 0;">O LARIMAR: nasceu do fogo. Parece o mar.</p>
+        <p style="font-family:'Montserrat',sans-serif; font-size:7px; letter-spacing:2px; color:var(--stone);">8 min · Garganta · Cardíaco</p>
+      </a>
+
+    </div>
+  </div>
+</div>
+
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
@@ -570,6 +648,9 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
       <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
       <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
       <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA: fragilidade e profundidade</a>
+      <a class="footer-link" href="pirita.html">A PIRITA e a geometria sagrada</a>
+      <a class="footer-link" href="larimar.html">O LARIMAR: nasceu do fogo</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
