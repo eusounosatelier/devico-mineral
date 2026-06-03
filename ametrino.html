@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A única mina do mundo: a história da Anahi e do AMETRINO boliviano · Dévico Mineral</title>
+<meta name="description" content="Existe um único lugar no planeta onde Ametista e Citrino crescem juntos naturalmente: a Mina Anahi, na Bolívia.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a0f0a;
+  --burgundy: #7a0000;
+  --gold: #b8860b;
+  --gold-light: #d4a017;
+  --cream: #f5ead8;
+  --cream-dark: #e8d5b7;
+  --cream-deep: #d4b896;
+  --paper: #faf3e8;
+  --stone: #8b7355;
+  --mist: #c9b99a;
+  --white: #fefcf8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.4;
+}
+
+/* ══ MASTHEAD ══ */
+.masthead {
+  background: var(--ink);
+  padding: 0;
+}
+
+.masthead-top-bar {
+  background: var(--burgundy);
+  padding: 6px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(184,134,11,0.4);
+}
+
+.masthead-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(245,234,216,0.6);
+}
+
+.masthead-tagline-top {
+  font-family: 'IM Fell English', serif;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--gold-light);
+  letter-spacing: 1px;
+}
+
+.masthead-main {
+  padding: 20px 40px 0;
+  text-align: center;
+}
+
+.masthead-rule-top {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
+  margin-bottom: 14px;
+}
+
+.masthead-kicker {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.masthead-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 0.95;
+  letter-spacing: -1px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.masthead-title span { color: var(--gold-light); }
+
+.masthead-subtitle {
+  font-family: 'IM Fell English', serif;
+  font-size: clamp(11px, 1.5vw, 14px);
+  font-style: italic;
+  color: var(--mist);
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.masthead-rule-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.rule-line {
+  flex: 1;
+  max-width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+.rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
+.rule-diamond { color: var(--gold); font-size: 10px; }
+
+.masthead-nav {
+  background: rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(184,134,11,0.3);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.masthead-nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--mist);
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 3px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.masthead-nav a:hover {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold);
+}
+
+.masthead-nav a.active {
+  color: var(--gold);
+  border-bottom-color: rgba(184,134,11,0.4);
+}
+
+/* ══ BREADCRUMB ══ */
+.breadcrumb {
+  max-width: 800px;
+  margin: 32px auto 0;
+  padding: 0 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--stone);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumb a {
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: var(--burgundy); }
+.breadcrumb-sep { color: var(--gold); font-size: 8px; }
+.breadcrumb-current { color: var(--burgundy); }
+
+/* ══ ARTIGO ══ */
+.article-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 40px 60px;
+}
+
+/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
+.article-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--cream-deep);
+  padding-top: 32px;
+  gap: 20px;
+}
+
+.article-nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.article-nav-link:hover { color: var(--gold); }
+
+.article-nav-center {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.article-nav-center:hover { color: var(--burgundy); }
+
+/* ══ FOOTER ══ */
+.journal-footer {
+  background: var(--ink);
+  border-top: 3px solid var(--burgundy);
+  padding: 40px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-brand {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.footer-brand span { color: var(--gold-light); }
+
+.footer-manifesto {
+  font-family: 'IM Fell English', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--mist);
+  line-height: 1.7;
+}
+
+.footer-col-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(184,134,11,0.3);
+}
+
+.footer-link {
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  color: var(--mist);
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+
+.footer-link:hover { color: var(--cream); }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(184,134,11,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-copy {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(180,160,130,0.5);
+}
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 700px) {
+  .masthead-top-bar,
+  .masthead-main,
+  .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper,
+  .breadcrumb,
+  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .journal-footer { padding: 30px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ MASTHEAD ══ -->
+<header class="masthead">
+  <div class="masthead-top-bar">
+    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
+    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+  </div>
+  <div class="masthead-main">
+    <div class="masthead-rule-top"></div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
+    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <div class="masthead-rule-ornament">
+      <div class="rule-line"></div>
+      <span class="rule-diamond">◆</span>
+      <div class="rule-line right"></div>
+    </div>
+  </div>
+  <nav class="masthead-nav">
+    <a href="index.html">Início</a>
+    <a href="index.html#mineralogia">Mineralogia</a>
+    <a href="index.html#origens">Origens</a>
+    <a href="index.html#campo">Campo Energético</a>
+    <a href="index.html#glossario">Glossário</a>
+    <a href="https://eusounos.com" target="_blank">Atelier Dévico</a>
+  </nav>
+</header>
+
+<!-- ══ BREADCRUMB ══ -->
+<div class="breadcrumb">
+  <a href="index.html">Dévico Mineral</a>
+  <span class="breadcrumb-sep">◆</span>
+  <span class="breadcrumb-current">AMETRINO</span>
+</div>
+
+<!-- ══ CONTEÚDO DO ARTIGO ══ -->
+<div class="article-wrapper">
+  <!-- KICKER -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Origens &amp; Minas &middot; 8 min de leitura</p>
+
+<!-- TÍTULO -->
+<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;">A única mina do mundo:<br/>a história da <em style="font-weight: 400; color: #7a0000;">Anahi</em><br/>e do <span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">Ametrino</span> boliviano.</h2>
+
+<!-- LEAD -->
+<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">Existe um único lugar no planeta onde Ametista e Citrino crescem no mesmo cristal, de forma natural, sem tratamento térmico: a Mina Anahi, na Bolívia. E a pedra carrega uma história do século XVII que a mineralogia raramente conta.</p>
+
+<!-- BYLINE -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+
+<!-- FICHA MINERAL -->
+<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">SiO₂ + Fe (duas fases)</span>
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Sistema</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Trigonal</span>
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Origem exclusiva</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Mina Anahi &middot; Bolívia</span>
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Coronário &middot; Plexo Solar</span>
+</div>
+
+<!-- LINHA GRADIENTE -->
+<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+
+<!-- ABERTURA COM DROP CAP -->
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">S</span>e você já viu um "Ametrino" fora da Bolívia, com grande probabilidade viu quartzo tratado termicamente. O aquecimento controlado da Ametista converte parte da coloração violeta em amarelo. e o resultado visualmente se assemelha ao <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Ametrino</span> natural. Mas não é o mesmo mineral, e não é o mesmo campo.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">O <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Ametrino</span> natural existe comercialmente em qualidade de joalheria em apenas um lugar no mundo: a Mina Anahi, no departamento de Santa Cruz, Bolívia. Qualquer <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Ametrino</span> de outra procedência declarada é quartzo tratado.</p>
+
+<!-- SEÇÃO: GEOLOGIA -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A geologia da bi-coloração</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Na Mina Anahi, as condições geológicas durante a formação do cristal foram tais que diferentes zonas do mesmo cristal ficaram expostas a campos magnéticos e de irradiação distintos. Uma metade ficou em condições que criaram a ametista. A outra, em condições que criaram o citrino. A linha entre as duas cores não é um degradê. É uma fronteira geológica precisa, visível a olho nu.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Mineralogicamente, o que torna o <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Ametrino</span> possível é uma variação de temperatura e irradiação natural durante o crescimento. Onde o ferro no quartzo é irradiado por partículas subatômicas do solo, a cor violeta se mantém. Onde essa irradiação aquece o mineral o suficiente para liberar a cor, o quartzo torna-se amarelo. A fronteira entre as cores é o registro físico dessas condições distintas, gravado no cristal durante milhões de anos.</p>
+
+<!-- PULLQUOTE -->
+<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"A linha entre o violeta e o amarelo no <span style="font-variant: small-caps; letter-spacing: 0.08em;">Ametrino</span> não é estética. É geológica. Uma dualidade que não precisou ser resolvida para se tornar uno."</p>
+</div>
+
+<!-- SEÇÃO: HISTÓRIA ANAHI -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A história da Anahi: dote de casamento e legado</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A lenda data do século XVII. Um cacique da tribo Ayoreo deu como dote de casamento para o conquistador espanhol Francisco de Toledo a localização de um depósito mineral extraordinário. O presente foi selado pelo casamento com sua filha. Anahi.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">A pedra, dizem, refletia a dualidade da própria Anahi: filha de um chefe indígena, casada com um europeu. Não indígena, não espanhola. As duas coisas, ao mesmo tempo, habitando o mesmo ser. E a mina carrega até hoje o nome de Anahi.</p>
+
+<!-- SEÇÃO: COMO IDENTIFICAR -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como identificar o Ametrino legítimo</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">A fronteira entre as cores no natural é direta e precisa. No tratado, é gradual. O <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Ametrino</span> natural tem violeta profundo e amarelo intenso. não cores lavadas. O natural da Anahi frequentemente tem inclusões características do depósito. E a origem declarada é o critério mais simples: um vendedor confiável sabe de onde vem cada pedra, sempre.</p>
+
+<!-- SEÇÃO: CAMPO ENERGÉTICO -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O campo energético</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Coronário e Plexo Solar em integração simultânea. A ametista (violeta = coronário) e o citrino (amarelo = plexo solar) não são dois campos em conflito dentro de uma pedra. São dois campos em diálogo.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">A visão que encontra a ação. O transcendente que desce ao concreto. Para quem tem muita inspiração e dificuldade de executar. Ou muita ação e perdeu a conexão com o propósito que a move. É também o mineral para quem vive em dualidade genuína entre dois mundos, duas identidades. O <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Ametrino</span> não resolve a escolha. Ensina que não é necessário escolher.</p>
+
+<!-- PARA QUEM. BLOCO BORDÔ -->
+<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem sempre viveu entre dois mundos<br/>e passou anos tentando escolher um.<br/>Não precisa."</p>
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">Anahi não precisou escolher.<br/>A pedra não precisou resolver.<br/>Você também não.</p>
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Coronário &middot; Plexo Solar</p>
+</div>
+
+<!-- SEÇÃO: ATELIER -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ele no Atelier</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Todo <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Ametrino</span> que entra no Atelier tem procedência declarada da Mina Anahi. Não trabalhamos com quartzo tratado termicamente nem com pedras sem origem verificada.</p>
+
+<!-- PREPARAÇÃO RITUAL -->
+<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
+  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Uma manipulação energética consciente que ancora no campo do mineral o propósito de integração: visão e ação habitando o mesmo ser, ao mesmo tempo.</p>
+</div>
+
+<!-- CTA -->
+<div style="background: #1a0f0a; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 0;">
+  <span style="font-family: 'IM Fell English',serif; font-style: italic; color: #f5ead8; font-size: 1rem;">Ver peças com <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Ametrino</span> disponíveis no Atelier →</span>
+  <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; border: 1px solid #b8860b; padding: 8px 16px; text-decoration: none;" href="/colares?q=ametrino">Explorar</a>
+</div>
+
+<!-- ASSINATURA -->
+<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O do <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Ametrino</span> é mostrar<br/>que dualidade não precisa ser resolvida.</p>
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+</div>
+</div>
+
+<!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
+<div class="article-nav">
+  <a href="turmalina-negra.html" class="article-nav-link">← Turmalina Negra</a>
+  <a href="index.html" class="article-nav-center">◆ Todos os artigos</a>
+  <a href="obsidiana-arco-iris.html" class="article-nav-link">Obsidiana Arco-Íris →</a>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="journal-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Dévico <span>Mineral</span></div>
+      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e campo. Aqui, nenhum desses elementos é separado dos outros. Ciência e campo habitam o mesmo registro."</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Artigos</div>
+      <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
+      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
+      <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
+      <a class="footer-link" href="ametrino.html">A única mina do mundo: AMETRINO</a>
+      <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
+      <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
+      <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Atelier Dévico</div>
+      <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://eusounos.com/colares" target="_blank">Peça Personalizada</a>
+      <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram @eu.sou.nos</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Eu Sou Nós Atelier Dévico · Garopaba · SC · Brasil</span>
+    <span class="footer-copy">Dévico Mineral · Diário de Mineralogia</span>
+  </div>
+</footer>
+
+</body>
+</html>
