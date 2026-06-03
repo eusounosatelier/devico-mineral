@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KUNZITA: o mineral mais frágil com a profundidade cardíaca mais rara · Dévico Mineral</title>
+<meta name="description" content="A Kunzita tem clivagem perfeita em dois eixos e pleocroísmo em três direções. Fragilidade e profundidade no mesmo cristal.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a0f0a;
+  --burgundy: #7a0000;
+  --gold: #b8860b;
+  --gold-light: #d4a017;
+  --cream: #f5ead8;
+  --cream-dark: #e8d5b7;
+  --cream-deep: #d4b896;
+  --paper: #faf3e8;
+  --stone: #8b7355;
+  --mist: #c9b99a;
+  --white: #fefcf8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.4;
+}
+
+/* ══ MASTHEAD ══ */
+.masthead {
+  background: var(--ink);
+  padding: 0;
+}
+
+.masthead-top-bar {
+  background: var(--burgundy);
+  padding: 6px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(184,134,11,0.4);
+}
+
+.masthead-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(245,234,216,0.6);
+}
+
+.masthead-tagline-top {
+  font-family: 'IM Fell English', serif;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--gold-light);
+  letter-spacing: 1px;
+}
+
+.masthead-main {
+  padding: 20px 40px 0;
+  text-align: center;
+}
+
+.masthead-rule-top {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
+  margin-bottom: 14px;
+}
+
+.masthead-kicker {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.masthead-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 0.95;
+  letter-spacing: -1px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.masthead-title span { color: var(--gold-light); }
+
+.masthead-subtitle {
+  font-family: 'IM Fell English', serif;
+  font-size: clamp(11px, 1.5vw, 14px);
+  font-style: italic;
+  color: var(--mist);
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.masthead-rule-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.rule-line {
+  flex: 1;
+  max-width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+.rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
+.rule-diamond { color: var(--gold); font-size: 10px; }
+
+.masthead-nav {
+  background: rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(184,134,11,0.3);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.masthead-nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--mist);
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 3px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.masthead-nav a:hover {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold);
+}
+
+.masthead-nav a.active {
+  color: var(--gold);
+  border-bottom-color: rgba(184,134,11,0.4);
+}
+
+/* ══ BREADCRUMB ══ */
+.breadcrumb {
+  max-width: 800px;
+  margin: 32px auto 0;
+  padding: 0 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--stone);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumb a {
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: var(--burgundy); }
+.breadcrumb-sep { color: var(--gold); font-size: 8px; }
+.breadcrumb-current { color: var(--burgundy); }
+
+/* ══ ARTIGO ══ */
+.article-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 40px 60px;
+}
+
+/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
+.article-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--cream-deep);
+  padding-top: 32px;
+  gap: 20px;
+}
+
+.article-nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.article-nav-link:hover { color: var(--gold); }
+
+.article-nav-center {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.article-nav-center:hover { color: var(--burgundy); }
+
+/* ══ FOOTER ══ */
+.journal-footer {
+  background: var(--ink);
+  border-top: 3px solid var(--burgundy);
+  padding: 40px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-brand {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.footer-brand span { color: var(--gold-light); }
+
+.footer-manifesto {
+  font-family: 'IM Fell English', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--mist);
+  line-height: 1.7;
+}
+
+.footer-col-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(184,134,11,0.3);
+}
+
+.footer-link {
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  color: var(--mist);
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+
+.footer-link:hover { color: var(--cream); }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(184,134,11,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-copy {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(180,160,130,0.5);
+}
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 700px) {
+  .masthead-top-bar,
+  .masthead-main,
+  .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper,
+  .breadcrumb,
+  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .journal-footer { padding: 30px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ MASTHEAD ══ -->
+<header class="masthead">
+  <div class="masthead-top-bar">
+    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
+    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+  </div>
+  <div class="masthead-main">
+    <div class="masthead-rule-top"></div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
+    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <div class="masthead-rule-ornament">
+      <div class="rule-line"></div>
+      <span class="rule-diamond">◆</span>
+      <div class="rule-line right"></div>
+    </div>
+  </div>
+  <nav class="masthead-nav">
+    <a href="index.html">Início</a>
+    <a href="index.html#mineralogia">Mineralogia</a>
+    <a href="index.html#origens">Origens</a>
+    <a href="index.html#campo">Campo Energético</a>
+    <a href="index.html#glossario">Glossário</a>
+    <a href="https://eusounos.com" target="_blank">Atelier Dévico</a>
+  </nav>
+</header>
+
+<!-- ══ BREADCRUMB ══ -->
+<div class="breadcrumb">
+  <a href="index.html">Dévico Mineral</a>
+  <span class="breadcrumb-sep">◆</span>
+  <span class="breadcrumb-current">KUNZITA</span>
+</div>
+
+<!-- ══ CONTEÚDO DO ARTIGO ══ -->
+<div class="article-wrapper">
+  <!-- KICKER -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Mineralogia Profunda &middot; 7 min de leitura</p>
+
+<!-- TÍTULO -->
+<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;"><span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">KUNZITA</span>:<br/>o mineral mais frágil<br/>com a <em style="font-weight: 400; color: #7a0000;">profundidade cardíaca mais rara.</em></h2>
+
+<!-- LEAD -->
+<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> tem clivagem perfeita em dois eixos. Isso significa que ela pode se partir ao longo de planos internos com precisão absoluta. É um dos minerais mais difíceis de lapidar. E é exatamente essa fragilidade estrutural que define o campo que ela carrega.</p>
+
+<!-- BYLINE -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+
+<!-- FICHA MINERAL -->
+<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">LiAlSi₂O₆</span>
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Grupo</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Espodumênio</span>
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Dureza</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">6,5–7 Mohs</span>
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Clivagem</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Perfeita em 2 eixos</span>
+  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
+  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Cardíaco</span>
+</div>
+
+<!-- LINHA GRADIENTE -->
+<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+
+<!-- ABERTURA COM DROP CAP -->
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">A</span> <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> pertence ao grupo do espodumênio, silicato de lítio e alumínio. Sua cor rosa a lilás vem do manganês em sua estrutura. Mas o que a distingue de qualquer outro mineral rosa não é a cor. É o que acontece com ela quando você muda o ângulo de observação.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> é pleocroica. Dependendo do ângulo em que a luz a atravessa, a pedra muda de cor: rosa intenso em um eixo, lilás em outro, quase incolor no terceiro. O mesmo mineral, três cores distintas, conforme a direção da observação. Isso não é ilusão óptica. É física cristalográfica.</p>
+
+<!-- SEÇÃO: PLEOCROÍSMO -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O pleocroísmo: três cores no mesmo cristal</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Pleocroísmo vem do grego: pleion, "mais", e chroma, "cor". Ocorre em cristais com estrutura assimétrica, onde os elétrons respondem diferentemente à luz conforme o ângulo de incidência. Na <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span>, o manganês responsável pela coloração interage com a luz de formas distintas nos três eixos cristalográficos, produzindo absorções de comprimentos de onda diferentes em cada direção.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Na prática: segurar a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> e girá-la lentamente é ver a cor mudar. Não o brilho. Não a intensidade. A cor. De rosa para lilás para quase transparente e de volta. É o mesmo fenômeno que ocorre na Tanzanita, na Alexandrita e na Iolita. Mas na <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span>, o espectro vai do rosa ao violeta, dois comprimentos de onda que trabalham diretamente no campo do chakra cardíaco e coronário.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Um detalhe que lapidadores sabem e quase ninguém mais conta: a orientação do corte determina qual cor vai predominar na peça finalizada. Um lapidador experiente escolhe o ângulo de corte conforme a cor que quer expressar. A pedra tem três versões de si mesma. O corte escolhe qual mostrar.</p>
+
+<!-- PULLQUOTE -->
+<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"A <span style="font-variant: small-caps; letter-spacing: 0.08em;">Kunzita</span> tem clivagem perfeita em dois eixos e pleocroísmo em três direções. É um dos minerais mais complexos de lapidar e mais raros de encontrar em qualidade. A fragilidade não é um defeito. É parte do que ela é."</p>
+</div>
+
+<!-- SEÇÃO: CLIVAGEM -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A clivagem perfeita: fragilidade como estrutura</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Clivagem é a tendência de um cristal se partir ao longo de planos definidos pela sua estrutura interna. Quanto mais perfeita a clivagem, mais preciso e limpo é o plano de fratura, e mais difícil é trabalhar com o mineral sem que ele se parta. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> tem clivagem perfeita em dois eixos, o que significa dois planos distintos de fragilidade estrutural cruzando o mesmo cristal.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Para lapidar uma <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> de qualidade, o lapidador precisa trabalhar contra esses dois planos simultaneamente, com pressão e temperatura controladas, sabendo que qualquer erro de ângulo pode partir o cristal ao longo da clivagem. É por isso que <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzitas</span> lapidadas de tamanho expressivo são raras e custam proporcionalmente mais do que o peso sugeriria. A dificuldade do processo está embutida no resultado.</p>
+
+<!-- SEÇÃO: SENSIBILIDADE À LUZ -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O dado que o mercado de cristais raramente menciona</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> é fotossensível. Exposição prolongada à luz solar direta pode desbotar a cor rosa ao longo do tempo. O manganês que produz a cor é sensível à radiação ultravioleta. Isso não é defeito, é química. Guardar a pedra longe de exposição solar prolongada preserva a intensidade da cor. É um mineral que pede cuidado, assim como o campo que representa.</p>
+
+<!-- SEÇÃO: CAMPO ENERGÉTICO -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O campo energético</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Chakra cardíaco em abertura suave. Não é um mineral de aterramento nem de proteção. É um mineral de dissolução. Do que ficou endurecido no coração por necessidade de sobrevivência e agora pode ser depositado porque a situação mudou. Para quem aprendeu a não precisar, quando precisar já é permitido.</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">A fragilidade estrutural da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> não é metáfora. É dado mineralógico que informa o campo: um mineral que pode se partir ao longo de planos precisos não é fraco. Tem clareza de onde suas fronteiras estão. Sabe exatamente onde cede e por quê.</p>
+
+<!-- PARA QUEM. BLOCO BORDÔ -->
+<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem aprendeu a não precisar<br/>quando precisar ainda era perigoso.<br/>A situação mudou.<br/>O coração pode abrir agora."</p>
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">Fragilidade não é fraqueza.<br/>É saber exatamente onde você cede e por quê.</p>
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Cardíaco</p>
+</div>
+
+<!-- SEÇÃO: CUIDADOS -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Cuidados</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Evitar exposição solar prolongada para preservar a cor. Cuidado com impactos. a clivagem perfeita significa que um golpe no ângulo errado pode partir o cristal. Não usar ultrassom para limpeza. Água morna e pano macio são suficientes. Guardar separada de minerais mais duros que possam riscar a superfície.</p>
+
+<!-- SEÇÃO: ATELIER -->
+<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ela no Atelier</p>
+
+<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Trabalhamos com <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Kunzita</span> em esferas naturais, selecionadas pelo pleocroísmo visível e pela intensidade da cor rosa a lilás. A ausência de procedência declarada pelo fornecedor é uma limitação real do mercado atacadista de minerais, especialmente para pedras provenientes da Ásia. O que podemos garantir: natural, sem tingimento, sem tratamento térmico.</p>
+
+<!-- PREPARAÇÃO RITUAL -->
+<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
+  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Uma manipulação energética consciente que ancora no campo do mineral o propósito de abertura cardíaca suave. O que ficou endurecido por necessidade pode agora ser depositado.</p>
+</div>
+
+<!-- CTA -->
+<div style="background: #1a0f0a; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 0;">
+  <span style="font-family: 'IM Fell English',serif; font-style: italic; color: #f5ead8; font-size: 1rem;">Ver peças com <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Kunzita</span> disponíveis no Atelier →</span>
+  <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; border: 1px solid #b8860b; padding: 8px 16px; text-decoration: none;" href="https://eusounos.com/colares?q=kunzita">Explorar</a>
+</div>
+
+<!-- ASSINATURA -->
+<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
+  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Kunzita</span> é mostrar<br/>que fragilidade e profundidade<br/>habitam o mesmo cristal.</p>
+  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+</div>
+</div>
+
+<!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
+<div class="article-nav">
+  <a href="index.html" class="article-nav-link">← Início</a>
+  <a href="index.html" class="article-nav-center">◆ Todos os artigos</a>
+  <a href="pirita.html" class="article-nav-link">Pirita →</a>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="journal-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Dévico <span>Mineral</span></div>
+      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e campo. Aqui, nenhum desses elementos é separado dos outros. Ciência e campo habitam o mesmo registro."</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Artigos</div>
+      <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
+      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
+      <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
+      <a class="footer-link" href="ametrino.html">A única mina do mundo: AMETRINO</a>
+      <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
+      <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
+      <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Atelier Dévico</div>
+      <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://eusounos.com/colares" target="_blank">Peça Personalizada</a>
+      <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram @eu.sou.nos</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Eu Sou Nós Atelier Dévico · Garopaba · SC · Brasil</span>
+    <span class="footer-copy">Dévico Mineral · Diário de Mineralogia</span>
+  </div>
+</footer>
+
+</body>
+</html>
