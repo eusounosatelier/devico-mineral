@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dévico — Diário Mineral</title>
+<title>Dévico Mineral · O diário de mineralogia que ninguém havia escrito ainda</title>
+<meta name="description" content="Dévico Mineral é o diário de mineralogia do Eu Sou Nós Atelier Dévico. Ciência, campo energético e origem em um só registro.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
 <style>
 :root {
   --ink: #1a0f0a;
@@ -21,448 +21,64 @@
   --mist: #c9b99a;
   --white: #fefcf8;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  overflow-x: hidden;
-  cursor: default;
-}
-
-/* ══ GRAIN TEXTURE OVERLAY ══ */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
-/* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.masthead-top-bar {
-  background: var(--burgundy);
-  padding: 6px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(184,134,11,0.4);
-}
-
-.masthead-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245,234,216,0.6);
-}
-
-.masthead-tagline-top {
-  font-family: 'IM Fell English', serif;
-  font-size: 10px;
-  font-style: italic;
-  color: var(--gold-light);
-  letter-spacing: 1px;
-}
-
-.masthead-main {
-  padding: 30px 40px 0;
-  text-align: center;
-  position: relative;
-}
-
-.masthead-rule-top {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
-  margin-bottom: 20px;
-}
-
-.masthead-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 10px;
-}
-
-.masthead-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(36px, 7vw, 82px);
-  font-weight: 700;
-  color: var(--cream);
-  line-height: 0.95;
-  letter-spacing: -1px;
-  margin-bottom: 6px;
-}
-
-.masthead-title span {
-  color: var(--gold-light);
-}
-
-.masthead-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(13px, 2vw, 18px);
-  font-style: italic;
-  color: var(--mist);
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
-.masthead-rule-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 0;
-}
-
-.rule-line {
-  flex: 1;
-  max-width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
-
-.rule-line.right {
-  background: linear-gradient(90deg, var(--gold), transparent);
-}
-
-.rule-diamond {
-  color: var(--gold);
-  font-size: 10px;
-}
-
-.masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
-  padding: 12px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.masthead-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--mist);
-  text-decoration: none;
-  transition: color 0.2s;
-  padding: 4px 0;
-  border-bottom: 1px solid transparent;
-}
-
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-/* ══ HERO ARTICLE ══ */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  gap: 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 40px 40px;
-  border-bottom: 2px solid var(--ink);
-}
-
-.hero-text {
-  padding-right: 50px;
-  border-right: 1px solid var(--cream-deep);
-}
-
-.article-issue {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.article-issue::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--burgundy);
-  opacity: 0.3;
-}
-
-.hero-headline {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(28px, 4vw, 52px);
-  font-weight: 900;
-  line-height: 1.05;
-  color: var(--ink);
-  margin-bottom: 16px;
-  letter-spacing: -0.5px;
-}
-
-.hero-headline em {
-  font-style: italic;
-  color: var(--burgundy);
-}
-
-.hero-deck {
-  font-family: 'IM Fell English', serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 1.6;
-  color: var(--stone);
-  margin-bottom: 24px;
-  border-left: 3px solid var(--gold);
-  padding-left: 16px;
-}
-
-.hero-byline {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--stone);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
+body { background: var(--paper); color: var(--ink); font-family: 'Libre Baskerville', Georgia, serif; overflow-x: hidden; cursor: default; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
+.masthead { background: var(--ink); padding: 0; position: relative; overflow: hidden; }
+.masthead-top-bar { background: var(--burgundy); padding: 6px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(184,134,11,0.4); }
+.masthead-date { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,234,216,0.6); }
+.masthead-tagline-top { font-family: 'IM Fell English', serif; font-size: 10px; font-style: italic; color: var(--gold-light); letter-spacing: 1px; }
+.masthead-main { padding: 30px 40px 0; text-align: center; position: relative; }
+.masthead-rule-top { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent); margin-bottom: 20px; }
+.masthead-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.masthead-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(36px, 7vw, 82px); font-weight: 700; color: var(--cream); line-height: 0.95; letter-spacing: -1px; margin-bottom: 6px; }
+.masthead-title span { color: var(--gold-light); }
+.masthead-subtitle { font-family: 'IM Fell English', serif; font-size: clamp(13px, 2vw, 18px); font-style: italic; color: var(--mist); letter-spacing: 2px; margin-bottom: 20px; }
+.masthead-rule-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 0; }
+.rule-line { flex: 1; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
+.rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
+.rule-diamond { color: var(--gold); font-size: 10px; }
+.masthead-nav { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(184,134,11,0.3); padding: 12px 40px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.masthead-nav a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); text-decoration: none; transition: color 0.2s; padding: 4px 0; border-bottom: 1px solid transparent; }
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.hero { display: grid; grid-template-columns: 1fr 400px; gap: 0; max-width: 1200px; margin: 0 auto; padding: 50px 40px 40px; border-bottom: 2px solid var(--ink); }
+.hero-text { padding-right: 50px; border-right: 1px solid var(--cream-deep); }
+.article-issue { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.article-issue::after { content: ''; flex: 1; height: 1px; background: var(--burgundy); opacity: 0.3; }
+.hero-headline { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 52px); font-weight: 900; line-height: 1.05; color: var(--ink); margin-bottom: 16px; letter-spacing: -0.5px; }
+.hero-headline em { font-style: italic; color: var(--burgundy); }
+.hero-deck { font-family: 'IM Fell English', serif; font-size: 16px; font-style: italic; line-height: 1.6; color: var(--stone); margin-bottom: 24px; border-left: 3px solid var(--gold); padding-left: 16px; }
+.hero-byline { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--stone); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
 .byline-dot { color: var(--gold); }
-
-.hero-body {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
-  line-height: 1.85;
-  color: #2a1a10;
-  column-count: 2;
-  column-gap: 28px;
-  column-rule: 1px solid var(--cream-deep);
-}
-
+.hero-body { font-family: 'Libre Baskerville', serif; font-size: 14px; line-height: 1.85; color: #2a1a10; column-count: 2; column-gap: 28px; column-rule: 1px solid var(--cream-deep); }
 .hero-body p { margin-bottom: 14px; }
-
-.hero-body p:first-child::first-letter {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 64px;
-  font-weight: 700;
-  float: left;
-  line-height: 0.8;
-  margin: 8px 8px 0 0;
-  color: var(--burgundy);
-}
-
-.hero-formula {
-  display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: var(--gold);
-  background: var(--ink);
-  padding: 3px 8px;
-  margin: 0 2px;
-}
-
-.hero-sidebar {
-  padding-left: 40px;
-}
-
-.mineral-card {
-  background: var(--ink);
-  padding: 28px;
-  margin-bottom: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.mineral-card::before {
-  content: '';
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(184,134,11,0.15), transparent);
-}
-
-.mineral-card-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.mineral-card-kicker::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: rgba(184,134,11,0.3);
-}
-
-.mineral-card-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 4px;
-  line-height: 1.1;
-}
-
-.mineral-card-formula {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: var(--gold-light);
-  margin-bottom: 14px;
-}
-
-.mineral-card-fact {
-  font-family: 'IM Fell English', serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 1.6;
-  color: var(--mist);
-  border-top: 1px solid rgba(184,134,11,0.2);
-  padding-top: 12px;
-}
-
-.mineral-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 14px;
-}
-
-.tag {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(184,134,11,0.8);
-  border: 1px solid rgba(184,134,11,0.3);
-  padding: 3px 7px;
-}
-
-/* ══ SECTION DIVIDER ══ */
-.section-header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 40px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
+.hero-body p:first-child::first-letter { font-family: 'Cinzel Decorative', serif; font-size: 64px; font-weight: 700; float: left; line-height: 0.8; margin: 8px 8px 0 0; color: var(--burgundy); }
+.hero-formula { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--gold); background: var(--ink); padding: 3px 8px; margin: 0 2px; }
+.hero-sidebar { padding-left: 40px; }
+.mineral-card { background: var(--ink); padding: 28px; margin-bottom: 20px; position: relative; overflow: hidden; }
+.mineral-card::before { content: ''; position: absolute; top: -30px; right: -30px; width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle, rgba(184,134,11,0.15), transparent); }
+.mineral-card-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.mineral-card-kicker::after { content: ''; flex: 1; height: 1px; background: rgba(184,134,11,0.3); }
+.mineral-card-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 4px; line-height: 1.1; }
+.mineral-card-formula { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 2px; color: var(--gold-light); margin-bottom: 14px; }
+.mineral-card-fact { font-family: 'IM Fell English', serif; font-size: 13px; font-style: italic; line-height: 1.6; color: var(--mist); border-top: 1px solid rgba(184,134,11,0.2); padding-top: 12px; }
+.mineral-card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.tag { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 2px; text-transform: uppercase; color: rgba(184,134,11,0.8); border: 1px solid rgba(184,134,11,0.3); padding: 3px 7px; }
+.section-header { max-width: 1200px; margin: 0 auto; padding: 40px 40px 20px; display: flex; align-items: center; gap: 20px; }
 .section-header-line { flex: 1; height: 2px; background: var(--ink); }
-.section-header-line.thin { height: 1px; background: var(--cream-deep); }
-
-.section-header-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 11px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--ink);
-  white-space: nowrap;
-}
-
-/* ══ GRID DE ARTIGOS ══ */
-.articles-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--cream-deep);
-  border: 1px solid var(--cream-deep);
-}
-
-.article-card {
-  background: var(--paper);
-  padding: 28px 24px;
-  transition: background 0.2s;
-  cursor: pointer;
-  position: relative;
-}
-
+.section-header-title { font-family: 'Cinzel Decorative', serif; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
+.articles-grid { max-width: 1200px; margin: 0 auto; padding: 0 40px 50px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--cream-deep); border: 1px solid var(--cream-deep); }
+.article-card { background: var(--paper); padding: 28px 24px; transition: background 0.2s; cursor: pointer; position: relative; }
 .article-card:hover { background: var(--white); }
-
-.article-card.featured {
-  grid-column: span 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  padding: 0;
-}
-
+.article-card.featured { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 0; }
 .article-card.featured .card-content { padding: 28px 24px; }
-
-.article-card.dark {
-  background: var(--ink);
-}
-
+.article-card.dark { background: var(--ink); }
 .article-card.dark:hover { background: #2a1a10; }
-
-.card-visual {
-  aspect-ratio: 4/3;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-visual-mineral {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(40px, 8vw, 90px);
-  font-weight: 700;
-  position: relative;
-}
-
-.card-visual-mineral::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  filter: brightness(0.7);
-}
-
-.card-visual-mineral span {
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: overlay;
-  opacity: 0.3;
-}
-
+.card-visual { aspect-ratio: 4/3; position: relative; overflow: hidden; }
+.card-visual-mineral { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Cinzel Decorative', serif; font-size: clamp(40px, 8vw, 90px); font-weight: 700; position: relative; }
+.card-visual-mineral::before { content: ''; position: absolute; inset: 0; background: inherit; filter: brightness(0.7); }
+.card-visual-mineral span { position: relative; z-index: 1; mix-blend-mode: overlay; opacity: 0.3; }
 .mineral-bg-labradorita { background: linear-gradient(135deg, #1a3a5c 0%, #0d2847 30%, #1a4a6e 60%, #2d6a9f 100%); }
 .mineral-bg-hematita { background: linear-gradient(135deg, #3d0a00 0%, #6b1500 40%, #8b2500 70%, #4a0800 100%); }
 .mineral-bg-opala { background: linear-gradient(135deg, #1a1a3d 0%, #0d3d2e 30%, #2d1a4a 60%, #1a3d0d 100%); }
@@ -471,522 +87,79 @@ body::before {
 .mineral-bg-ametista { background: linear-gradient(135deg, #2a0a3d 0%, #4a1a6b 40%, #6b2a9b 70%, #3a0a5c 100%); }
 .mineral-bg-turmalina { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 40%, #0d0d0d 70%, #050505 100%); }
 .mineral-bg-larimar { background: linear-gradient(135deg, #0a3d5c 0%, #1a6b8b 40%, #2d8baa 70%, #0d4a6b 100%); }
-
-.card-number {
-  position: absolute;
-  top: 12px;
-  left: 14px;
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 9px;
-  color: rgba(255,255,255,0.5);
-  z-index: 2;
-  letter-spacing: 2px;
-}
-
-.card-formula-badge {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  background: rgba(0,0,0,0.6);
-  border: 1px solid rgba(184,134,11,0.4);
-  padding: 4px 8px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 1px;
-  color: var(--gold-light);
-  z-index: 2;
-}
-
-.card-section-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
+.card-number { position: absolute; top: 12px; left: 14px; font-family: 'Cinzel Decorative', serif; font-size: 9px; color: rgba(255,255,255,0.5); z-index: 2; letter-spacing: 2px; }
+.card-formula-badge { position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.6); border: 1px solid rgba(184,134,11,0.4); padding: 4px 8px; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 1px; color: var(--gold-light); z-index: 2; }
+.card-section-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
 .card-section-label.light { color: var(--burgundy); }
 .card-section-label.gold { color: var(--gold); }
-
-.card-headline {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  letter-spacing: -0.2px;
-}
-
+.card-headline { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; line-height: 1.2; margin-bottom: 10px; letter-spacing: -0.2px; }
 .card-headline.light { color: var(--ink); }
 .card-headline.cream { color: var(--cream); }
-
-.card-deck {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  line-height: 1.7;
-  margin-bottom: 14px;
-}
-
+.card-deck { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.7; margin-bottom: 14px; }
 .card-deck.stone { color: var(--stone); }
 .card-deck.mist { color: var(--mist); }
-
-.card-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-read-time {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--mist);
-}
-
-.card-arrow {
-  font-size: 16px;
-  color: var(--gold);
-  transition: transform 0.2s;
-}
-
+.card-meta { display: flex; align-items: center; justify-content: space-between; }
+.card-read-time { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 2px; text-transform: uppercase; color: var(--mist); }
+.card-arrow { font-size: 16px; color: var(--gold); transition: transform 0.2s; }
 .article-card:hover .card-arrow { transform: translateX(4px); }
-
-/* ══ PULLQUOTE SECTION ══ */
-.pullquote-section {
-  background: var(--burgundy);
-  padding: 60px 40px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pullquote-section::before {
-  content: '"';
-  position: absolute;
-  top: -20px;
-  left: 30px;
-  font-family: 'Playfair Display', serif;
-  font-size: 300px;
-  font-weight: 900;
-  color: rgba(255,255,255,0.04);
-  line-height: 1;
-}
-
-.pullquote-inner {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.pullquote-ornament {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 9px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: rgba(184,134,11,0.7);
-  margin-bottom: 24px;
-}
-
-.pullquote-text {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(20px, 3vw, 32px);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.5;
-  color: var(--cream);
-  margin-bottom: 20px;
-}
-
-.pullquote-attribution {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold-light);
-}
-
-/* ══ MINERALOGIA PROFUNDA — grid especial ══ */
-.deep-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px 50px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
-  border-bottom: 2px solid var(--ink);
-}
-
-.deep-main {}
-
-.deep-article-number {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 72px;
-  font-weight: 700;
-  color: rgba(122,0,0,0.12);
-  line-height: 1;
-  margin-bottom: -20px;
-}
-
-.deep-headline {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(22px, 3vw, 38px);
-  font-weight: 900;
-  line-height: 1.1;
-  color: var(--ink);
-  margin-bottom: 16px;
-}
-
+.pullquote-section { background: var(--burgundy); padding: 60px 40px; position: relative; overflow: hidden; }
+.pullquote-section::before { content: '"'; position: absolute; top: -20px; left: 30px; font-family: 'Playfair Display', serif; font-size: 300px; font-weight: 900; color: rgba(255,255,255,0.04); line-height: 1; }
+.pullquote-inner { max-width: 800px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+.pullquote-ornament { font-family: 'Cinzel Decorative', serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.7); margin-bottom: 24px; }
+.pullquote-text { font-family: 'Playfair Display', serif; font-size: clamp(20px, 3vw, 32px); font-weight: 400; font-style: italic; line-height: 1.5; color: var(--cream); margin-bottom: 20px; }
+.pullquote-attribution { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-light); }
+.deep-grid { max-width: 1200px; margin: 0 auto; padding: 0 40px 50px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; border-bottom: 2px solid var(--ink); }
+.deep-article-number { font-family: 'Cinzel Decorative', serif; font-size: 72px; font-weight: 700; color: rgba(122,0,0,0.12); line-height: 1; margin-bottom: -20px; }
+.deep-headline { font-family: 'Playfair Display', serif; font-size: clamp(22px, 3vw, 38px); font-weight: 900; line-height: 1.1; color: var(--ink); margin-bottom: 16px; }
 .deep-headline em { font-style: italic; color: var(--burgundy); }
-
-.deep-body {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 13.5px;
-  line-height: 1.9;
-  color: #2a1a10;
-  margin-bottom: 16px;
-}
-
-.deep-body strong {
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.deep-data-box {
-  background: var(--ink);
-  padding: 20px;
-  margin: 24px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.data-item {}
-
-.data-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(184,134,11,0.7);
-  margin-bottom: 4px;
-}
-
-.data-value {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--cream);
-}
-
-.deep-sidebar {}
-
-.sidebar-widget {
-  border: 1px solid var(--cream-deep);
-  padding: 20px;
-  margin-bottom: 24px;
-}
-
-.sidebar-widget-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--cream-deep);
-}
-
-.sidebar-mineral-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--cream-dark);
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
+.deep-body { font-family: 'Libre Baskerville', serif; font-size: 13.5px; line-height: 1.9; color: #2a1a10; margin-bottom: 16px; }
+.deep-body strong { font-weight: 700; color: var(--ink); }
+.deep-data-box { background: var(--ink); padding: 20px; margin: 24px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.data-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7); margin-bottom: 4px; }
+.data-value { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: var(--cream); }
+.sidebar-widget { border: 1px solid var(--cream-deep); padding: 20px; margin-bottom: 24px; }
+.sidebar-widget-title { font-family: 'Cinzel Decorative', serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--burgundy); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--cream-deep); }
+.sidebar-mineral-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--cream-dark); cursor: pointer; transition: opacity 0.2s; }
 .sidebar-mineral-item:last-child { border-bottom: none; }
 .sidebar-mineral-item:hover { opacity: 0.75; }
-
-.sidebar-mineral-num {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--burgundy);
-  min-width: 24px;
-}
-
-.sidebar-mineral-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--ink);
-  line-height: 1.2;
-}
-
-.sidebar-mineral-sub {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 1px;
-  color: var(--stone);
-  margin-top: 2px;
-}
-
-/* ══ CARD SALVAR (estilo Instagram) ══ */
-.save-cards-section {
-  background: var(--ink);
-  padding: 50px 40px;
-}
-
-.save-cards-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.save-cards-header {
-  text-align: center;
-  margin-bottom: 36px;
-}
-
-.save-cards-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 10px;
-}
-
-.save-cards-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--cream);
-}
-
-.save-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.save-card {
-  aspect-ratio: 3/4;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
+.sidebar-mineral-num { font-family: 'Cinzel Decorative', serif; font-size: 11px; font-weight: 700; color: var(--burgundy); min-width: 24px; }
+.sidebar-mineral-name { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; color: var(--ink); line-height: 1.2; }
+.sidebar-mineral-sub { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 1px; color: var(--stone); margin-top: 2px; }
+.save-cards-section { background: var(--ink); padding: 50px 40px; }
+.save-cards-inner { max-width: 1200px; margin: 0 auto; }
+.save-cards-header { text-align: center; margin-bottom: 36px; }
+.save-cards-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.save-cards-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; font-style: italic; color: var(--cream); }
+.save-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.save-card { aspect-ratio: 3/4; position: relative; overflow: hidden; cursor: pointer; transition: transform 0.3s; }
 .save-card:hover { transform: translateY(-4px); }
-
-.save-card-bg {
-  position: absolute;
-  inset: 0;
-}
-
-.save-card-content {
-  position: absolute;
-  inset: 0;
-  padding: 20px 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
-}
-
-.save-card-mineral {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 7px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold-light);
-  margin-bottom: 6px;
-}
-
-.save-card-fact {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  font-weight: 700;
-  font-style: italic;
-  line-height: 1.3;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
-.save-card-formula {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  color: rgba(184,134,11,0.8);
-}
-
-.save-card-icon {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 28px;
-  height: 28px;
-  background: rgba(0,0,0,0.4);
-  border: 1px solid rgba(184,134,11,0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  color: var(--gold-light);
-}
-
-/* ══ GLOSSÁRIO VISUAL ══ */
-.glossary-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 40px;
-}
-
-.glossary-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--cream-deep);
-  border: 1px solid var(--cream-deep);
-}
-
-.glossary-item {
-  background: var(--paper);
-  padding: 24px;
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 16px;
-  align-items: start;
-  transition: background 0.2s;
-  cursor: default;
-}
-
+.save-card-bg { position: absolute; inset: 0; }
+.save-card-content { position: absolute; inset: 0; padding: 20px 16px; display: flex; flex-direction: column; justify-content: flex-end; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%); }
+.save-card-mineral { font-family: 'Cinzel Decorative', serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 6px; }
+.save-card-fact { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; font-style: italic; line-height: 1.3; color: var(--cream); margin-bottom: 8px; }
+.save-card-formula { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; color: rgba(184,134,11,0.8); }
+.save-card-icon { position: absolute; top: 12px; right: 12px; width: 28px; height: 28px; background: rgba(0,0,0,0.4); border: 1px solid rgba(184,134,11,0.4); display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--gold-light); }
+.glossary-section { max-width: 1200px; margin: 0 auto; padding: 50px 40px; }
+.glossary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--cream-deep); border: 1px solid var(--cream-deep); }
+.glossary-item { background: var(--paper); padding: 24px; display: grid; grid-template-columns: 80px 1fr; gap: 16px; align-items: start; transition: background 0.2s; }
 .glossary-item:hover { background: var(--white); }
-
-.glossary-letter {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: rgba(122,0,0,0.15);
-  line-height: 1;
-}
-
-.glossary-term {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--burgundy);
-  margin-bottom: 4px;
-}
-
-.glossary-def {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  line-height: 1.7;
-  color: #3a2a1a;
-}
-
-.glossary-example {
-  font-family: 'IM Fell English', serif;
-  font-style: italic;
-  font-size: 11px;
-  color: var(--stone);
-  margin-top: 6px;
-}
-
-/* ══ FOOTER ══ */
-.journal-footer {
-  background: var(--ink);
-  border-top: 3px solid var(--burgundy);
-  padding: 40px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-brand {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
+.glossary-letter { font-family: 'Cinzel Decorative', serif; font-size: 48px; font-weight: 700; color: rgba(122,0,0,0.15); line-height: 1; }
+.glossary-term { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: var(--burgundy); margin-bottom: 4px; }
+.glossary-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.7; color: #3a2a1a; }
+.glossary-example { font-family: 'IM Fell English', serif; font-style: italic; font-size: 11px; color: var(--stone); margin-top: 6px; }
+.journal-footer { background: var(--ink); border-top: 3px solid var(--burgundy); padding: 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
 .footer-brand span { color: var(--gold-light); }
-
-.footer-manifesto {
-  font-family: 'IM Fell English', serif;
-  font-size: 12px;
-  font-style: italic;
-  color: var(--mist);
-  line-height: 1.7;
-}
-
-.footer-col-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(184,134,11,0.3);
-}
-
-.footer-link {
-  display: block;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  color: var(--mist);
-  text-decoration: none;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-
+.footer-manifesto { font-family: 'IM Fell English', serif; font-size: 12px; font-style: italic; color: var(--mist); line-height: 1.7; }
+.footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184,134,11,0.3); }
+.footer-link { display: block; font-family: 'Libre Baskerville', serif; font-size: 12px; color: var(--mist); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 .footer-link:hover { color: var(--cream); }
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(184,134,11,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-copy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(180,160,130,0.5);
-}
-
-/* ══ ANIMATIONS ══ */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(184,134,11,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(180,160,130,0.5); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 .masthead { animation: fadeUp 0.6s ease forwards; }
 .hero { animation: fadeUp 0.6s 0.2s ease both; }
-
-/* ══ RESPONSIVE ══ */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .hero-text { padding-right: 0; border-right: none; border-bottom: 1px solid var(--cream-deep); padding-bottom: 30px; margin-bottom: 30px; }
@@ -1005,7 +178,6 @@ body::before {
 </head>
 <body>
 
-<!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
     <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
@@ -1023,23 +195,24 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
-    <a href="#">Mineralogia</a>
-    <a href="#">Origens</a>
-    <a href="#">Campo Energético</a>
-    <a href="#">Ritual & Ativação</a>
-    <a href="#">Peças do Atelier</a>
-    <a href="#">Glossário</a>
-    <a href="#">Sobre a Criadora</a>
+    <a href="#mineralogia">Mineralogia</a>
+    <a href="#origens">Origens</a>
+    <a href="#campo">Campo Energético</a>
+    <a href="#ritual">Ritual &amp; Ativação</a>
+    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="#glossario">Glossário</a>
+    <a href="https://eusounos.com/quem-somos" target="_blank">Sobre a Criadora</a>
   </nav>
 </header>
 
-<!-- ══ HERO ARTICLE ══ -->
 <main>
 <section class="hero">
   <div class="hero-text">
-    <div class="article-issue">Artigo de Abertura — Mineralogia Essencial</div>
+    <div class="article-issue">
+      <a href="labradorita.html" style="color:var(--burgundy);text-decoration:none;">Artigo de Abertura · Mineralogia Essencial · Ler artigo completo →</a>
+    </div>
     <h2 class="hero-headline">A Labradorita não tem cor.<br>Ela <em>cria</em> cor. E essa distinção muda absolutamente tudo.</h2>
-    <p class="hero-deck">"O azul que você vê não está no mineral — está na física de ondas entre as lamelas de exsolução internas. Dois materiais. Uma fronteira. Uma interferência construtiva que produz exatamente aquele comprimento de onda."</p>
+    <p class="hero-deck">"O azul que você vê não está no mineral. Está na física de ondas entre as lamelas de exsolução internas. Dois materiais. Uma fronteira. Uma interferência construtiva que produz exatamente aquele comprimento de onda."</p>
     <div class="hero-byline">
       <span>Por Patrícia · Atelier Dévico</span>
       <span class="byline-dot">◆</span>
@@ -1048,13 +221,12 @@ body::before {
       <span>Mineralogia Avançada</span>
     </div>
     <div class="hero-body">
-      <p>Quando a luz encontra a Labradorita em ângulo específico, algo físico acontece dentro do mineral — não na superfície. A estrutura interna do feldspato plagioclásio, composto por <span class="hero-formula">NaAlSi₃O₈</span> e <span class="hero-formula">CaAl₂Si₂O₈</span>, contém lamelas alternadas de dois tipos de material com índices de refração ligeiramente distintos.</p>
-      <p>Nessa fronteira — invisível a olho nu, mas com espessura de alguns nanômetros — a luz se divide. Parte reflete em uma superfície, parte na outra. Quando as duas ondas se reencontram, interferem entre si. Se a espessura das lamelas for exatamente certa para o comprimento de onda do azul, esse azul é amplificado. Os outros são suprimidos.</p>
+      <p>Quando a luz encontra a Labradorita em ângulo específico, algo físico acontece dentro do mineral. Não na superfície. A estrutura interna do feldspato plagioclásio, composto por <span class="hero-formula">NaAlSi₃O₈</span> e <span class="hero-formula">CaAl₂Si₂O₈</span>, contém lamelas alternadas de dois tipos de material com índices de refração ligeiramente distintos.</p>
+      <p>Nessa fronteira, invisível a olho nu mas com espessura de alguns nanômetros, a luz se divide. Parte reflete em uma superfície, parte na outra. Quando as duas ondas se reencontram, interferem entre si. Se a espessura das lamelas for exatamente certa para o comprimento de onda do azul, esse azul é amplificado. Os outros são suprimidos.</p>
       <p>O que você chama de "cor azul da Labradorita" é, na verdade, um evento. Uma condição. Algo que só existe quando você e a pedra estão em relação precisa.</p>
       <p>Isso tem nome: labradorescência. E tem implicações para o campo energético que a maioria das fontes sobre cristais não menciona: um mineral que cria realidade em relação não é um objeto estático. É uma presença responsiva.</p>
     </div>
   </div>
-
   <aside class="hero-sidebar">
     <div class="mineral-card">
       <div class="mineral-card-kicker">Perfil Mineral</div>
@@ -1064,22 +236,20 @@ body::before {
       <div class="mineral-card-tags">
         <span class="tag">Feldspato</span>
         <span class="tag">Labradorescência</span>
-        <span class="tag">Triclinico</span>
+        <span class="tag">Triclínico</span>
         <span class="tag">Madagascar</span>
         <span class="tag">Terceiro Olho</span>
       </div>
     </div>
-
     <div class="mineral-card" style="background: var(--burgundy);">
       <div class="mineral-card-kicker" style="color: rgba(245,234,216,0.6);">Dado Desconhecido</div>
-      <div class="mineral-card-name" style="font-size:16px; line-height:1.3;">A Labradorita finlandesa e a de Madagascar têm campos distintos — e a geologia explica por quê.</div>
+      <div class="mineral-card-name" style="font-size:16px; line-height:1.3;">A Labradorita finlandesa e a de Madagascar têm campos distintos. A geologia explica por quê.</div>
       <div class="mineral-card-fact" style="color: rgba(245,234,216,0.75);">A composição química varia sutilmente por região. A finlandesa tende ao azul-cinza. A malgaxe ao azul-dourado. O campo segue essa diferença.</div>
     </div>
   </aside>
 </section>
 
-<!-- ══ ARTIGOS GRID ══ -->
-<div class="section-header">
+<div id="mineralogia" class="section-header">
   <div class="section-header-line"></div>
   <span class="section-header-title">◆ &nbsp; Mineralogia Profunda &nbsp; ◆</span>
   <div class="section-header-line"></div>
@@ -1087,8 +257,7 @@ body::before {
 
 <section class="articles-grid">
 
-  <!-- FEATURED CARD -->
-  <div class="article-card featured">
+  <div class="article-card featured" onclick="location.href='hematita.html'" style="cursor:pointer;">
     <div class="card-visual mineral-bg-hematita">
       <div class="card-visual-mineral"><span>Hm</span></div>
       <div class="card-number">№ 01</div>
@@ -1096,8 +265,8 @@ body::before {
     </div>
     <div class="card-content">
       <div class="card-section-label light">Anatomia de um Mineral</div>
-      <h3 class="card-headline light">O mesmo ferro que carrega oxigênio no sangue está nesta pedra. Isso não é coincidência — é química.</h3>
-      <p class="card-deck stone">A Hematita — óxido de ferro — tem densidade 5,26 g/cm³. Seu peso é a sua mensagem. O corpo reconhece antes de qualquer palavra.</p>
+      <h3 class="card-headline light">O mesmo ferro que carrega oxigênio no sangue está nesta pedra. Isso não é coincidência. É química.</h3>
+      <p class="card-deck stone">A Hematita, óxido de ferro, tem densidade 5,26 g/cm³. Seu peso é a sua mensagem. O corpo reconhece antes de qualquer palavra.</p>
       <div class="card-meta">
         <span class="card-read-time">6 min · Chakra Raiz · Aterramento</span>
         <span class="card-arrow">→</span>
@@ -1105,8 +274,7 @@ body::before {
     </div>
   </div>
 
-  <!-- CARD 2 -->
-  <div class="article-card dark">
+  <div class="article-card dark" onclick="location.href='opala-piaui.html'" style="cursor:pointer;">
     <div class="card-visual mineral-bg-opala" style="aspect-ratio: 16/9;">
       <div class="card-visual-mineral" style="font-size:50px;"><span>Op</span></div>
       <div class="card-number">№ 02</div>
@@ -1123,8 +291,8 @@ body::before {
     </div>
   </div>
 
-  <!-- CARD 3 -->
-  <div class="article-card">
+  <!-- Kunzita - artigo em breve -->
+  <div class="article-card" style="cursor:default;">
     <div class="card-visual mineral-bg-kunzita" style="aspect-ratio: 16/9;">
       <div class="card-visual-mineral" style="font-size:50px;"><span>Kz</span></div>
       <div class="card-number" style="color:rgba(255,255,255,0.4);">№ 03</div>
@@ -1136,13 +304,13 @@ body::before {
       <p class="card-deck stone" style="font-size:11px;">Clivagem perfeita em dois eixos. Pleocroísmo que muda de rosa a lilás. E um campo que dissolve o que foi necessário e agora pode ser depositado.</p>
       <div class="card-meta">
         <span class="card-read-time">7 min · Chakra Cardíaco</span>
-        <span class="card-arrow">→</span>
+        <span class="card-arrow" style="opacity:0.3;">→</span>
       </div>
     </div>
   </div>
 
-  <!-- CARD 4 -->
-  <div class="article-card">
+  <!-- Pirita - artigo em breve -->
+  <div class="article-card" style="cursor:default;">
     <div class="card-visual mineral-bg-pirita" style="aspect-ratio: 16/9;">
       <div class="card-visual-mineral" style="font-size:50px;"><span>Py</span></div>
       <div class="card-number">№ 04</div>
@@ -1154,16 +322,15 @@ body::before {
       <p class="card-deck stone" style="font-size:11px;">Pyr, do grego: fogo. Ao ser atritada, produz faíscas. É literalmente o mineral do fogo interior que manifesta.</p>
       <div class="card-meta">
         <span class="card-read-time">5 min · Plexo Solar</span>
-        <span class="card-arrow">→</span>
+        <span class="card-arrow" style="opacity:0.3;">→</span>
       </div>
     </div>
   </div>
 
-  <!-- CARD 5 - dark, vertical -->
-  <div class="article-card dark" style="display:flex; flex-direction:column; justify-content:space-between;">
+  <div class="article-card dark" onclick="location.href='turmalina-negra.html'" style="cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;">
     <div>
       <div class="card-section-label gold" style="margin-bottom:10px;">Ciência Confirmada</div>
-      <h3 class="card-headline cream" style="font-size:17px; margin-bottom:12px;">"A proteção da Turmalina Negra tem base mensurável. Não é crença — é piezoeletricidade."</h3>
+      <h3 class="card-headline cream" style="font-size:17px; margin-bottom:12px;">"A proteção da Turmalina Negra tem base mensurável. Não é crença. É piezoeletricidade."</h3>
       <p class="card-deck mist" style="font-size:11px;">Borossilicato de ferro que gera campo elétrico com o calor do seu corpo. A tradição soube antes da ciência nomear.</p>
     </div>
     <div class="card-meta" style="margin-top:20px;">
@@ -1172,15 +339,14 @@ body::before {
     </div>
   </div>
 
-  <!-- CARD 6 -->
-  <div class="article-card">
+  <div class="article-card" onclick="location.href='ametrino.html'" style="cursor:pointer;">
     <div class="card-visual mineral-bg-ametista" style="aspect-ratio: 16/9;">
       <div class="card-visual-mineral" style="font-size:50px;"><span>Am</span></div>
       <div class="card-number">№ 06</div>
       <div class="card-formula-badge">SiO₂ + Fe</div>
     </div>
     <div style="padding: 20px 0 0;">
-      <div class="card-section-label light">Etimologia & Campo</div>
+      <div class="card-section-label light">Etimologia &amp; Campo</div>
       <h3 class="card-headline light" style="font-size:15px;">A-methystos: "não embriagado". Os gregos erraram a razão, mas acertaram o campo.</h3>
       <p class="card-deck stone" style="font-size:11px;">A Ametista não acalma por sedação. Acalma por organização. Clareza é diferente de silêncio.</p>
       <div class="card-meta">
@@ -1192,17 +358,15 @@ body::before {
 
 </section>
 
-<!-- ══ PULLQUOTE ══ -->
-<div class="pullquote-section">
+<div id="campo" class="pullquote-section">
   <div class="pullquote-inner">
     <div class="pullquote-ornament">◆ &nbsp; Manifesto Mineral &nbsp; ◆</div>
-    <p class="pullquote-text">"Não vendemos cristais. Selecionamos instrumentos. E cada instrumento passa por um processo antes de chegar até você: ativação com geometria sagrada, intenção ancorada, campo calibrado para uma função específica."</p>
-    <div class="pullquote-attribution">Patrícia · Atelier Dévico · Garopaba, SC</div>
+    <p class="pullquote-text">"Não vendemos cristais. Selecionamos instrumentos. E cada instrumento passa por um processo antes de chegar até você: preparação ritual com intenção ancorada, campo calibrado para uma função específica."</p>
+    <div class="pullquote-attribution">Patrícia · Atelier Dévico</div>
   </div>
 </div>
 
-<!-- ══ ARTIGO PROFUNDO ══ -->
-<div class="section-header">
+<div id="origens" class="section-header">
   <div class="section-header-line"></div>
   <span class="section-header-title">◆ &nbsp; Registros Geológicos &nbsp; ◆</span>
   <div class="section-header-line"></div>
@@ -1211,10 +375,11 @@ body::before {
 <section class="deep-grid">
   <div class="deep-main">
     <div class="deep-article-number">01</div>
-    <h2 class="deep-headline">A única mina do mundo que produz <em>Ametrino legítimo</em> — e a lenda que a pedra carrega desde o séc. XVII</h2>
+    <a href="ametrino.html" style="text-decoration:none;color:inherit;">
+      <h2 class="deep-headline">A única mina do mundo que produz <em>Ametrino legítimo</em> e a lenda que a pedra carrega desde o séc. XVII</h2>
+    </a>
     <p class="deep-body">Existe um único lugar no planeta onde Ametista e Citrino crescem juntos no mesmo cristal, de forma natural, sem tratamento térmico, sem irradiação artificial: a <strong>Mina Anahi</strong>, no departamento de Santa Cruz, Bolívia. Qualquer Ametrino de outra procedência é quartzo tratado.</p>
-    <p class="deep-body">A história da mina começa no século XVII. O conquistador espanhol Francisco de Toledo recebeu a pedra como <strong>dote de casamento</strong> de um cacique Ayoreo — presente pela mão de sua filha, que se chamava Anahi. A pedra, dizem, refletia a dualidade dela: não indígena, não espanhola. As duas coisas habitando o mesmo ser.</p>
-
+    <p class="deep-body">A história da mina começa no século XVII. O conquistador espanhol Francisco de Toledo recebeu a pedra como <strong>dote de casamento</strong> de um cacique Ayoreo. Presente pela mão de sua filha, que se chamava Anahi. A pedra, dizem, refletia a dualidade dela: não indígena, não espanhola. As duas coisas habitando o mesmo ser.</p>
     <div class="deep-data-box">
       <div class="data-item">
         <div class="data-label">Composição</div>
@@ -1233,43 +398,41 @@ body::before {
         <div class="data-value">Coronário + Plexo Solar</div>
       </div>
     </div>
-
-    <p class="deep-body">A mineralogicamente, o que torna o Ametrino possível é uma <strong>variação de temperatura e irradiação natural durante o crescimento</strong>. Onde o ferro no quartzo é irradiado por partículas subatômicas do solo, a cor violeta (ametista) se mantém. Onde não há essa irradiação — ou onde ela aquece o mineral o suficiente para liberar a cor — o quartzo torna-se amarelo (citrino). A linha entre as cores é uma <strong>fronteira geológica visível</strong>.</p>
-    <p class="deep-body">Para o campo energético: chakra coronário e plexo solar em integração simultânea. A visão que encontra a ação. O transcendente que desce ao concreto. Para quem tem muita inspiração mas dificuldade de executar — ou muita execução mas perdeu o propósito que a move.</p>
+    <p class="deep-body">O que torna o Ametrino possível é uma <strong>variação de temperatura e irradiação natural durante o crescimento</strong>. Onde o ferro no quartzo é irradiado por partículas subatômicas do solo, a cor violeta (ametista) se mantém. Onde essa irradiação aquece o mineral o suficiente para liberar a cor, o quartzo torna-se amarelo (citrino). A linha entre as cores é uma <strong>fronteira geológica visível</strong>.</p>
+    <p class="deep-body">Para o campo energético: chakra coronário e plexo solar em integração simultânea. A visão que encontra a ação. O transcendente que desce ao concreto. Para quem tem muita inspiração mas dificuldade de executar. Ou muita execução mas perdeu o propósito que a move.</p>
   </div>
-
   <aside class="deep-sidebar">
     <div class="sidebar-widget">
       <div class="sidebar-widget-title">Minerais desta edição</div>
-      <div class="sidebar-mineral-item">
+      <div class="sidebar-mineral-item" onclick="location.href='labradorita.html'">
         <div class="sidebar-mineral-num">01</div>
         <div>
           <div class="sidebar-mineral-name">Labradorita</div>
           <div class="sidebar-mineral-sub">Labradorescência · Madagascar</div>
         </div>
       </div>
-      <div class="sidebar-mineral-item">
+      <div class="sidebar-mineral-item" onclick="location.href='hematita.html'">
         <div class="sidebar-mineral-num">02</div>
         <div>
           <div class="sidebar-mineral-name">Hematita</div>
           <div class="sidebar-mineral-sub">Fe₂O₃ · Aterramento profundo</div>
         </div>
       </div>
-      <div class="sidebar-mineral-item">
+      <div class="sidebar-mineral-item" onclick="location.href='opala-piaui.html'">
         <div class="sidebar-mineral-num">03</div>
         <div>
           <div class="sidebar-mineral-name">Opala do Piauí</div>
           <div class="sidebar-mineral-sub">Play-of-color · Brasil</div>
         </div>
       </div>
-      <div class="sidebar-mineral-item">
+      <div class="sidebar-mineral-item" style="cursor:default;opacity:0.5;">
         <div class="sidebar-mineral-num">04</div>
         <div>
           <div class="sidebar-mineral-name">Kunzita</div>
           <div class="sidebar-mineral-sub">LiAlSi₂O₆ · Chakra cardíaco</div>
         </div>
       </div>
-      <div class="sidebar-mineral-item">
+      <div class="sidebar-mineral-item" onclick="location.href='ametrino.html'">
         <div class="sidebar-mineral-num">05</div>
         <div>
           <div class="sidebar-mineral-name">Ametrino</div>
@@ -1277,24 +440,21 @@ body::before {
         </div>
       </div>
     </div>
-
     <div class="sidebar-widget" style="background: var(--ink); border-color: rgba(184,134,11,0.2);">
       <div class="sidebar-widget-title" style="color: var(--gold); border-color: rgba(184,134,11,0.2);">Dado que ninguém conta</div>
-      <p style="font-family:'IM Fell English',serif; font-size:13px; font-style:italic; color:var(--mist); line-height:1.7;">"A Turmalina Negra produz campo elétrico com o calor do seu corpo. Você a ativa simplesmente ao usá-la. Nenhum ritual necessário — embora o ritual amplifique."</p>
+      <p style="font-family:'IM Fell English',serif; font-size:13px; font-style:italic; color:var(--mist); line-height:1.7;">"A Turmalina Negra produz campo elétrico com o calor do seu corpo. Você a ativa simplesmente ao usá-la. Nenhum ritual necessário, embora o ritual amplifique."</p>
     </div>
   </aside>
 </section>
 
-<!-- ══ CARDS PARA SALVAR ══ -->
-<div class="save-cards-section">
+<div id="ritual" class="save-cards-section">
   <div class="save-cards-inner">
     <div class="save-cards-header">
       <div class="save-cards-kicker">◆ &nbsp; Para Salvar e Compartilhar &nbsp; ◆</div>
       <h2 class="save-cards-title">Dados que você vai querer ter sempre à mão</h2>
     </div>
-
     <div class="save-cards-grid">
-      <div class="save-card">
+      <div class="save-card" onclick="location.href='labradorita.html'">
         <div class="save-card-bg mineral-bg-labradorita"></div>
         <div class="save-card-content">
           <div class="save-card-mineral">Labradorita · #01</div>
@@ -1303,8 +463,7 @@ body::before {
         </div>
         <div class="save-card-icon">◆</div>
       </div>
-
-      <div class="save-card">
+      <div class="save-card" onclick="location.href='hematita.html'">
         <div class="save-card-bg mineral-bg-hematita"></div>
         <div class="save-card-content">
           <div class="save-card-mineral">Hematita · #02</div>
@@ -1313,8 +472,7 @@ body::before {
         </div>
         <div class="save-card-icon">◆</div>
       </div>
-
-      <div class="save-card">
+      <div class="save-card" onclick="location.href='turmalina-negra.html'">
         <div class="save-card-bg mineral-bg-turmalina"></div>
         <div class="save-card-content">
           <div class="save-card-mineral">Turmalina Negra · #03</div>
@@ -1323,8 +481,7 @@ body::before {
         </div>
         <div class="save-card-icon">◆</div>
       </div>
-
-      <div class="save-card">
+      <div class="save-card" style="cursor:default;">
         <div class="save-card-bg mineral-bg-larimar"></div>
         <div class="save-card-content">
           <div class="save-card-mineral">Larimar · #04</div>
@@ -1337,8 +494,7 @@ body::before {
   </div>
 </div>
 
-<!-- ══ GLOSSÁRIO ══ -->
-<div class="section-header">
+<div id="glossario" class="section-header">
   <div class="section-header-line"></div>
   <span class="section-header-title">◆ &nbsp; Glossário Dévico &nbsp; ◆</span>
   <div class="section-header-line"></div>
@@ -1346,7 +502,6 @@ body::before {
 
 <section class="glossary-section">
   <div class="glossary-grid">
-
     <div class="glossary-item">
       <div class="glossary-letter">A</div>
       <div>
@@ -1355,16 +510,14 @@ body::before {
         <div class="glossary-example">Ex: "A adularescência azul da Pedra-da-Lua Indiana é o padrão mais valorizado em joalheria mundial."</div>
       </div>
     </div>
-
     <div class="glossary-item">
       <div class="glossary-letter">L</div>
       <div>
         <div class="glossary-term">Labradorescência</div>
-        <div class="glossary-def">Variação específica de adularescência presente na Labradorita. Criada por interferência óptica entre lamelas de exsolução — duas fases de feldspato com índices de refração distintos. Diferente da adularescência: aqui as cores são mais intensas e saturadas.</div>
+        <div class="glossary-def">Variação específica de adularescência presente na Labradorita. Criada por interferência óptica entre lamelas de exsolução. Duas fases de feldspato com índices de refração distintos. Diferente da adularescência: aqui as cores são mais intensas e saturadas.</div>
         <div class="glossary-example">Ex: "A labradorescência azul-dourada da Labradorita de Madagascar ocorre em ~75% dos espécimes de qualidade A."</div>
       </div>
     </div>
-
     <div class="glossary-item">
       <div class="glossary-letter">P</div>
       <div>
@@ -1373,7 +526,6 @@ body::before {
         <div class="glossary-example">Ex: "A Turmalina Negra mantém campo piezoelétrico ativo com o calor do corpo de quem a carrega."</div>
       </div>
     </div>
-
     <div class="glossary-item">
       <div class="glossary-letter">H</div>
       <div>
@@ -1382,31 +534,26 @@ body::before {
         <div class="glossary-example">Ex: "A Opala Etíope com hidrofanismo é classificada separadamente em gemologia por seu comportamento único."</div>
       </div>
     </div>
-
     <div class="glossary-item">
       <div class="glossary-letter">P</div>
       <div>
         <div class="glossary-term">Play-of-color</div>
         <div class="glossary-def">Fenômeno exclusivo das Opalas. Criado pela difração de luz em microesferas de sílica organizadas em camadas de espessura nanométrica. Diferente da labradorescência e da adularescência: aqui é o tamanho e arranjo das esferas que determina as cores produzidas.</div>
-        <div class="glossary-example">Ex: "Uma Opala com play-of-color vermelho é mais rara do que uma com azul — comprimentos de onda longos exigem microesferas de tamanho muito específico."</div>
+        <div class="glossary-example">Ex: "Uma Opala com play-of-color vermelho é mais rara do que uma com azul. Comprimentos de onda longos exigem microesferas de tamanho muito específico."</div>
       </div>
     </div>
-
     <div class="glossary-item">
       <div class="glossary-letter">E</div>
       <div>
         <div class="glossary-term">Exsolução</div>
-        <div class="glossary-def">Processo geológico onde dois minerais originalmente misturados se separam em domínios distintos durante o resfriamento lento. As lamelas de exsolução da Labradorita — responsáveis pela labradorescência — são o exemplo mais visível e belo desse processo.</div>
+        <div class="glossary-def">Processo geológico onde dois minerais originalmente misturados se separam em domínios distintos durante o resfriamento lento. As lamelas de exsolução da Labradorita, responsáveis pela labradorescência, são o exemplo mais visível e belo desse processo.</div>
         <div class="glossary-example">Ex: "Sem as lamelas de exsolução, a Labradorita seria apenas um feldspato cinza sem fenômeno óptico."</div>
       </div>
     </div>
-
   </div>
 </section>
-
 </main>
 
-<!-- ══ FOOTER ══ -->
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
@@ -1414,19 +561,23 @@ body::before {
       <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e campo. Aqui, nenhum desses elementos é separado dos outros. Ciência e campo habitam o mesmo registro."</p>
     </div>
     <div>
-      <div class="footer-col-title">Edições Anteriores</div>
-      <a class="footer-link" href="#">Vol. I — Feldspatos e Labradorescência</a>
-      <a class="footer-link" href="#">Vol. II — Opalas do Brasil</a>
-      <a class="footer-link" href="#">Vol. III — A Ciência da Proteção Mineral</a>
-      <a class="footer-link" href="#">Vol. IV — Minas e Origens</a>
+      <div class="footer-col-title">Artigos</div>
+      <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
+      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
+      <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
+      <a class="footer-link" href="ametrino.html">A única mina do mundo: AMETRINO</a>
+      <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
+      <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
+      <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
-      <a class="footer-link" href="#">Peças Disponíveis</a>
-      <a class="footer-link" href="#">Peça Personalizada</a>
-      <a class="footer-link" href="#">O Ritual de Ativação</a>
-      <a class="footer-link" href="#">Sobre Patrícia</a>
-      <a class="footer-link" href="#">Instagram @eu.sou.nos</a>
+      <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://eusounos.com/colares" target="_blank">Peça Personalizada</a>
+      <a class="footer-link" href="https://eusounos.com/nosso-proposito" target="_blank">O Ritual de Ativação</a>
+      <a class="footer-link" href="https://eusounos.com/quem-somos" target="_blank">Sobre Patrícia</a>
+      <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram @eu.sou.nos</a>
     </div>
   </div>
   <div class="footer-bottom">
