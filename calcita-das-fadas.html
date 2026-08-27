@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A CALCITA DAS FADAS: cada anel é um ciclo. Cada ciclo é tempo registrado · Dévico Mineral</title>
-<meta name="description" content="Formada em lagos glaciais no rio Harricana, Quebec. Os círculos concêntricos são o registro físico de cada ciclo de deposição.">
+<title>CALCITA DAS FADAS: antes de ser pedra, havia sedimento, água e possivelmente vida · Dévico Mineral</title>
+<meta name="description" content="A CALCITA DAS FADAS não é uma variedade de calcita. É uma concreção calcária formada no pós-glacial do Québec, Canadá. Sedimento, água, carbonato e tempo.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -20,325 +20,110 @@
   --mist: #c9b99a;
   --white: #fefcf8;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
-/* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-}
-
-.masthead-top-bar {
-  background: var(--burgundy);
-  padding: 6px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(184,134,11,0.4);
-}
-
-.masthead-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245,234,216,0.6);
-}
-
-.masthead-tagline-top {
-  font-family: 'IM Fell English', serif;
-  font-size: 10px;
-  font-style: italic;
-  color: var(--gold-light);
-  letter-spacing: 1px;
-}
-
-.masthead-main {
-  padding: 20px 40px 0;
-  text-align: center;
-}
-
-.masthead-rule-top {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
-  margin-bottom: 14px;
-}
-
-.masthead-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 8px;
-}
-
-.masthead-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(28px, 5vw, 56px);
-  font-weight: 700;
-  color: var(--cream);
-  line-height: 0.95;
-  letter-spacing: -1px;
-  margin-bottom: 4px;
-  text-decoration: none;
-  display: block;
-}
-
+body { background: var(--paper); color: var(--ink); font-family: 'Libre Baskerville', Georgia, serif; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
+.masthead { background: var(--ink); padding: 0; }
+.masthead-top-bar { background: var(--burgundy); padding: 6px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(184,134,11,0.4); }
+.masthead-date { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,234,216,0.6); }
+.masthead-tagline-top { font-family: 'IM Fell English', serif; font-size: 10px; font-style: italic; color: var(--gold-light); letter-spacing: 1px; }
+.masthead-main { padding: 20px 40px 0; text-align: center; }
+.masthead-rule-top { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent); margin-bottom: 14px; }
+.masthead-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.masthead-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(28px, 5vw, 56px); font-weight: 700; color: var(--cream); line-height: 0.95; letter-spacing: -1px; margin-bottom: 4px; text-decoration: none; display: block; }
 .masthead-title span { color: var(--gold-light); }
-
-.masthead-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(11px, 1.5vw, 14px);
-  font-style: italic;
-  color: var(--mist);
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-.masthead-rule-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.rule-line {
-  flex: 1;
-  max-width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
+.masthead-subtitle { font-family: 'IM Fell English', serif; font-size: clamp(11px, 1.5vw, 14px); font-style: italic; color: var(--mist); letter-spacing: 2px; margin-bottom: 14px; }
+.masthead-rule-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.rule-line { flex: 1; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 .rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
 .rule-diamond { color: var(--gold); font-size: 10px; }
-
-.masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
-  padding: 10px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.masthead-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--mist);
-  text-decoration: none;
-  transition: color 0.2s;
-  padding: 3px 0;
-  border-bottom: 1px solid transparent;
-}
-
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-.masthead-nav a.active {
-  color: var(--gold);
-  border-bottom-color: rgba(184,134,11,0.4);
-}
-
-/* ══ BREADCRUMB ══ */
-.breadcrumb {
-  max-width: 800px;
-  margin: 32px auto 0;
-  padding: 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.breadcrumb a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.masthead-nav { background: transparent; border-top: 1px solid rgba(184,134,11,0.15); padding: 10px 40px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+.masthead-nav a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); text-decoration: none; transition: color 0.2s; padding: 3px 0; border-bottom: 1px solid transparent; }
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.masthead-nav a.destaque { color: var(--gold-light); border-bottom-color: rgba(184,134,11,0.4); }
+.breadcrumb { max-width: 800px; margin: 32px auto 0; padding: 0 40px; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); display: flex; align-items: center; gap: 10px; }
+.breadcrumb a { color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--burgundy); }
 .breadcrumb-sep { color: var(--gold); font-size: 8px; }
 .breadcrumb-current { color: var(--burgundy); }
-
-/* ══ ARTIGO ══ */
-.article-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 40px 60px;
-}
-
-/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
-.article-nav {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 40px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--cream-deep);
-  padding-top: 32px;
-  gap: 20px;
-}
-
-.article-nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.2s;
-}
-
+.article-wrapper { max-width: 800px; margin: 0 auto; padding: 40px 40px 60px; }
+.article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 18px 0; }
+.article-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(26px, 4vw, 46px); line-height: 1.08; color: var(--ink); margin: 0 0 10px 0; letter-spacing: -0.5px; }
+.article-title em { font-style: italic; color: var(--burgundy); font-weight: 400; }
+.article-subtitle { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); margin: 0 0 28px 0; }
+.article-lead { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid var(--gold); padding-left: 20px; margin: 0 0 10px 0; }
+.article-byline { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); margin: 0 0 32px 0; }
+.ficha-mineral { background: var(--ink); padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline; }
+.ficha-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7); }
+.ficha-value { font-family: monospace; font-size: 11px; font-weight: bold; color: var(--cream); margin-right: 12px; }
+.gradiente-linha { height: 2px; background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy)); margin-bottom: 36px; }
+.drop-cap::first-letter { font-family: 'Cinzel Decorative', serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: var(--burgundy); }
+.body-p { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0; }
+.mineral-name { font-variant: small-caps; letter-spacing: 0.08em; color: var(--burgundy); }
+.section-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid var(--cream-deep); }
+.section-label.gold { color: var(--gold); border-top-color: rgba(184,134,11,0.3); }
+.pullquote { background: var(--cream-dark); border-left: 4px solid var(--burgundy); padding: 22px 28px; margin: 0 0 36px 0; }
+.pullquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; line-height: 1.75; color: var(--ink); margin: 0; }
+.bloco-escuro { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-escuro p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 12px 0; }
+.bloco-escuro p:last-child { margin-bottom: 0; }
+.bloco-burgundy { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-burgundy p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.bloco-burgundy p:last-child { margin-bottom: 0; }
+.lista-formacao { background: var(--ink); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 0 0 36px 0; }
+.lista-formacao p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 2; color: var(--cream); margin: 0; }
+.ritual-box { border-left: 3px solid var(--gold); padding: 0 0 0 22px; margin: 0 0 44px 0; }
+.ritual-box .ritual-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 12px 0; }
+.ritual-box p { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0 0 14px 0; }
+.ritual-box p:last-child { margin-bottom: 0; }
+.glossario-box { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.glossario-box .glossario-titulo { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin: 0 0 20px 0; padding-bottom: 10px; border-bottom: 1px solid rgba(184,134,11,0.25); }
+.glossario-item { margin-bottom: 20px; }
+.glossario-item:last-child { margin-bottom: 0; }
+.glossario-termo { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; }
+.glossario-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.75; color: var(--mist); }
+.assinatura { background: var(--ink); padding: 36px 40px; text-align: center; }
+.assinatura .ornamento { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0; }
+.assinatura .fecho { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: var(--cream); margin: 0 0 20px 0; }
+.assinatura .marca { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); }
+.article-nav { max-width: 800px; margin: 0 auto; padding: 32px 40px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--cream-deep); gap: 20px; }
+.article-nav-link { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--burgundy); text-decoration: none; transition: color 0.2s; }
 .article-nav-link:hover { color: var(--gold); }
-
-.article-nav-center {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.article-nav-center { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .article-nav-center:hover { color: var(--burgundy); }
-
-/* ══ FOOTER ══ */
-.journal-footer {
-  background: var(--ink);
-  border-top: 3px solid var(--burgundy);
-  padding: 40px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-brand {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
+.journal-footer { background: var(--ink); border-top: 3px solid var(--burgundy); padding: 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
 .footer-brand span { color: var(--gold-light); }
-
-.footer-manifesto {
-  font-family: 'IM Fell English', serif;
-  font-size: 12px;
-  font-style: italic;
-  color: var(--mist);
-  line-height: 1.7;
-}
-
-.footer-col-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(184,134,11,0.3);
-}
-
-.footer-link {
-  display: block;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  color: var(--mist);
-  text-decoration: none;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-
+.footer-brand-sub { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 8px 0; }
+.footer-manifesto { font-family: 'IM Fell English', serif; font-size: 12px; font-style: italic; color: var(--mist); line-height: 1.7; }
+.footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184,134,11,0.3); }
+.footer-link { display: block; font-family: 'Libre Baskerville', serif; font-size: 12px; color: var(--mist); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 .footer-link:hover { color: var(--cream); }
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(184,134,11,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-copy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(180,160,130,0.5);
-}
-
-/* ══ RESPONSIVE ══ */
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(184,134,11,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(180,160,130,0.5); }
 @media (max-width: 700px) {
-  .masthead-top-bar,
-  .masthead-main,
-  .masthead-nav { padding-left: 20px; padding-right: 20px; }
-  .article-wrapper,
-  .breadcrumb,
-  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .masthead-top-bar, .masthead-main, .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper, .breadcrumb, .article-nav { padding-left: 20px; padding-right: 20px; }
   .footer-inner { grid-template-columns: 1fr; }
   .journal-footer { padding: 30px 20px; }
+  .drop-cap::first-letter { font-size: 2.2rem; }
 }
 </style>
 </head>
 <body>
 
-<!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
-    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
-    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+    <span class="masthead-date">EU SOU NÓS · Atelier Dévico · Dévico Mineral</span>
+    <em class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</em>
   </div>
   <div class="masthead-main">
     <div class="masthead-rule-top"></div>
-    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico</div>
     <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
-    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <p class="masthead-subtitle">O diário de mineralogia do Eu Sou Nós Atelier Dévico</p>
     <div class="masthead-rule-ornament">
       <div class="rule-line"></div>
       <span class="rule-diamond">◆</span>
@@ -346,128 +131,205 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
+    <a href="https://eusounos.com/produtos" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
-    <a href="index.html#campo">Campo Energético</a>
-    <a href="index.html#glossario">Glossário</a>
     <a href="index.html#artigos">Artigos</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="index.html#glossario">Glossário</a>
   </nav>
 </header>
 
-<!-- ══ BREADCRUMB ══ -->
 <div class="breadcrumb">
   <a href="index.html">Dévico Mineral</a>
   <span class="breadcrumb-sep">◆</span>
   <span class="breadcrumb-current">CALCITA DAS FADAS</span>
 </div>
 
-<!-- ══ CONTEÚDO DO ARTIGO ══ -->
 <div class="article-wrapper">
-  <!-- KICKER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Origens &amp; Minas &middot; 7 min de leitura</p>
 
-<!-- TÍTULO -->
-<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">Calcita das Fadas</span>:<br/>cada anel é um ciclo.<br/>Cada ciclo é <em style="font-weight: 400; color: #7a0000;">tempo registrado.</em></h2>
+  <p class="article-kicker">Geologia &amp; Campo &middot; 8 min de leitura</p>
 
-<!-- LEAD -->
-<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">No norte do Quebec, no rio Harricana, o degelo de geleiras milenares depositou carbonato de cálcio em camadas concêntricas ao longo de séculos. O que parece desenho é registro. O que parece ornamento é arquivo. Cada círculo nesta pedra é tempo que a Terra guardou.</p>
+  <h1 class="article-title">Antes de ser pedra,<br>havia sedimento, água<br>e possivelmente <em>vida.</em></h1>
 
-<!-- BYLINE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+  <p class="article-subtitle">Nome popular/comercial &nbsp;·&nbsp; Concreção calcária &nbsp;·&nbsp; Abitibi, Québec, Canadá</p>
 
-<!-- FICHA MINERAL -->
-<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">CaCO₃</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Sistema</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Trigonal</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Formação</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Depósitos quaternários glaciais</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Origem</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Rio Harricana · Quebec · Canadá</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Coronário</span>
-</div>
+  <p class="article-lead">Aquilo que comercialmente chamamos de <span class="mineral-name">CALCITA DAS FADAS</span>, Fairy Stone ou Pierre de fée, não deve ser apresentada simplesmente como uma variedade cristalina de calcita. Ela é uma concreção calcária. Sua história não começa com um cristal. Começa com sedimento, água, matéria orgânica, carbonato de cálcio e tempo.</p>
 
-<!-- LINHA GRADIENTE -->
-<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+  <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
-<!-- ABERTURA COM DROP CAP -->
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">H</span>á minerais formados por pressão e calor extremos. Há minerais formados por colisões geológicas, por vulcões, por oceanos que secaram. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Calcita das Fadas</span> foi formada por algo diferente: paciência. Deposição lenta, camada sobre camada, ao longo de séculos, no leito de lagos alimentados pelo degelo de geleiras no norte do Canadá.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">O nome científico da localidade é Harricana. um rio no norte do Quebec. As pedras são alisadas naturalmente pela água e pelo tempo. Os círculos concêntricos que aparecem em sua superfície não são decoração. São o registro físico de cada ciclo de deposição. Cada anel é uma estação. Uma variação de temperatura. Um ciclo que a Terra completou e inscreveu na pedra.</p>
-
-<!-- SEÇÃO: GEOLOGIA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A geologia dos círculos</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Calcita das Fadas</span> é carbonato de cálcio. <span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">CaCO₃</span>. formado em depósitos quaternários. Durante o último período glacial, geleiras cobriam o norte do Quebec. À medida que o gelo recuou, lagos de degelo se formaram. A água desses lagos, rica em cálcio dissolvido, depositou carbonato de cálcio no leito de forma rítmica. mais intensamente no verão, menos no inverno. Esse ritmo criou os anéis.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A água e o gelo depois alisaram as pedras ao longo de séculos. o mesmo processo que arredonda as pedras de rio, mas em escala de tempo muito maior. O resultado são pedras com superfície completamente lisa ao toque, quase sedosa, e os círculos concêntricos preservados como registro permanente dos ciclos que as formaram.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Um dado que raramente aparece: cada pedra é única e irrepetível não apenas pela forma, mas pelos anéis. Contar os círculos de uma <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Calcita das Fadas</span> é, literalmente, contar os ciclos que ela atravessou. É uma cronologia inscrita pela natureza.</p>
-
-<!-- PULLQUOTE -->
-<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"Cada círculo desta pedra é um ciclo que a Terra completou. Não é símbolo. É registro. A natureza criou seu próprio diário. e inscreveu em carbonato de cálcio."</p>
-</div>
-
-<!-- SEÇÃO: HARRICANA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Harricana: o nome que a origem carrega</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">O rio Harricana tem nome de origem algonquina. língua dos povos indígenas que habitaram o norte do Quebec antes da colonização europeia. A região é remota, ao norte da baía James, onde o degelo ainda molda a paisagem a cada primavera. As pedras encontradas ali não foram mineradas. foram coletadas diretamente do leito do rio, já alisadas pela água.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Isso as torna diferentes de qualquer outro mineral que trabalhamos: não foram cortadas, não foram polidas por mão humana, não foram modificadas em nenhuma etapa. A forma que você segura é exatamente a forma que a água e o tempo criaram. Peça única no sentido mais literal possível. moldada por um processo que não se repete da mesma forma duas vezes.</p>
-
-<!-- SEÇÃO: CAMPO ENERGÉTICO -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A leitura energética</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Calcita das Fadas</span> trabalha no chakra coronário. a conexão com o que é maior, com o ritmo da Terra, com o tempo longo. Mas o que a distingue de outras calcitas é o que os círculos carregam: a memória de ciclos. Cada anel é um ciclo completado. Não interrompido. Completado.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">É o mineral para quem está no meio de um ciclo difícil e precisa lembrar que ciclos terminam. Que o inverno que reduziu o depósito também faz parte do registro. Que a primavera que retomou a deposição também faz parte. Nenhum ciclo foi desperdiçado. Todos estão inscritos. A pedra carrega isso como evidência física, não como metáfora.</p>
-
-<!-- PARA QUEM. BLOCO BORDÔ -->
-<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem está no meio de um ciclo<br/>que ainda não sabe se vai terminar.<br/>Vai. A pedra tem a prova."</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">Para quem precisa de perspectiva de tempo longo.<br/>Para quem esqueceu que já atravessou ciclos antes.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Coronário &middot; Conexão com Ciclos</p>
-</div>
-
-<!-- SEÇÃO: CUIDADOS -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Cuidados</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Calcita</span> tem dureza 3 na escala de Mohs. relativamente macia. Evitar contato com superfícies duras que possam riscar. Não usar produtos químicos na limpeza. água morna e pano macio são suficientes. Evitar exposição prolongada a ácidos, incluindo suor excessivo em contato direto por longos períodos.</p>
-
-<!-- SEÇÃO: ATELIER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ela no Atelier</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Cada <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Calcita das Fadas</span> que entra no Atelier é selecionada pela clareza dos círculos concêntricos e pela integridade da superfície. A forma já vem da natureza. nossa função é escolher a pedra certa e preparar o campo com intenção.</p>
-
-<!-- PREPARAÇÃO RITUAL -->
-<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
-  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Um gesto de dedicação consciente que confia à peça o propósito de perspectiva. a memória de que ciclos terminam, de que o tempo longo sempre foi favorável.</p>
-</div>
-
-<!-- CTA · GABINETE MINERAL -->
-<div style="background: #faf6ef; border: 1px solid #b8860b; padding: 3px; margin-bottom: 0;">
-  <div style="border: 1px solid rgba(184,134,11,0.4); padding: 28px 24px; text-align: center;">
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0 0 14px 0;">Gabinete Mineral · Espécime nº 07</p>
-    <p style="font-family: 'Playfair Display',serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.14em; color: #1a0f0a; margin: 0 0 6px 0;">CALCITA DAS FADAS</p>
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 10px; letter-spacing: 1px; color: #6b4226; margin: 0 0 18px 0;">CaCO₃ · Harricana, Quebec</p>
-    <div style="width: 40px; height: 1px; background: #b8860b; margin: 0 auto 18px auto;"></div>
-    <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.7; color: #3d1a0a; margin: 0 0 22px 0;">"Cada anel é um ciclo.<br/>Cada ciclo é tempo registrado."</p>
-    <a href="https://eusounos.com/search/?q=calcita" style="display: inline-block; font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #7a0000; border: 1px solid #7a0000; padding: 10px 22px; text-decoration: none;">Ver no Atelier →</a>
+  <div class="ficha-mineral">
+    <span class="ficha-label">Natureza</span>
+    <span class="ficha-value">Concreção calcária</span>
+    <span class="ficha-label">Composição principal</span>
+    <span class="ficha-value">Areia fina, silte e cimento calcário</span>
+    <span class="ficha-label">Estrutura</span>
+    <span class="ficha-value">Sedimentar concrecionada</span>
+    <span class="ficha-label">Origem</span>
+    <span class="ficha-value">Ambientes lacustres pós-glaciais</span>
+    <span class="ficha-label">Procedência</span>
+    <span class="ficha-value">Abitibi, Québec, Canadá</span>
   </div>
-</div>
 
-<!-- ASSINATURA -->
-<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Calcita das Fadas</span> é lembrar<br/>que nenhum ciclo foi desperdiçado.<br/>Todos estão inscritos.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
-</div>
+  <div class="gradiente-linha"></div>
+
+  <!-- ABERTURA -->
+  <p class="body-p drop-cap">Exemplares do Québec são descritos como formações constituídas principalmente por areia fina, silte e um cimento calcário. Isso muda bastante a narrativa. Porque sua história não começa com CaCO₃ → cristal → pedra.</p>
+
+  <div class="lista-formacao">
+    <p>Começa com sedimento.<br>Água.<br>Matéria orgânica.<br>Carbonato de cálcio.<br>Tempo.<br>E uma paisagem que estava sendo redesenhada pelo fim de uma glaciação.</p>
+  </div>
+
+  <!-- SEÇÃO: UMA PEDRA NASCIDA DEPOIS DO GELO -->
+  <p class="section-label">Uma pedra nascida depois do gelo</p>
+
+  <p class="body-p">As pierres de fée são características da região de Abitibi, Québec, Canadá, especialmente associadas a antigos ambientes lacustres de origem glacial. Durante o recuo da frente glacial, extensões de água ocuparam depressões da paisagem. Sedimentos finos foram depositados nesses ambientes. Posteriormente, cursos d'água transportaram algumas dessas concreções, deixando-as também nas margens de rios e lagos.</p>
+
+  <div class="bloco-escuro">
+    <p>O gelo recuou.<br>A água ocupou a paisagem.<br>Sedimentos se acumularam.<br>E dentro deles começaram a nascer formas.</p>
+    <p>Não formas esculpidas posteriormente. Formas produzidas pelo próprio processo de concreção.</p>
+  </div>
+
+  <!-- SEÇÃO: E TALVEZ EXISTA VIDA REGISTRADA DENTRO DELAS -->
+  <p class="section-label">E talvez exista vida registrada dentro delas</p>
+
+  <p class="body-p">Há exemplares nos quais foram identificados filamentos vegetais, incluindo estruturas relacionadas a algas e cavalinha. Algumas concreções parecem ter crescido circularmente ao redor de uma haste vegetal, cuja seção pode permanecer perceptível no centro.</p>
+
+  <p class="body-p">A interpretação proposta para determinados exemplares é particularmente fascinante: esses materiais orgânicos podem ter funcionado como núcleos em torno dos quais a concreção começou a se formar. Portanto, aquilo que parece simplesmente um desenho abstrato na pedra pode guardar uma relação entre mineralização e matéria que um dia esteve viva.</p>
+
+  <div class="pullquote">
+    <p>Antes de alguém enxergar uma fada na pedra, a geologia já havia produzido algo que parecia desenhado.</p>
+  </div>
+
+  <!-- SEÇÃO: A PEDRA CRESCEU AO REDOR DE ALGUMA COISA -->
+  <p class="section-label">A pedra cresceu ao redor de alguma coisa</p>
+
+  <p class="body-p">Uma concreção se forma quando minerais precipitam e cimentam partículas existentes no sedimento. No caso das pedras de fada do Québec, encontramos essencialmente sedimentos finos consolidados por carbonato de cálcio. Isso também explica uma característica visual extraordinária: elas frequentemente apresentam uma face relativamente lisa e outra marcada por linhas, relevos, protuberâncias e desenhos irregulares.</p>
+
+  <div class="bloco-escuro">
+    <p>Não existe um molde. Cada formação registra as condições microscópicas do lugar em que cresceu.</p>
+    <p>Algumas parecem discos. Outras lembram animais. Corpos. Símbolos. Pequenas figuras.</p>
+    <p>É provavelmente daí que nasce parte do encantamento cultural em torno delas.</p>
+  </div>
+
+  <!-- SEÇÃO: E OS CÍRCULOS? -->
+  <p class="section-label">E os círculos?</p>
+
+  <p class="body-p">Aqui podemos recuperar nossa ideia inicial, mas com muito mais precisão. Segundo a interpretação apresentada pelo Museu Mineralógico de Abitibi-Témiscamingue, os círculos observados nessas formações corresponderiam a diferentes estágios de crescimento, associados a condições favoráveis à atividade bacteriana e separados por interrupções relacionadas à dessecação ou ao resfriamento.</p>
+
+  <p class="body-p">Portanto, não precisamos dizer "cada anel é um ciclo." Podemos dizer algo mais preciso e mais interessante:</p>
+
+  <div class="pullquote">
+    <p>Cada anel pode ser o registro de um intervalo em que a pedra conseguiu continuar crescendo.</p>
+  </div>
+
+  <div class="bloco-escuro">
+    <p>Há períodos em que a matéria cresce. Outros em que as condições mudam. O processo interrompe. Depois encontra condições novamente. E aquilo que parecia uma interrupção não desaparece. Fica registrado na forma.</p>
+  </div>
+
+  <!-- SEÇÃO: POR QUE "DAS FADAS"? -->
+  <p class="section-label">Por que "das Fadas"?</p>
+
+  <p class="body-p">A aparência dessas concreções favoreceu uma série de histórias e associações culturais. Fontes locais do Québec registram tradições segundo as quais pequenas pierres de fée teriam sido carregadas como amuletos e posteriormente associadas a proteção, saúde, prosperidade e boa sorte.</p>
+
+  <p class="body-p">Mas a documentação disponível não permite transformar essas narrativas automaticamente em uma tradição indígena historicamente comprovada. Por isso, no Dévico Mineral, tratamos esse conteúdo como aquilo que podemos sustentar: uma tradição local registrada na região.</p>
+
+  <div class="bloco-escuro">
+    <p>Quando existe documentação histórica, chamamos de história. Quando existe tradição registrada, chamamos de tradição. Quando a origem não pode ser suficientemente rastreada, não inventamos uma genealogia para tornar a narrativa mais bonita.</p>
+    <p>O mistério não precisa disso.</p>
+  </div>
+
+  <!-- SEÇÃO: MATÉRIA & CAMPO -->
+  <p class="section-label gold">Matéria &amp; Campo</p>
+
+  <p class="body-p">Em práticas contemporâneas com cristais, a <span class="mineral-name">CALCITA DAS FADAS</span> é associada a conexão com a Terra, proteção, ancestralidade e energia feminina. Essas interpretações pertencem ao campo espiritual. A geologia não demonstra nenhuma delas.</p>
+
+  <p class="body-p">Mas existe uma relação material extraordinária que podemos contemplar sem precisar transformá-la em prova. A <span class="mineral-name">CALCITA DAS FADAS</span> não cresceu isolada do ambiente. Sua forma surgiu em relação.</p>
+
+  <div class="lista-formacao">
+    <p>Sedimento.<br>Água.<br>Carbonato.<br>Temperatura.<br>Microrganismos.<br>Possivelmente plantas.<br>Mudanças ambientais.<br>Interrupções.<br>Retomadas.</p>
+  </div>
+
+  <p class="body-p">A pedra que seguramos hoje é resultado dessa rede. Talvez por isso exista uma relação ainda mais interessante do que simplesmente "a pedra das fadas":</p>
+
+  <div class="bloco-burgundy">
+    <p>Nenhuma forma nasce sozinha.</p>
+    <p>Até aquilo que parece uma pedra individual pode ser o registro físico de incontáveis relações.</p>
+    <p>E aqui a própria matéria encontra de maneira particularmente bonita o nome do Atelier:</p>
+    <p>Eu Sou Nós.</p>
+  </div>
+
+  <!-- SEÇÃO: CRESCER NÃO SIGNIFICA APAGAR -->
+  <p class="section-label">Crescer não significa apagar</p>
+
+  <p class="body-p">Há outra leitura possível escondida na maneira como uma concreção se forma. Ela cresce em torno de algo. Aquilo que estava no início pode permanecer dentro da estrutura posterior. Isso oferece uma imagem diferente da ideia de crescimento como ruptura absoluta.</p>
+
+  <p class="body-p">Talvez amadurecer nem sempre exija eliminar aquilo que fomos. Algumas experiências podem mudar de função. Aquilo que antes foi medo pode tornar-se discernimento. Aquilo que foi ferida pode participar da construção de um limite. Aquilo que foi vivido pode tornar-se referência.</p>
+
+  <div class="pullquote">
+    <p>A geologia não afirma nada disso. Mas oferece uma matéria diante da qual pensar. Crescer pode significar acrescentar novas camadas sem apagar completamente o núcleo da história.</p>
+  </div>
+
+  <!-- SEÇÃO: APRENDA A OLHAR -->
+  <p class="section-label">Aprenda a olhar uma CALCITA DAS FADAS</p>
+
+  <p class="body-p">Pegue o exemplar e esqueça por alguns segundos qualquer significado espiritual atribuído a ele. Observe suas duas faces. Procure linhas. Sulcos. Círculos. Protuberâncias. Veja se existe um centro em torno do qual a forma parece ter se organizado. Essas irregularidades não são defeitos. São parte da própria história de formação da concreção.</p>
+
+  <p class="body-p">E há uma inversão bonita nisso: em muitas gemas procuramos perfeição cristalina. Aqui, é justamente a irregularidade que contém informação. Lembre também que você não está observando simplesmente um cristal de calcita. Está diante de uma concreção construída pela relação entre sedimento, cimentação mineral e condições ambientais específicas.</p>
+
+  <!-- GLOSSÁRIO DÉVICO -->
+  <div class="glossario-box">
+    <p class="glossario-titulo">Glossário Dévico</p>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Concreção</p>
+      <p class="glossario-def">Massa endurecida formada dentro de sedimentos pela precipitação e cimentação mineral, frequentemente desenvolvida ao redor de um núcleo.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Cimento Calcário</p>
+      <p class="glossario-def">Carbonato de cálcio precipitado entre partículas de sedimento, capaz de uni-las e tornar o material mais consolidado.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Núcleo de Concreção</p>
+      <p class="glossario-def">Ponto ou material em torno do qual o processo de cimentação e crescimento da concreção pode se iniciar.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Sedimento</p>
+      <p class="glossario-def">Material constituído por partículas transportadas e depositadas por água, vento, gelo ou outros processos geológicos.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Calcita das Fadas / Fairy Stone</p>
+      <p class="glossario-def">Nome popular ou comercial aplicado a determinadas concreções calcárias de formas características. Não corresponde a uma espécie mineral independente.</p>
+    </div>
+  </div>
+
+  <!-- NO ATELIER -->
+  <p class="section-label">No Atelier</p>
+
+  <div class="ritual-box">
+    <p class="ritual-label">Como escolhemos · Como preparamos</p>
+    <p>Cada <span class="mineral-name">CALCITA DAS FADAS</span> chega ao Atelier com uma forma que não poderia ser repetida. Não buscamos corrigir sua irregularidade. Ela é justamente parte daquilo que torna cada exemplar particular. Observamos as duas faces, os relevos, os círculos, as mudanças de textura e a maneira como a concreção pede para ser integrada à criação sem perder aquilo que sua história geológica construiu. Nosso trabalho manual procura construir ao redor dela respeitando o que já existe.</p>
+    <p>Depois da criação manual, a obra permanece no Atelier para sua preparação dévica. Ela é colocada sobre nossa placa de cobre com o Cubo de Metatron, onde conduzimos nosso ritual de ativação com presença e intenção direcionadas à relação entre mineral, obra e propósito.</p>
+    <p>Essa é uma prática energética própria do Eu Sou Nós. Não pretende transformar sedimentação, atividade bacteriana ou crescimento em camadas em prova espiritual. Parte da matéria como ela é.</p>
+  </div>
+
+  <!-- CTA -->
+  <div style="background: var(--ink); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 2px;">
+    <span style="font-family: 'IM Fell English',serif; font-style: italic; color: var(--cream); font-size: 1rem;">Ver peças com <span class="mineral-name" style="color:var(--gold-light);">CALCITA DAS FADAS</span> disponíveis no Atelier →</span>
+    <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 8px 16px; text-decoration: none;" href="https://eusounos.com/search/?q=calcita%20das%20fadas" target="_blank">Ver Peças</a>
+  </div>
+
+  <!-- PARA GUARDAR / ASSINATURA -->
+  <div class="assinatura">
+    <p class="ornamento">◆ ◆ ◆</p>
+    <p class="fecho">Nenhuma forma nasce sozinha.<br><br>Sedimento. Água. Minerais.<br>Condições ambientais. Possivelmente vida.<br>Interrupções e retomadas.<br><br>Tudo isso pode participar da história de uma única concreção.<br><br>Talvez crescer também seja assim.<br>Não apagar aquilo que existiu.<br>Mas permitir que novas relações construam formas<br>que antes ainda não eram possíveis.</p>
+    <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+  </div>
+
 </div>
 
 <!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
@@ -481,30 +343,32 @@ body::before {
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Dévico <span>Mineral</span></div>
-      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e história. Aqui, nenhum desses elementos é separado dos outros. Ciência e tradição habitam o mesmo registro."</p>
+      <div class="footer-brand">Eu Sou <span>Nós</span></div>
+      <p class="footer-brand-sub">Atelier Dévico · Dévico Mineral</p>
+      <p class="footer-manifesto">"Honrar o sagrado também exige honrar a verdade."</p>
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
       <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
+      <a class="footer-link" href="hematita.html">HEMATITA: o ferro que colore a Terra</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: matéria &amp; campo</a>
       <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">A mina lendária do AMETRINO</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO · gema bicolor</a>
       <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
       <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
       <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">A KUNZITA e a fragilidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR e o vulcão</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA: fragilidade e profundidade</a>
+      <a class="footer-link" href="pirita.html">A PIRITA e a geometria sagrada</a>
+      <a class="footer-link" href="larimar.html">O LARIMAR: nasceu do fogo</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
       <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://eusounos.com" target="_blank">Peça Personalizada</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
-      <a class="footer-link" href="https://tiktok.com/@eu.sou.nos" target="_blank">TikTok</a>
+      <a class="footer-link" href="https://tiktok.com/@eusounos" target="_blank">TikTok</a>
     </div>
   </div>
   <div class="footer-bottom">
