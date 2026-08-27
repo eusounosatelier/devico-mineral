@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A PROPHECY STONE: por fora a mesma forma. Por dentro, outro mineral completamente · Dévico Mineral</title>
-<meta name="description" content="Hematita com forma de marcassita. 70 milhões de anos. Deserto de Farafra que foi oceano. O mineral da transformação invisível.">
+<title>PROPHECY STONE: a pedra que preservou uma forma que já não existe mais · Dévico Mineral</title>
+<meta name="description" content="A PROPHECY STONE é um pseudomorfo: hematita e goethita que assumiram a forma externa de outro mineral. Uma substituição química registrada em rocha do Egito.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -20,325 +20,112 @@
   --mist: #c9b99a;
   --white: #fefcf8;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
-/* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-}
-
-.masthead-top-bar {
-  background: var(--burgundy);
-  padding: 6px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(184,134,11,0.4);
-}
-
-.masthead-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245,234,216,0.6);
-}
-
-.masthead-tagline-top {
-  font-family: 'IM Fell English', serif;
-  font-size: 10px;
-  font-style: italic;
-  color: var(--gold-light);
-  letter-spacing: 1px;
-}
-
-.masthead-main {
-  padding: 20px 40px 0;
-  text-align: center;
-}
-
-.masthead-rule-top {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
-  margin-bottom: 14px;
-}
-
-.masthead-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 8px;
-}
-
-.masthead-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(28px, 5vw, 56px);
-  font-weight: 700;
-  color: var(--cream);
-  line-height: 0.95;
-  letter-spacing: -1px;
-  margin-bottom: 4px;
-  text-decoration: none;
-  display: block;
-}
-
+body { background: var(--paper); color: var(--ink); font-family: 'Libre Baskerville', Georgia, serif; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
+.masthead { background: var(--ink); padding: 0; }
+.masthead-top-bar { background: var(--burgundy); padding: 6px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(184,134,11,0.4); }
+.masthead-date { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,234,216,0.6); }
+.masthead-tagline-top { font-family: 'IM Fell English', serif; font-size: 10px; font-style: italic; color: var(--gold-light); letter-spacing: 1px; }
+.masthead-main { padding: 20px 40px 0; text-align: center; }
+.masthead-rule-top { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent); margin-bottom: 14px; }
+.masthead-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.masthead-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(28px, 5vw, 56px); font-weight: 700; color: var(--cream); line-height: 0.95; letter-spacing: -1px; margin-bottom: 4px; text-decoration: none; display: block; }
 .masthead-title span { color: var(--gold-light); }
-
-.masthead-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(11px, 1.5vw, 14px);
-  font-style: italic;
-  color: var(--mist);
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-.masthead-rule-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.rule-line {
-  flex: 1;
-  max-width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
+.masthead-subtitle { font-family: 'IM Fell English', serif; font-size: clamp(11px, 1.5vw, 14px); font-style: italic; color: var(--mist); letter-spacing: 2px; margin-bottom: 14px; }
+.masthead-rule-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.rule-line { flex: 1; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 .rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
 .rule-diamond { color: var(--gold); font-size: 10px; }
-
-.masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
-  padding: 10px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.masthead-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--mist);
-  text-decoration: none;
-  transition: color 0.2s;
-  padding: 3px 0;
-  border-bottom: 1px solid transparent;
-}
-
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-.masthead-nav a.active {
-  color: var(--gold);
-  border-bottom-color: rgba(184,134,11,0.4);
-}
-
-/* ══ BREADCRUMB ══ */
-.breadcrumb {
-  max-width: 800px;
-  margin: 32px auto 0;
-  padding: 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.breadcrumb a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.masthead-nav { background: transparent; border-top: 1px solid rgba(184,134,11,0.15); padding: 10px 40px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+.masthead-nav a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); text-decoration: none; transition: color 0.2s; padding: 3px 0; border-bottom: 1px solid transparent; }
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.masthead-nav a.destaque { color: var(--gold-light); border-bottom-color: rgba(184,134,11,0.4); }
+.breadcrumb { max-width: 800px; margin: 32px auto 0; padding: 0 40px; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); display: flex; align-items: center; gap: 10px; }
+.breadcrumb a { color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--burgundy); }
 .breadcrumb-sep { color: var(--gold); font-size: 8px; }
 .breadcrumb-current { color: var(--burgundy); }
-
-/* ══ ARTIGO ══ */
-.article-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 40px 60px;
-}
-
-/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
-.article-nav {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 40px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--cream-deep);
-  padding-top: 32px;
-  gap: 20px;
-}
-
-.article-nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.2s;
-}
-
+.article-wrapper { max-width: 800px; margin: 0 auto; padding: 40px 40px 60px; }
+.article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 18px 0; }
+.article-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(26px, 4vw, 46px); line-height: 1.08; color: var(--ink); margin: 0 0 10px 0; letter-spacing: -0.5px; }
+.article-title em { font-style: italic; color: var(--burgundy); font-weight: 400; }
+.article-subtitle { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); margin: 0 0 28px 0; }
+.article-lead { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid var(--gold); padding-left: 20px; margin: 0 0 10px 0; }
+.article-byline { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); margin: 0 0 32px 0; }
+.ficha-mineral { background: var(--ink); padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline; }
+.ficha-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7); }
+.ficha-value { font-family: monospace; font-size: 11px; font-weight: bold; color: var(--cream); margin-right: 12px; }
+.gradiente-linha { height: 2px; background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy)); margin-bottom: 36px; }
+.drop-cap::first-letter { font-family: 'Cinzel Decorative', serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: var(--burgundy); }
+.body-p { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0; }
+.mineral-name { font-variant: small-caps; letter-spacing: 0.08em; color: var(--burgundy); }
+.section-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid var(--cream-deep); }
+.section-label.gold { color: var(--gold); border-top-color: rgba(184,134,11,0.3); }
+.pullquote { background: var(--cream-dark); border-left: 4px solid var(--burgundy); padding: 22px 28px; margin: 0 0 36px 0; }
+.pullquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; line-height: 1.75; color: var(--ink); margin: 0; }
+.bloco-escuro { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-escuro p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 12px 0; }
+.bloco-escuro p:last-child { margin-bottom: 0; }
+.bloco-burgundy { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-burgundy p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.bloco-burgundy p:last-child { margin-bottom: 0; }
+.para-quem { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.para-quem .para-quem-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0 0 14px 0; }
+.para-quem p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.para-quem p:last-child { margin-bottom: 0; }
+.ritual-box { border-left: 3px solid var(--gold); padding: 0 0 0 22px; margin: 0 0 44px 0; }
+.ritual-box .ritual-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 12px 0; }
+.ritual-box p { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0 0 14px 0; }
+.ritual-box p:last-child { margin-bottom: 0; }
+.glossario-box { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.glossario-box .glossario-titulo { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin: 0 0 20px 0; padding-bottom: 10px; border-bottom: 1px solid rgba(184,134,11,0.25); }
+.glossario-item { margin-bottom: 20px; }
+.glossario-item:last-child { margin-bottom: 0; }
+.glossario-termo { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; }
+.glossario-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.75; color: var(--mist); }
+.assinatura { background: var(--ink); padding: 36px 40px; text-align: center; }
+.assinatura .ornamento { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0; }
+.assinatura .fecho { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: var(--cream); margin: 0 0 20px 0; }
+.assinatura .marca { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); }
+.article-nav { max-width: 800px; margin: 0 auto; padding: 32px 40px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--cream-deep); gap: 20px; }
+.article-nav-link { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--burgundy); text-decoration: none; transition: color 0.2s; }
 .article-nav-link:hover { color: var(--gold); }
-
-.article-nav-center {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.article-nav-center { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .article-nav-center:hover { color: var(--burgundy); }
-
-/* ══ FOOTER ══ */
-.journal-footer {
-  background: var(--ink);
-  border-top: 3px solid var(--burgundy);
-  padding: 40px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-brand {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
+.journal-footer { background: var(--ink); border-top: 3px solid var(--burgundy); padding: 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
 .footer-brand span { color: var(--gold-light); }
-
-.footer-manifesto {
-  font-family: 'IM Fell English', serif;
-  font-size: 12px;
-  font-style: italic;
-  color: var(--mist);
-  line-height: 1.7;
-}
-
-.footer-col-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(184,134,11,0.3);
-}
-
-.footer-link {
-  display: block;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  color: var(--mist);
-  text-decoration: none;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-
+.footer-brand-sub { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 8px 0; }
+.footer-manifesto { font-family: 'IM Fell English', serif; font-size: 12px; font-style: italic; color: var(--mist); line-height: 1.7; }
+.footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184,134,11,0.3); }
+.footer-link { display: block; font-family: 'Libre Baskerville', serif; font-size: 12px; color: var(--mist); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 .footer-link:hover { color: var(--cream); }
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(184,134,11,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-copy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(180,160,130,0.5);
-}
-
-/* ══ RESPONSIVE ══ */
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(184,134,11,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(180,160,130,0.5); }
 @media (max-width: 700px) {
-  .masthead-top-bar,
-  .masthead-main,
-  .masthead-nav { padding-left: 20px; padding-right: 20px; }
-  .article-wrapper,
-  .breadcrumb,
-  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .masthead-top-bar, .masthead-main, .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper, .breadcrumb, .article-nav { padding-left: 20px; padding-right: 20px; }
   .footer-inner { grid-template-columns: 1fr; }
   .journal-footer { padding: 30px 20px; }
+  .drop-cap::first-letter { font-size: 2.2rem; }
 }
 </style>
 </head>
 <body>
 
-<!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
-    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
-    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+    <span class="masthead-date">EU SOU NÓS · Atelier Dévico · Dévico Mineral</span>
+    <em class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</em>
   </div>
   <div class="masthead-main">
     <div class="masthead-rule-top"></div>
-    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico</div>
     <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
-    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <p class="masthead-subtitle">O diário de mineralogia do Eu Sou Nós Atelier Dévico</p>
     <div class="masthead-rule-ornament">
       <div class="rule-line"></div>
       <span class="rule-diamond">◆</span>
@@ -346,160 +133,224 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
+    <a href="https://eusounos.com/produtos" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
-    <a href="index.html#campo">Campo Energético</a>
-    <a href="index.html#glossario">Glossário</a>
     <a href="index.html#artigos">Artigos</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="index.html#glossario">Glossário</a>
   </nav>
 </header>
 
-<!-- ══ BREADCRUMB ══ -->
 <div class="breadcrumb">
   <a href="index.html">Dévico Mineral</a>
   <span class="breadcrumb-sep">◆</span>
   <span class="breadcrumb-current">PROPHECY STONE</span>
 </div>
 
-<!-- ══ CONTEÚDO DO ARTIGO ══ -->
 <div class="article-wrapper">
-  <!-- KICKER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Ciência &amp; Campo &middot; 8 min de leitura</p>
 
-<!-- TÍTULO -->
-<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">PROPHECY STONE</span>:<br/>por fora a mesma forma.<br/>Por dentro, <em style="font-weight: 400; color: #7a0000;">outro mineral completamente.</em></h2>
+  <p class="article-kicker">Geologia &amp; Campo &middot; 8 min de leitura</p>
 
-<!-- LEAD -->
-<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">Há 70 milhões de anos, no que hoje é o deserto de Farafra, no Egito, a marcassita começou a se transformar. Não a forma. A substância. Átomo por átomo, o mineral original foi substituído por hematita, mantendo a estrutura externa intacta. Por fora, a mesma pedra. Por dentro, tudo mudou. A mineralogia tem um nome para isso.</p>
+  <h1 class="article-title">A pedra que preservou<br>uma forma que<br><em>já não existe mais.</em></h1>
 
-<!-- BYLINE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+  <p class="article-subtitle">Pseudomorfo &nbsp;·&nbsp; Hematita e goethita &nbsp;·&nbsp; Deserto Ocidental &nbsp;·&nbsp; Egito</p>
 
-<!-- FICHA MINERAL -->
-<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Classificação</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Pseudomorfo</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição atual</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Fe₂O₃ (Hematita)</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Mineral original</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Marcassita (FeS₂)</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Origem</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Farafra · Egito</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Terceiro Olho &middot; Raiz</span>
-</div>
+  <p class="article-lead">Por fora, a <span class="mineral-name">PROPHECY STONE</span> parece uma formação escura com superfície irregular, cheia de protuberâncias e reentrâncias. Por dentro, existe uma história química registrada em rocha: um mineral substituiu outro. A forma permaneceu. A composição não.</p>
 
-<!-- LINHA GRADIENTE -->
-<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+  <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
-<!-- ABERTURA COM DROP CAP -->
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">V</span>ocê já atravessou uma transformação que ninguém de fora ainda viu. O processo aconteceu internamente, na escala que ninguém consegue observar de fora. A aparência permaneceu. A substância mudou completamente. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Prophecy Stone</span> é o único mineral que passou exatamente por isso. E a mineralogia documenta como.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">O deserto de Farafra, no Egito, foi oceano. Há 70 milhões de anos, sedimentos marinhos se depositavam no que hoje é areia. A marcassita, <span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">FeS₂</span>, cristalizou nesse fundo marinho. Com o tempo geológico, o oceano recuou, o clima mudou, as condições químicas do solo se alteraram. E a marcassita começou a se transformar.</p>
-
-<!-- SEÇÃO: PSEUDOMORFO -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O que é um pseudomorfo</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Pseudomorfo vem do grego: pseudo, "falso", e morphe, "forma". É exatamente o que o nome diz. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Prophecy Stone</span> tem a forma externa da marcassita original. Mas não é marcassita. É hematita, <span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">Fe₂O₃</span>. O mineral original foi dissolvido e substituído átomo por átomo pelo novo mineral, ao longo de milhões de anos, sem que a estrutura externa colapsasse.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">O processo tem nome técnico: pseudomorfismo por substituição. É raro. Requer condições químicas muito específicas para que o mineral substituto se deposite exatamente onde o original estava, mantendo a geometria. A natureza precisou de paciência e de condições precisas para criar isso. O resultado é uma pedra que mente a sua própria identidade. E essa mentira é fisicamente perfeita.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">O que você segura quando segura uma <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Prophecy Stone</span> é hematita com memória de forma. Um mineral que carrega a geometria de algo que não existe mais. A transformação aconteceu completamente. A forma lembra de onde veio.</p>
-
-<!-- PULLQUOTE -->
-<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"Por fora a forma permanece. Por dentro, tudo mudou. A mineralogia chama isso de pseudomorfo. Quem já atravessou uma transformação real sabe exatamente do que essa pedra está falando."</p>
-</div>
-
-<!-- SEÇÃO: FARAFRA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Farafra: o deserto que foi oceano</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">O oásis de Farafra fica no deserto ocidental egípcio, a centenas de quilômetros do Nilo. A paisagem atual é árida, silenciosa, sem nada que lembre o fundo marinho que foi. Mas os sedimentos estão lá. E as <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Prophecy Stones</span> são encontradas nessa região, aflorando na superfície do deserto como registros de um mundo completamente diferente.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Cada pedra carrega essa história em camadas: primeiro o oceano, depois os sedimentos, depois a marcassita cristalizando no fundo marinho, depois o recuo do oceano, depois o deserto, depois a transformação química lenta que substituiu a marcassita pela hematita, mantendo a forma. 70 milhões de anos de processo registrado em algo que cabe na palma da mão.</p>
-
-<!-- SEÇÃO: CAMPO ENERGÉTICO -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A leitura energética</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Prophecy Stone</span> trabalha nos chakras terceiro olho e raiz simultaneamente. Percepção do que ainda não é visível, ancorada no corpo físico. É o mineral da transformação invisível. Do processo que acontece antes de qualquer resultado externo. Do que muda internamente muito antes de aparecer.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">O nome popular, Pedra da Profecia, não vem de previsão do futuro. Vem da capacidade de perceber o que está em processo antes de se tornar visível. Quem trabalha com ela descreve uma clareza sobre o que está acontecendo internamente, mesmo quando externamente nada parece ter mudado ainda. A transformação que a pedra atravessou durante 70 milhões de anos é o campo que ela carrega.</p>
-
-<!-- PARA QUEM · BLOCO BORDÔ -->
-<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem está em transformação<br/>que ninguém de fora ainda viu.<br/>Para quem sabe que mudou<br/>antes de conseguir mostrar."</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">A forma permanece enquanto o processo acontece.<br/>Isso não é fraqueza. É como a transformação real funciona.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Terceiro Olho &middot; Raiz</p>
-</div>
-
-<!-- SEÇÃO: ATELIER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ela no Atelier</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Cada <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Prophecy Stone</span> que entra no Atelier é selecionada pela integridade estrutural e pela geometria preservada da forma pseudomórfica. Buscamos pedras onde a substituição foi completa e a forma original está clara. Onde a transformação foi total e o registro, preciso.</p>
-
-<!-- PREPARAÇÃO RITUAL -->
-<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
-  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Um gesto de dedicação consciente que confia à peça o propósito de honrar a transformação que acontece antes de ser visível. O processo interno que precede qualquer resultado externo.</p>
-</div>
-
-<!-- CTA · GABINETE MINERAL -->
-<div style="background: #faf6ef; border: 1px solid #b8860b; padding: 3px; margin-bottom: 0;">
-  <div style="border: 1px solid rgba(184,134,11,0.4); padding: 28px 24px; text-align: center;">
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0 0 14px 0;">Gabinete Mineral · Espécime nº 08</p>
-    <p style="font-family: 'Playfair Display',serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.14em; color: #1a0f0a; margin: 0 0 6px 0;">PROPHECY STONE</p>
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 10px; letter-spacing: 1px; color: #6b4226; margin: 0 0 18px 0;">FeS₂ → Fe₂O₃ · Farafra, Egito</p>
-    <div style="width: 40px; height: 1px; background: #b8860b; margin: 0 auto 18px auto;"></div>
-    <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.7; color: #3d1a0a; margin: 0 0 22px 0;">"Por fora, a mesma forma.<br/>Por dentro, outro mineral completamente."</p>
-    <a href="https://eusounos.com/search/?q=prophecy" style="display: inline-block; font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #7a0000; border: 1px solid #7a0000; padding: 10px 22px; text-decoration: none;">Ver no Atelier →</a>
+  <div class="ficha-mineral">
+    <span class="ficha-label">Natureza</span>
+    <span class="ficha-value">Pseudomorfo</span>
+    <span class="ficha-label">Composição atual</span>
+    <span class="ficha-value">Hematita (Fe₂O₃) e/ou goethita (FeO·OH)</span>
+    <span class="ficha-label">Forma preservada</span>
+    <span class="ficha-value">Marcassita ou pirita</span>
+    <span class="ficha-label">Origem</span>
+    <span class="ficha-value">Deserto Ocidental · Egito</span>
   </div>
-</div>
 
-<!-- ASSINATURA -->
-<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Prophecy Stone</span> é honrar<br/>a transformação que acontece<br/>antes de ser visível.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
-</div>
+  <div class="gradiente-linha"></div>
+
+  <!-- ABERTURA -->
+  <p class="body-p drop-cap">O nome "Prophecy Stone" é comercial, não mineralógico. Mas a matéria que ele descreve é extraordinária por razões que independem completamente de qualquer nome. Para entender por que, precisamos de um conceito que está no coração desta pedra: pseudomorfo.</p>
+
+  <!-- SEÇÃO: O QUE É UM PSEUDOMORFO -->
+  <p class="section-label">O que é um pseudomorfo</p>
+
+  <p class="body-p">Em mineralogia, um pseudomorfo é um mineral que ocupa a forma externa de outro mineral. A palavra vem do grego: pseudo, falso, e morphe, forma. A aparência exterior sugere um mineral. A composição química interior revela outro.</p>
+
+  <p class="body-p">Como isso acontece? Existem diferentes mecanismos. O mais relevante aqui envolve substituição: os componentes de um mineral original são progressivamente substituídos pelos de um novo mineral, enquanto a estrutura externa é parcial ou totalmente preservada. O mineral anterior deixa de existir como tal. Mas deixa um molde.</p>
+
+  <div class="pullquote">
+    <p>A forma continua. A composição mudou. Aquilo que era permaneceu visível como contorno do que veio depois.</p>
+  </div>
+
+  <!-- SEÇÃO: A HISTÓRIA QUÍMICA DA PROPHECY STONE -->
+  <p class="section-label">A história química da PROPHECY STONE</p>
+
+  <p class="body-p">As <span class="mineral-name">PROPHECY STONES</span> são descritas na literatura especializada como pseudomorfos de hematita e/ou goethita após marcassita ou pirita. Isso significa que a forma que vemos, com suas características protuberâncias e superfície irregular, corresponde à estrutura externa que a marcassita ou pirita original possuía. Mas a composição atual é de óxido ou oxi-hidróxido de ferro.</p>
+
+  <p class="body-p">Marcassita e pirita são sulfetos de ferro. São instáveis em determinadas condições ambientais, especialmente sob exposição prolongada a umidade e oxigênio. Quando essa instabilidade se manifesta, os sulfetos podem ser progressivamente alterados. Os produtos dessa transformação incluem óxidos e oxi-hidróxidos de ferro, entre eles hematita e goethita.</p>
+
+  <div class="bloco-escuro">
+    <p>Portanto, aquilo que foi ferro e enxofre tornou-se ferro e oxigênio.</p>
+    <p>A composição mudou. Mas a forma, de alguma maneira, permaneceu reconhecível o suficiente para que a história pudesse ser lida na rocha.</p>
+  </div>
+
+  <p class="body-p">As condições específicas em que esse processo ocorreu na região do Deserto Ocidental do Egito, incluindo temperatura, pressão, química do fluido e tempo geológico, determinaram o resultado que hoje seguramos nas mãos. Há algo extraordinário em perceber que aquilo que vemos é o registro de uma transformação, não o estado original da matéria.</p>
+
+  <!-- SEÇÃO: O EGITO QUE POUCOS IMAGINAM -->
+  <p class="section-label">O Egito que poucos imaginam</p>
+
+  <p class="body-p">A procedência egípcia é parte indissociável dessa história. O Deserto Ocidental do Egito, também chamado de Deserto Líbio quando considerada sua extensão além das fronteiras egípcias, é uma região de geologia extraordinária. Sob sua superfície árida existem registros de paleolago, antigos sistemas aquáticos e condições ambientais que nada têm a ver com o deserto que existe hoje.</p>
+
+  <p class="body-p">É justamente nesse contexto geológico que determinados minerais sulfetados se formaram e, posteriormente, passaram pelos processos de transformação que produziram os pseudomorfos que chegam até nós. O deserto não é apenas o lugar onde a pedra foi encontrada. É parte integrante de sua história química.</p>
+
+  <!-- SEÇÃO: O QUE O NOME "PROPHECY" NÃO SIGNIFICA -->
+  <p class="section-label">O que o nome "Prophecy" não significa</p>
+
+  <p class="body-p">É importante ser direto aqui. O nome "Prophecy Stone" é uma denominação comercial. Não corresponde a nenhuma classificação mineralógica estabelecida. Não existe na nomenclatura da IMA (International Mineralogical Association) nem em qualquer catálogo gemológico científico reconhecido.</p>
+
+  <p class="body-p">Isso não invalida a pedra. Significa que o nome é uma camada interpretativa adicionada ao material, e não uma descrição de sua natureza. A natureza da pedra é: pseudomorfo de hematita e/ou goethita após marcassita ou pirita, proveniente do Deserto Ocidental do Egito.</p>
+
+  <p class="body-p">Essa descrição já é suficientemente extraordinária. Não precisamos de "profecia" para que a matéria seja fascinante.</p>
+
+  <div class="pullquote">
+    <p>Uma pedra que preservou a forma de algo que já não existe mais dispensaria qualquer nome amplificado. A mineralogia já entregou algo raro.</p>
+  </div>
+
+  <!-- SEÇÃO: A LEITURA DÉVICA -->
+  <p class="section-label gold">A leitura energética</p>
+
+  <p class="body-p">Em práticas cristaloterápicas contemporâneas, a <span class="mineral-name">PROPHECY STONE</span> é associada a visão, percepção ampliada, acesso a camadas mais profundas de si mesmo e transformação. Essas associações pertencem ao campo espiritual e simbólico.</p>
+
+  <p class="body-p">A geologia não comprova profecia. A substituição química não demonstra capacidade de expansão da percepção. E hematita e goethita não são, por suas propriedades físicas, instrumentos de visão espiritual.</p>
+
+  <p class="body-p">Mas existe uma imagem disponível na própria matéria, e ela é extraordinariamente fértil para uma leitura humana. A <span class="mineral-name">PROPHECY STONE</span> é literalmente uma forma que sobreviveu à transformação da composição que a sustentava.</p>
+
+  <div class="bloco-burgundy">
+    <p>Aquilo que você reconhece em si como forma, como padrão, como maneira de se mover no mundo, pode persistir mesmo quando a composição interior muda.</p>
+    <p>Não porque transformação seja superficial. Mas porque algumas formas têm profundidade suficiente para atravessar transformações sem se perder completamente.</p>
+    <p>E existe, nessa imagem, uma relação particular com processos de travessia. Com fases em que tudo parece estar mudando de composição enquanto você ainda não sabe qual forma vai emergir do outro lado.</p>
+  </div>
+
+  <!-- SEÇÃO: PERMANECER FORMA DURANTE A TRANSFORMAÇÃO -->
+  <p class="section-label">Permanecer forma durante a transformação</p>
+
+  <p class="body-p">Há momentos em que a sensação é de que não sobrou nada reconhecível. As referências anteriores deixaram de funcionar. O que sustentava certas estruturas não está mais disponível da mesma maneira. A composição interior mudou.</p>
+
+  <p class="body-p">A <span class="mineral-name">PROPHECY STONE</span> não afirma que isso é impossível de atravessar. Ela oferece uma imagem diferente: talvez exista algo que persiste mesmo quando a composição muda. Não como resistência à transformação. Mas como continuidade que a atravessa.</p>
+
+  <div class="pullquote">
+    <p>A matéria não ficou presa na forma antiga. Ela se transformou completamente. E a forma ficou.</p>
+  </div>
+
+  <!-- PARA QUEM -->
+  <div class="para-quem">
+    <p class="para-quem-label">◆ Para quem</p>
+    <p>Para quem está em um processo de transformação profunda e ainda não sabe qual forma vai emergir do outro lado.</p>
+    <p>Para quem sente que tudo mudou de composição mas ainda não consegue reconhecer o que permaneceu.</p>
+    <p>A matéria não promete que a forma vai permanecer intacta. Oferece apenas uma imagem: transformação e continuidade podem coexistir.</p>
+  </div>
+
+  <!-- SEÇÃO: APRENDA A OLHAR -->
+  <p class="section-label">Aprenda a olhar uma PROPHECY STONE</p>
+
+  <p class="body-p">Observe a superfície com atenção. As protuberâncias, as reentrâncias, os relevos irregulares: esses são registros da forma original do mineral precursor. Não existem dois exemplares iguais porque o processo de pseudomorfização preservou estruturas únicas em cada espécime.</p>
+
+  <p class="body-p">Observe também a textura e o brilho. A presença de hematita pode conferir brilho sub-metálico a certas regiões. A goethita pode produzir zonas mais opacas ou com tom levemente acastanhado. Essas diferenças internas são visíveis em muitos exemplares e contam algo sobre a história química específica daquele material.</p>
+
+  <p class="body-p">E lembre que o nome "Prophecy Stone" descreve uma narrativa cultural construída ao redor de um pseudomorfo. A pedra em si não tem profecia dentro. Tem uma transformação química registrada em rocha. E isso, por si só, é extraordinário.</p>
+
+  <!-- GLOSSÁRIO DÉVICO -->
+  <div class="glossario-box">
+    <p class="glossario-titulo">Glossário Dévico</p>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Pseudomorfo</p>
+      <p class="glossario-def">Mineral que apresenta a forma externa de outro mineral. A composição química é de um mineral, mas a morfologia corresponde a outro.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Pseudomorfização</p>
+      <p class="glossario-def">Processo pelo qual um mineral original é substituído por outro, com preservação parcial ou total da forma externa original.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Goethita</p>
+      <p class="glossario-def">Oxi-hidróxido de ferro de fórmula FeO·OH. Mineral comum em zonas de alteração de depósitos ricos em ferro.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Marcassita</p>
+      <p class="glossario-def">Sulfeto de ferro de fórmula FeS₂, polimórfico da pirita. Menos estável que a pirita em condições ambientais, tende a se alterar com maior facilidade quando exposta a umidade e oxigênio.</p>
+    </div>
+  </div>
+
+  <!-- NO ATELIER -->
+  <p class="section-label">No Atelier</p>
+
+  <div class="ritual-box">
+    <p class="ritual-label">Como escolhemos · Como preparamos</p>
+    <p>Na <span class="mineral-name">PROPHECY STONE</span>, o que observamos antes de qualquer outra coisa é a integridade do exemplar. A superfície irregular dessas pedras, com suas protuberâncias e reentrâncias características, é exatamente aquilo que precisamos preservar. Ela não é um defeito a ser corrigido. É o registro visível da transformação que tornou essa pedra aquilo que é.</p>
+    <p>Depois da criação manual, a obra permanece no Atelier para sua preparação dévica. Ela é colocada sobre nossa placa de cobre com o Cubo de Metatron, onde conduzimos nosso ritual de ativação com presença e intenção direcionadas à relação entre mineral, obra e propósito.</p>
+    <p>Na <span class="mineral-name">PROPHECY STONE</span>, direcionamos essa preparação à travessia consciente: permanecer reconhecível através da transformação. Não como resistência ao que muda, mas como continuidade que atravessa.</p>
+  </div>
+
+  <!-- CTA -->
+  <div style="background: var(--ink); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 2px;">
+    <span style="font-family: 'IM Fell English',serif; font-style: italic; color: var(--cream); font-size: 1rem;">Ver peças com <span class="mineral-name" style="color:var(--gold-light);">PROPHECY STONE</span> disponíveis no Atelier →</span>
+    <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 8px 16px; text-decoration: none;" href="https://eusounos.com/search/?q=prophecy%20stone" target="_blank">Ver Peças</a>
+  </div>
+
+  <!-- ASSINATURA -->
+  <div class="assinatura">
+    <p class="ornamento">◆ ◆ ◆</p>
+    <p class="fecho">A composição mudou.<br>A forma ficou.<br><br>Talvez essa seja uma das imagens mais honestas<br>que a geologia oferece sobre travessia.<br><br>Você não precisa permanecer o mesmo para permanecer.<br>Precisa encontrar o que em você atravessa.<br><br>Isso não é profecia.<br>É o que a matéria fez durante milhões de anos<br>naquele deserto.</p>
+    <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+  </div>
+
 </div>
 
 <!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
 <div class="article-nav">
   <a href="calcita-das-fadas.html" class="article-nav-link">← Calcita das Fadas</a>
   <a href="index.html" class="article-nav-center">◆ Todos os artigos</a>
-  <a href="index.html" class="article-nav-link">Início →</a>
+  <a href="kunzita.html" class="article-nav-link">Kunzita →</a>
 </div>
 
 <!-- ══ FOOTER ══ -->
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Dévico <span>Mineral</span></div>
-      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e história. Aqui, nenhum desses elementos é separado dos outros. Ciência e tradição habitam o mesmo registro."</p>
+      <div class="footer-brand">Eu Sou <span>Nós</span></div>
+      <p class="footer-brand-sub">Atelier Dévico · Dévico Mineral</p>
+      <p class="footer-manifesto">"Honrar o sagrado também exige honrar a verdade."</p>
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
       <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
+      <a class="footer-link" href="hematita.html">HEMATITA: o ferro que colore a Terra</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: matéria &amp; campo</a>
       <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">A mina lendária do AMETRINO</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO · gema bicolor</a>
       <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
       <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
       <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">A KUNZITA e a fragilidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR e o vulcão</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA: fragilidade e profundidade</a>
+      <a class="footer-link" href="pirita.html">A PIRITA e a geometria sagrada</a>
+      <a class="footer-link" href="larimar.html">O LARIMAR: nasceu do fogo</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
       <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://eusounos.com" target="_blank">Peça Personalizada</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
-      <a class="footer-link" href="https://tiktok.com/@eu.sou.nos" target="_blank">TikTok</a>
+      <a class="footer-link" href="https://tiktok.com/@eusounos" target="_blank">TikTok</a>
     </div>
   </div>
   <div class="footer-bottom">
