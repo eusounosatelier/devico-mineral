@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TURMALINA NEGRA: piezoeletricidade e a base científica real da proteção · Dévico Mineral</title>
-<meta name="description" content="A Turmalina Negra gera campo elétrico com o calor do corpo. Piezoeletricidade documentada, não crença.">
+<title>TURMALINA NEGRA · Antes de ser símbolo de proteção, ela já respondia fisicamente ao que acontecia ao seu redor — Dévico Mineral</title>
+<meta name="description" content="Piezoeletricidade e piroeletricidade: propriedades físicas reais da Turmalina. O que a eletricidade do cristal demonstra — e o que ela não prova.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -41,11 +41,7 @@ body::before {
   opacity: 0.4;
 }
 
-/* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-}
+.masthead { background: var(--ink); padding: 0; }
 
 .masthead-top-bar {
   background: var(--burgundy);
@@ -56,26 +52,9 @@ body::before {
   border-bottom: 1px solid rgba(184,134,11,0.4);
 }
 
-.masthead-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245,234,216,0.6);
-}
-
-.masthead-tagline-top {
-  font-family: 'IM Fell English', serif;
-  font-size: 10px;
-  font-style: italic;
-  color: var(--gold-light);
-  letter-spacing: 1px;
-}
-
-.masthead-main {
-  padding: 20px 40px 0;
-  text-align: center;
-}
+.masthead-date { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,234,216,0.6); }
+.masthead-tagline-top { font-family: 'IM Fell English', serif; font-size: 10px; font-style: italic; color: var(--gold-light); letter-spacing: 1px; }
+.masthead-main { padding: 20px 40px 0; text-align: center; }
 
 .masthead-rule-top {
   width: 100%;
@@ -84,245 +63,108 @@ body::before {
   margin-bottom: 14px;
 }
 
-.masthead-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 8px;
-}
+.masthead-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
 
-.masthead-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(28px, 5vw, 56px);
-  font-weight: 700;
-  color: var(--cream);
-  line-height: 0.95;
-  letter-spacing: -1px;
-  margin-bottom: 4px;
-  text-decoration: none;
-  display: block;
-}
-
+.masthead-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(28px, 5vw, 56px); font-weight: 700; color: var(--cream); line-height: 0.95; letter-spacing: -1px; margin-bottom: 4px; text-decoration: none; display: block; }
 .masthead-title span { color: var(--gold-light); }
+.masthead-subtitle { font-family: 'IM Fell English', serif; font-size: clamp(11px, 1.5vw, 14px); font-style: italic; color: var(--mist); letter-spacing: 2px; margin-bottom: 14px; }
 
-.masthead-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(11px, 1.5vw, 14px);
-  font-style: italic;
-  color: var(--mist);
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-.masthead-rule-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.rule-line {
-  flex: 1;
-  max-width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
+.masthead-rule-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.rule-line { flex: 1; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 .rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
 .rule-diamond { color: var(--gold); font-size: 10px; }
 
-.masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
-  padding: 10px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
+.masthead-nav { background: transparent; border-top: 1px solid rgba(184,134,11,0.15); padding: 10px 40px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+.masthead-nav a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); text-decoration: none; transition: color 0.2s; padding: 3px 0; border-bottom: 1px solid transparent; }
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.masthead-nav a.destaque { color: var(--gold-light); border-bottom-color: rgba(184,134,11,0.4); }
 
-.masthead-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--mist);
-  text-decoration: none;
-  transition: color 0.2s;
-  padding: 3px 0;
-  border-bottom: 1px solid transparent;
-}
-
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-.masthead-nav a.active {
-  color: var(--gold);
-  border-bottom-color: rgba(184,134,11,0.4);
-}
-
-/* ══ BREADCRUMB ══ */
-.breadcrumb {
-  max-width: 800px;
-  margin: 32px auto 0;
-  padding: 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.breadcrumb a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.breadcrumb { max-width: 800px; margin: 32px auto 0; padding: 0 40px; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); display: flex; align-items: center; gap: 10px; }
+.breadcrumb a { color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--burgundy); }
 .breadcrumb-sep { color: var(--gold); font-size: 8px; }
 .breadcrumb-current { color: var(--burgundy); }
 
-/* ══ ARTIGO ══ */
-.article-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 40px 60px;
-}
+.article-wrapper { max-width: 800px; margin: 0 auto; padding: 40px 40px 60px; }
 
-/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
-.article-nav {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 40px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--cream-deep);
-  padding-top: 32px;
-  gap: 20px;
-}
+.article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 18px 0; }
+.article-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(26px, 4vw, 46px); line-height: 1.08; color: var(--ink); margin: 0 0 10px 0; letter-spacing: -0.5px; }
+.article-title em { font-style: italic; color: var(--burgundy); font-weight: 400; }
+.article-subtitle { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); margin: 0 0 28px 0; }
+.article-lead { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid var(--gold); padding-left: 20px; margin: 0 0 10px 0; }
+.article-byline { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); margin: 0 0 32px 0; }
 
-.article-nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.2s;
-}
+.ficha-mineral { background: var(--ink); padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline; }
+.ficha-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7); }
+.ficha-value { font-family: monospace; font-size: 11px; font-weight: bold; color: var(--cream); margin-right: 12px; }
 
+.gradiente-linha { height: 2px; background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy)); margin-bottom: 36px; }
+
+.drop-cap::first-letter { font-family: 'Cinzel Decorative', serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: var(--burgundy); }
+
+.body-p { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0; }
+.mineral-name { font-variant: small-caps; letter-spacing: 0.08em; color: var(--burgundy); }
+
+.section-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid var(--cream-deep); }
+.section-label.gold { color: var(--gold); border-top-color: rgba(184,134,11,0.3); }
+
+.pullquote { background: var(--cream-dark); border-left: 4px solid var(--burgundy); padding: 22px 28px; margin: 0 0 36px 0; }
+.pullquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; line-height: 1.75; color: var(--ink); margin: 0; }
+
+.bloco-escuro { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-escuro p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 12px 0; }
+.bloco-escuro p:last-child { margin-bottom: 0; }
+
+.bloco-burgundy { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-burgundy p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.bloco-burgundy p:last-child { margin-bottom: 0; }
+
+.dado-box { background: var(--ink); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 0 0 36px 0; }
+.dado-box .dado-titulo { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.7); margin: 0 0 14px 0; }
+.dado-box p { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.8; color: var(--mist); margin: 0 0 8px 0; }
+.dado-box p:last-child { margin-bottom: 0; }
+
+.ritual-box { border-left: 3px solid var(--gold); padding: 0 0 0 22px; margin: 0 0 44px 0; }
+.ritual-box .ritual-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 12px 0; }
+.ritual-box p { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0 0 14px 0; }
+.ritual-box p:last-child { margin-bottom: 0; }
+
+.glossario-box { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.glossario-box .glossario-titulo { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin: 0 0 20px 0; padding-bottom: 10px; border-bottom: 1px solid rgba(184,134,11,0.25); }
+.glossario-item { margin-bottom: 20px; }
+.glossario-item:last-child { margin-bottom: 0; }
+.glossario-termo { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; }
+.glossario-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.75; color: var(--mist); }
+
+.assinatura { background: var(--ink); padding: 36px 40px; text-align: center; }
+.assinatura .ornamento { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0; }
+.assinatura .fecho { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: var(--cream); margin: 0 0 20px 0; }
+.assinatura .marca { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); }
+
+.article-nav { max-width: 800px; margin: 0 auto; padding: 32px 40px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--cream-deep); gap: 20px; }
+.article-nav-link { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--burgundy); text-decoration: none; transition: color 0.2s; }
 .article-nav-link:hover { color: var(--gold); }
-
-.article-nav-center {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.article-nav-center { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .article-nav-center:hover { color: var(--burgundy); }
 
-/* ══ FOOTER ══ */
-.journal-footer {
-  background: var(--ink);
-  border-top: 3px solid var(--burgundy);
-  padding: 40px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-brand {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
+.journal-footer { background: var(--ink); border-top: 3px solid var(--burgundy); padding: 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
 .footer-brand span { color: var(--gold-light); }
-
-.footer-manifesto {
-  font-family: 'IM Fell English', serif;
-  font-size: 12px;
-  font-style: italic;
-  color: var(--mist);
-  line-height: 1.7;
-}
-
-.footer-col-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(184,134,11,0.3);
-}
-
-.footer-link {
-  display: block;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  color: var(--mist);
-  text-decoration: none;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-
+.footer-brand-sub { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 8px 0; }
+.footer-manifesto { font-family: 'IM Fell English', serif; font-size: 12px; font-style: italic; color: var(--mist); line-height: 1.7; }
+.footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184,134,11,0.3); }
+.footer-link { display: block; font-family: 'Libre Baskerville', serif; font-size: 12px; color: var(--mist); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 .footer-link:hover { color: var(--cream); }
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(184,134,11,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(180,160,130,0.5); }
 
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(184,134,11,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-copy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(180,160,130,0.5);
-}
-
-/* ══ RESPONSIVE ══ */
 @media (max-width: 700px) {
-  .masthead-top-bar,
-  .masthead-main,
-  .masthead-nav { padding-left: 20px; padding-right: 20px; }
-  .article-wrapper,
-  .breadcrumb,
-  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .masthead-top-bar, .masthead-main, .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper, .breadcrumb, .article-nav { padding-left: 20px; padding-right: 20px; }
   .footer-inner { grid-template-columns: 1fr; }
   .journal-footer { padding: 30px 20px; }
+  .drop-cap::first-letter { font-size: 2.2rem; }
 }
 </style>
 </head>
@@ -331,14 +173,14 @@ body::before {
 <!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
-    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
-    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+    <span class="masthead-date">EU SOU NÓS · Atelier Dévico · Dévico Mineral</span>
+    <em class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</em>
   </div>
   <div class="masthead-main">
     <div class="masthead-rule-top"></div>
-    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico</div>
     <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
-    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <p class="masthead-subtitle">O diário de mineralogia do Eu Sou Nós Atelier Dévico</p>
     <div class="masthead-rule-ornament">
       <div class="rule-line"></div>
       <span class="rule-diamond">◆</span>
@@ -346,13 +188,12 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
+    <a href="https://eusounos.com/produtos" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
-    <a href="index.html#campo">Campo Energético</a>
-    <a href="index.html#glossario">Glossário</a>
     <a href="index.html#artigos">Artigos</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="index.html#glossario">Glossário</a>
   </nav>
 </header>
 
@@ -365,102 +206,171 @@ body::before {
 
 <!-- ══ CONTEÚDO DO ARTIGO ══ -->
 <div class="article-wrapper">
-  <!-- KICKER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Ciência &amp; Campo &middot; 8 min de leitura</p>
 
-<!-- TÍTULO -->
-<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;">Piezoeletricidade:<br/>a base <em style="font-weight: 400; color: #7a0000;">científica real</em><br/>da proteção da <span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">Turmalina Negra.</span></h2>
+  <p class="article-kicker">Mineralogia · Supergrupo da Turmalina · Matéria &amp; Campo</p>
 
-<!-- LEAD -->
-<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">A tradição mineral diz que a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina Negra</span> protege. A física documenta por quê. Não são explicações distintas. São a mesma observação em idiomas diferentes. Este artigo as traduz.</p>
+  <h1 class="article-title">Antes de ser símbolo de proteção,<br>ela já respondia fisicamente<br>ao que acontecia ao seu <em>redor.</em></h1>
 
-<!-- BYLINE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+  <p class="article-subtitle">Supergrupo da Turmalina &nbsp;·&nbsp; Sistema trigonal &nbsp;·&nbsp; Piezoeletricidade &nbsp;·&nbsp; Piroeletricidade</p>
 
-<!-- FICHA MINERAL -->
-<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Nome mineral</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Schorl</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">NaFe₃Al₆(BO₃)₃Si₆O₁₈(OH)₄</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Sistema</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Trigonal</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Dureza</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">7–7,5 Mohs</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Raiz</span>
-</div>
+  <p class="article-lead">Pressão. Temperatura. Eletricidade. Essas três palavras poderiam parecer o começo de uma explicação energética sobre a <span class="mineral-name">TURMALINA NEGRA</span>. Não são. São mineralogia. Cristais do grupo da turmalina possuem propriedades elétricas reais e mensuráveis. Sob determinadas condições, alterações mecânicas ou térmicas podem produzir mudanças na polarização e cargas elétricas em suas superfícies.</p>
 
-<!-- LINHA GRADIENTE -->
-<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+  <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
-<!-- ABERTURA COM DROP CAP -->
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">A</span> <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina Negra</span> gera eletricidade. Não metaforicamente. Não como recurso de comunicação. Literalmente: quando submetida à pressão mecânica ou variação de temperatura, o mineral produz carga elétrica mensurável em seus cristais. Isso tem nome: piezoeletricidade, do grego piezein, "pressionar".</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">O calor do corpo humano é suficiente para ativar esse efeito. Cada movimento que você faz enquanto usa a pedra. a pressão da roupa sobre ela, a variação de temperatura entre a pele e o ambiente. mantém esse campo elétrico ativo. Você não precisa fazer nada. A física faz.</p>
-
-<!-- SEÇÃO: PIEZOELETRICIDADE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O que é piezoeletricidade e por que ela importa</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Quando certos cristais com estrutura assimétrica são submetidos a estresse mecânico, os átomos internos se deslocam ligeiramente, criando uma separação de cargas positivas e negativas dentro do cristal. Essa separação de cargas é, por definição, um campo elétrico. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina</span> possui essa propriedade em grau incomum entre os minerais ornamentais.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Além da piezoeletricidade, a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina</span> é piroelétrica. gera carga elétrica em resposta a variações de temperatura. O corpo humano emite calor constantemente e varia a temperatura superficial com os movimentos. Qualquer dessas variações mantém o campo da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina Negra</span> ativo.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Um dado que o mercado de cristais raramente menciona: a piezoeletricidade da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina</span> tem aplicação industrial documentada. É usada em sensores de pressão, microfones de alta precisão e equipamentos de sonar. A tradição que reconheceu o campo protetor deste mineral observou algo que a engenharia confirmou séculos depois.</p>
-
-<!-- PULLQUOTE -->
-<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"Quando a ciência e a tradição chegam à mesma conclusão por caminhos diferentes, algo importante está sendo dito. A <span style="font-variant: small-caps; letter-spacing: 0.08em;">Turmalina Negra</span> protege. A piezoeletricidade explica o mecanismo. Uma não contradiz a outra."</p>
-</div>
-
-<!-- SEÇÃO: PARA QUEM -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Para quem. além do genérico</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Para terapeutas e facilitadores que regularmente acolhem o campo de outras pessoas e precisam de fronteiras energéticas claras. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina Negra</span> é ferramenta profissional, não acessório.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Para períodos de vulnerabilidade aumentada. doença, luto, transições importantes. Para ambientes de alta carga emocional coletiva: transportes lotados, trabalho intenso, eventos de grande público. Para práticas espirituais de abertura, meditações profundas, trabalho com estados expandidos de consciência. Momentos em que o campo bioelétrico está genuinamente mais permeável e uma fronteira definida faz diferença real.</p>
-
-<!-- PARA QUEM. BLOCO BORDÔ -->
-<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem volta para casa vazia depois de um dia cheio de pessoas.<br/>Para quem cuida de todo mundo e precisa lembrar onde termina o outro e começa ela."</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">Ela não fecha o coração.<br/>Define o perímetro.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Raiz</p>
-</div>
-
-<!-- SEÇÃO: CUIDADOS -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Cuidados com a Turmalina Negra</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">O schorl é robusto. Dureza 7–7,5 na escala de Mohs. Pode ser limpa com água morna e sabão neutro. Após períodos de uso em ambientes de alta carga. sessões terapêuticas, eventos intensos. recomenda-se neutralizar o campo colocando a pedra sobre selenita ou solo por algumas horas.</p>
-
-<!-- SEÇÃO: ATELIER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ela no Atelier</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Trabalhamos com <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Turmalina Negra</span> Schorl de procedência verificada, sem tingimento. A variedade Schorl é a única com a composição de ferro que sustenta a piezoeletricidade em grau relevante para uso na leitura energética.</p>
-
-<!-- PREPARAÇÃO RITUAL -->
-<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
-  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Um gesto de dedicação consciente que confia à peça o propósito de proteção com fronteira. guardar quem guarda, sem fechar o coração.</p>
-</div>
-
-<!-- CTA · GABINETE MINERAL -->
-<div style="background: #faf6ef; border: 1px solid #b8860b; padding: 3px; margin-bottom: 0;">
-  <div style="border: 1px solid rgba(184,134,11,0.4); padding: 28px 24px; text-align: center;">
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0 0 14px 0;">Gabinete Mineral · Espécime nº 03</p>
-    <p style="font-family: 'Playfair Display',serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.14em; color: #1a0f0a; margin: 0 0 6px 0;">TURMALINA NEGRA</p>
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 10px; letter-spacing: 1px; color: #6b4226; margin: 0 0 18px 0;">NaFe₃Al₆(BO₃)₃Si₆O₁₈(OH)₄ · Trigonal</p>
-    <div style="width: 40px; height: 1px; background: #b8860b; margin: 0 auto 18px auto;"></div>
-    <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.7; color: #3d1a0a; margin: 0 0 22px 0;">"Proteção não é uma parede.<br/>É uma resposta."</p>
-    <a href="https://eusounos.com/search/?q=turmalina" style="display: inline-block; font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #7a0000; border: 1px solid #7a0000; padding: 10px 22px; text-decoration: none;">Ver no Atelier →</a>
+  <div class="ficha-mineral">
+    <span class="ficha-label">Grupo</span>
+    <span class="ficha-value">Supergrupo da Turmalina</span>
+    <span class="ficha-label">Sistema</span>
+    <span class="ficha-value">Trigonal</span>
+    <span class="ficha-label">Espécie negra comum</span>
+    <span class="ficha-value">Schorl (rica em ferro)</span>
+    <span class="ficha-label">Propriedades elétricas</span>
+    <span class="ficha-value">Piezoelétrica · Piroelétrica</span>
   </div>
-</div>
 
-<!-- ASSINATURA -->
-<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Turmalina Negra</span> é guardar<br/>quem guarda.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
-</div>
+  <div class="gradiente-linha"></div>
+
+  <p class="body-p drop-cap">Isso não prova proteção energética. Não demonstra que uma pedra no corpo bloqueie campos eletromagnéticos. E não transforma cristaloterapia em física. Mas torna a própria matéria muito mais interessante do que qualquer tentativa de emprestar autoridade científica a uma crença.</p>
+
+  <!-- SEÇÃO: TURMALINA NÃO É UM ÚNICO MINERAL -->
+  <p class="section-label">TURMALINA não é um único mineral</p>
+
+  <p class="body-p">Há uma primeira correção importante. "Turmalina" não é o nome de uma única espécie mineral com uma única fórmula. Existe um supergrupo da turmalina, formado por diversas espécies relacionadas estruturalmente e capazes de incorporar diferentes elementos em suas estruturas cristalinas.</p>
+
+  <p class="body-p">Grande parte do material negro encontrado no comércio é identificado como schorl, uma espécie rica em ferro. Mas existe uma diferença entre dizer: "esta é uma <span class="mineral-name">TURMALINA NEGRA</span>" e afirmar: "esta amostra é mineralogicamente schorl." A cor negra, sozinha, não constitui uma análise mineralógica completa.</p>
+
+  <div class="pullquote">
+    <p>Por isso, no Dévico Mineral, o nome comercial não substitui identificação. A matéria merece mais precisão que a etiqueta.</p>
+  </div>
+
+  <!-- SEÇÃO: UM CRISTAL QUE RESPONDE À PRESSÃO -->
+  <p class="section-label">Um cristal que responde à pressão</p>
+
+  <p class="body-p">A turmalina pertence a uma classe de materiais capazes de apresentar piezoeletricidade. Quando determinadas tensões mecânicas deformam sua estrutura cristalina, pode ocorrer uma alteração na distribuição de cargas elétricas. Em linguagem simples: mudar mecanicamente o cristal pode modificar sua polarização elétrica.</p>
+
+  <p class="body-p">Isso não significa que a pedra funcione como uma bateria. Nem que simplesmente segurá-la gere uma corrente elétrica útil. Estamos falando de uma propriedade física específica da estrutura cristalina.</p>
+
+  <div class="bloco-escuro">
+    <p>E há algo fascinante nessa relação.</p>
+    <p>Uma força externa atua sobre a matéria. A estrutura responde. A resposta pode ser medida eletricamente.</p>
+    <p>Antes de qualquer significado espiritual atribuído à <span style="font-variant:small-caps;letter-spacing:0.08em;">TURMALINA</span>, a matéria já possuía uma maneira própria de responder à pressão.</p>
+  </div>
+
+  <!-- SEÇÃO: E ELA TAMBÉM RESPONDE À TEMPERATURA -->
+  <p class="section-label">E ela também responde à temperatura</p>
+
+  <p class="body-p">A turmalina também é um exemplo clássico de material piroelétrico. Aqui o mecanismo é diferente. Alterações de temperatura podem modificar sua polarização espontânea, levando ao aparecimento de cargas elétricas nas superfícies do cristal.</p>
+
+  <div class="dado-box">
+    <p class="dado-titulo">Dado que vale distinguir</p>
+    <p>pressão mecânica → resposta piezoelétrica</p>
+    <p>variação de temperatura → resposta piroelétrica</p>
+    <p>As duas propriedades estão relacionadas à estrutura cristalina, mas não são sinônimas.</p>
+  </div>
+
+  <p class="body-p">E essa distinção importa. Porque quanto mais extraordinária é uma propriedade real, menos precisamos deformá-la para torná-la interessante.</p>
+
+  <!-- SEÇÃO: O QUE A ELETRICIDADE DA TURMALINA NÃO PROVA -->
+  <p class="section-label">O que a eletricidade da TURMALINA não prova</p>
+
+  <p class="body-p">Aqui está uma fronteira que o Dévico Mineral precisa deixar muito clara. O fato de a <span class="mineral-name">TURMALINA</span> apresentar piezoeletricidade e piroeletricidade não demonstra, por si só, que ela bloqueie "energia negativa", neutralize campos eletromagnéticos ambientais, proteja o corpo de Wi-Fi ou celulares, ou crie uma barreira energética mensurável ao redor de quem a utiliza.</p>
+
+  <p class="body-p">Essas conclusões não derivam automaticamente das propriedades elétricas do cristal. É perfeitamente possível respeitar práticas energéticas sem tentar forçar a física a validá-las.</p>
+
+  <div class="pullquote">
+    <p>A TURMALINA já é extraordinária sem precisarmos dizer que a ciência comprovou aquilo que ela não comprovou.</p>
+  </div>
+
+  <!-- SEÇÃO: A COR NEGRA NÃO EXPLICA O CAMPO -->
+  <p class="section-label">A cor negra não explica o campo</p>
+
+  <p class="body-p">Também é tentador construir outra sequência: negro → absorção de luz → absorção de negatividade → proteção. Mas essas coisas pertencem a categorias diferentes. A maneira como um material interage com luz visível não constitui evidência de que ele absorva estados emocionais, influências espirituais ou aquilo que diferentes tradições chamam de energia negativa.</p>
+
+  <p class="body-p">A aparência pode inspirar símbolos. Símbolos podem participar de práticas. Mas símbolo e mecanismo físico não são a mesma coisa. Essa diferença não empobrece a experiência. Ela impede que precisemos falsificar uma coisa para preservar a outra.</p>
+
+  <!-- SEÇÃO: MATÉRIA & CAMPO -->
+  <p class="section-label gold">Matéria &amp; Campo</p>
+
+  <p class="body-p">Em práticas cristaloterápicas contemporâneas, a <span class="mineral-name">TURMALINA NEGRA</span> é uma das pedras mais fortemente associadas a proteção, aterramento, limites e estabilidade. Essas associações pertencem ao campo energético e simbólico.</p>
+
+  <p class="body-p">A piezoeletricidade não comprova proteção. A piroeletricidade não demonstra limpeza energética. E o ferro presente em determinadas espécies negras não constitui um mecanismo físico para criar limites emocionais.</p>
+
+  <p class="body-p">Mas a matéria oferece uma imagem particularmente fértil. Um cristal recebe pressão. E responde. Recebe alteração térmica. E responde novamente. Não permanece indiferente ao que acontece ao redor dele. Também não deixa de ser aquilo que é.</p>
+
+  <div class="bloco-burgundy">
+    <p>Talvez seja justamente aí que exista uma relação humana digna de ser explorada.</p>
+    <p>Porque proteção não precisa significar ausência de contato. Podemos ser atravessados pelo mundo sem permitir que tudo o que acontece ao redor se torne parte de nós. Podemos sentir uma pressão e ainda responder a partir de uma estrutura própria. Podemos perceber uma mudança no ambiente sem perder completamente o eixo.</p>
+    <p>A <span style="font-variant:small-caps;letter-spacing:0.08em;">TURMALINA</span> não demonstra que consegue ensinar isso. Ela oferece uma matéria diante da qual pensar sobre limites.</p>
+  </div>
+
+  <!-- SEÇÃO: PROTEGER NÃO É CONSTRUIR UMA PAREDE DEFINITIVA -->
+  <p class="section-label">Proteger não é construir uma parede definitiva</p>
+
+  <p class="body-p">Há uma ideia recorrente de que proteção deveria ser algo absoluto. Uma decisão. Um limite colocado uma vez. Uma barreira que nunca mais precisasse ser refeita. A experiência humana raramente funciona assim.</p>
+
+  <p class="body-p">Existem limites que precisam ser reafirmados. Ambientes dos quais precisamos nos afastar novamente. Relações em que precisamos lembrar mais de uma vez onde terminamos nós e começa o outro. Isso não transforma proteção em fracasso. Pode transformá-la em prática.</p>
+
+  <div class="bloco-escuro">
+    <p>Talvez exista aqui uma diferença importante:</p>
+    <p>fragilidade é não possuir limite.<br>Sabedoria é perceber quando ele precisa ser reforçado.</p>
+    <p>Essa não é uma conclusão da cristalografia. É uma leitura humana diante de uma matéria que responde ao que a atravessa sem deixar de possuir uma estrutura própria.</p>
+  </div>
+
+  <!-- SEÇÃO: APRENDA A OLHAR -->
+  <p class="section-label">Aprenda a olhar uma TURMALINA NEGRA</p>
+
+  <p class="body-p">Não comece procurando apenas a pedra mais preta. Observe sua forma. Muitas turmalinas desenvolvem cristais alongados, frequentemente com estriações paralelas ao comprimento. Procure essas linhas. Observe o brilho. As terminações. As fraturas naturais. A maneira como a luz reage à superfície.</p>
+
+  <p class="body-p">E lembre que "<span class="mineral-name">TURMALINA NEGRA</span>" é uma descrição visual/comercial antes de ser uma identificação completa da espécie. Se você quiser saber exatamente qual membro do supergrupo está diante de você, cor não basta. Esse pequeno detalhe muda a forma de comprar minerais. Conhecer o nome é diferente de conhecer a matéria.</p>
+
+  <!-- GLOSSÁRIO DÉVICO -->
+  <div class="glossario-box">
+    <p class="glossario-titulo">Glossário Dévico</p>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Turmalina</p>
+      <p class="glossario-def">Nome de um supergrupo de minerais borossilicatos estruturalmente relacionados, capazes de incorporar diferentes elementos e formar diversas espécies minerais.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Schorl</p>
+      <p class="glossario-def">Espécie do supergrupo da turmalina rica em ferro e frequentemente associada às turmalinas negras comercializadas no mercado mineral. A identificação exata de uma amostra não deve ser feita apenas pela cor.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Piezoeletricidade</p>
+      <p class="glossario-def">Propriedade pela qual uma deformação ou esforço mecânico em determinados materiais pode produzir alteração de polarização e resposta elétrica.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Piroeletricidade</p>
+      <p class="glossario-def">Propriedade de determinados cristais em que mudanças de temperatura podem alterar a polarização espontânea e produzir cargas elétricas superficiais.</p>
+    </div>
+  </div>
+
+  <!-- NO ATELIER -->
+  <p class="section-label">No Atelier</p>
+
+  <div class="ritual-box">
+    <p class="ritual-label">Como escolhemos · Como preparamos</p>
+    <p>Quando escolhemos uma <span class="mineral-name">TURMALINA NEGRA</span>, observamos a integridade da matéria, suas estriações, textura, brilho, forma natural e aquilo que torna aquele exemplar particular. Não trabalhamos com minerais artificialmente tingidos ou materiais sintéticos apresentados como equivalentes à pedra natural. Preservar a matéria faz parte da maneira como nos relacionamos com ela.</p>
+    <p>Depois da criação manual, a obra permanece no Atelier para sua preparação dévica. Ela é colocada sobre nossa placa de cobre com o Cubo de Metatron, onde conduzimos nosso ritual de ativação com presença e intenção direcionadas à relação entre mineral, obra e propósito.</p>
+    <p>Essa é uma prática energética própria do Eu Sou Nós. Não pretende transformar piezoeletricidade ou piroeletricidade em prova de proteção espiritual. Parte da matéria como ela é.</p>
+  </div>
+
+  <!-- CTA -->
+  <div style="background: var(--ink); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 2px;">
+    <span style="font-family: 'IM Fell English',serif; font-style: italic; color: var(--cream); font-size: 1rem;">Ver peças com <span class="mineral-name" style="color:var(--gold-light);">TURMALINA NEGRA</span> disponíveis no Atelier →</span>
+    <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 8px 16px; text-decoration: none;" href="https://eusounos.com/search/?q=turmalina%20negra" target="_blank">Ver Peças</a>
+  </div>
+
+  <!-- PARA GUARDAR -->
+  <div class="assinatura">
+    <p class="ornamento">◆ ◆ ◆</p>
+    <p class="fecho">Proteção não precisa acontecer uma única vez para ser verdadeira.<br><br>Talvez alguns limites sejam vivos justamente porque precisam responder ao mundo conforme ele muda.<br><br>A <span style="font-variant:small-caps;letter-spacing:0.08em;color:var(--gold-light);">TURMALINA NEGRA</span> não prova isso.<br><br>Mas existe algo profundamente interessante em uma matéria que recebe pressão, responde a ela e continua sustentando sua própria estrutura.</p>
+    <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+  </div>
+
 </div>
 
 <!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
@@ -474,30 +384,32 @@ body::before {
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Dévico <span>Mineral</span></div>
-      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e história. Aqui, nenhum desses elementos é separado dos outros. Ciência e tradição habitam o mesmo registro."</p>
+      <div class="footer-brand">Eu Sou <span>Nós</span></div>
+      <p class="footer-brand-sub">Atelier Dévico · Dévico Mineral</p>
+      <p class="footer-manifesto">"Honrar o sagrado também exige honrar a verdade."</p>
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
       <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
+      <a class="footer-link" href="hematita.html">HEMATITA: o ferro que colore a Terra</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: matéria &amp; campo</a>
       <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">A mina lendária do AMETRINO</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO · gema bicolor</a>
       <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
       <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
       <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">A KUNZITA e a fragilidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR e o vulcão</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA: fragilidade e profundidade</a>
+      <a class="footer-link" href="pirita.html">A PIRITA e a geometria sagrada</a>
+      <a class="footer-link" href="larimar.html">O LARIMAR: nasceu do fogo</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
       <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://eusounos.com" target="_blank">Peça Personalizada</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
-      <a class="footer-link" href="https://tiktok.com/@eu.sou.nos" target="_blank">TikTok</a>
+      <a class="footer-link" href="https://tiktok.com/@eusounos" target="_blank">TikTok</a>
     </div>
   </div>
   <div class="footer-bottom">
