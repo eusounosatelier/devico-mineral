@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A LABRADORITA não tem cor. Ela cria cor. · Dévico Mineral</title>
-<meta name="description" content="A labradorescência não é pigmento. É física de ondas dentro do mineral. O azul que você vê não está na superfície. Está dentro.">
+<title>A LABRADORITA · A cor que levou milhões de anos para aprender a aparecer — Dévico Mineral</title>
+<meta name="description" content="A labradorescência não é pigmento. É estrutura transformada em percepção. Intercrescimento de Bøggild, exsolução e nanômetros que mudam uma cor inteira.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -42,10 +42,7 @@ body::before {
 }
 
 /* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-}
+.masthead { background: var(--ink); padding: 0; }
 
 .masthead-top-bar {
   background: var(--burgundy);
@@ -133,8 +130,8 @@ body::before {
 .rule-diamond { color: var(--gold); font-size: 10px; }
 
 .masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
+  background: transparent;
+  border-top: 1px solid rgba(184,134,11,0.15);
   padding: 10px 40px;
   display: flex;
   justify-content: center;
@@ -154,15 +151,8 @@ body::before {
   border-bottom: 1px solid transparent;
 }
 
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-.masthead-nav a.active {
-  color: var(--gold);
-  border-bottom-color: rgba(184,134,11,0.4);
-}
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.masthead-nav a.destaque { color: var(--gold-light); border-bottom-color: rgba(184,134,11,0.4); }
 
 /* ══ BREADCRUMB ══ */
 .breadcrumb {
@@ -179,33 +169,321 @@ body::before {
   gap: 10px;
 }
 
-.breadcrumb a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.breadcrumb a { color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--burgundy); }
 .breadcrumb-sep { color: var(--gold); font-size: 8px; }
 .breadcrumb-current { color: var(--burgundy); }
 
-/* ══ ARTIGO ══ */
+/* ══ ARTICLE WRAPPER ══ */
 .article-wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 40px 60px;
 }
 
+/* ══ COMPONENTES EDITORIAIS ══ */
+.article-kicker {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  margin: 0 0 18px 0;
+}
+
+.article-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(26px, 4vw, 46px);
+  line-height: 1.08;
+  color: var(--ink);
+  margin: 0 0 10px 0;
+  letter-spacing: -0.5px;
+}
+
+.article-title em { font-style: italic; color: var(--burgundy); font-weight: 400; }
+
+.article-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin: 0 0 28px 0;
+}
+
+.article-lead {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #6b4226;
+  border-left: 3px solid var(--gold);
+  padding-left: 20px;
+  margin: 0 0 10px 0;
+}
+
+.article-byline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--mist);
+  margin: 0 0 32px 0;
+}
+
+.ficha-mineral {
+  background: var(--ink);
+  padding: 16px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-bottom: 36px;
+  align-items: baseline;
+}
+
+.ficha-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(184,134,11,0.7);
+}
+
+.ficha-value {
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--cream);
+  margin-right: 12px;
+}
+
+.gradiente-linha {
+  height: 2px;
+  background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy));
+  margin-bottom: 36px;
+}
+
+.drop-cap::first-letter {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  float: left;
+  line-height: 0.88;
+  margin: 7px 10px 0 0;
+  color: var(--burgundy);
+}
+
+.body-p {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.95;
+  color: #3d1a0a;
+  margin: 0 0 22px 0;
+}
+
+.body-p:last-child { margin-bottom: 0; }
+
+.mineral-name {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  color: var(--burgundy);
+}
+
+.section-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  margin: 0 0 16px 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--cream-deep);
+}
+
+.section-label.gold { color: var(--gold); border-top-color: rgba(184,134,11,0.3); }
+
+.destaque-p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 22px 0;
+  text-align: center;
+}
+
+.pullquote {
+  background: var(--cream-dark);
+  border-left: 4px solid var(--burgundy);
+  padding: 22px 28px;
+  margin: 0 0 36px 0;
+}
+
+.pullquote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--ink);
+  margin: 0;
+}
+
+.bloco-escuro {
+  background: var(--ink);
+  padding: 28px 32px;
+  margin: 0 0 36px 0;
+}
+
+.bloco-escuro p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--cream);
+  margin: 0 0 12px 0;
+}
+
+.bloco-escuro p:last-child { margin-bottom: 0; }
+
+.bloco-escuro .label-escuro {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(184,134,11,0.8);
+  margin: 0 0 14px 0;
+}
+
+.bloco-burgundy {
+  background: var(--burgundy);
+  padding: 28px 32px;
+  margin: 0 0 36px 0;
+}
+
+.bloco-burgundy p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--cream);
+  margin: 0 0 10px 0;
+}
+
+.bloco-burgundy p:last-child { margin-bottom: 0; }
+
+.bloco-burgundy .label-burgundy {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(184,134,11,0.8);
+  margin: 14px 0 0 0;
+}
+
+.ritual-box {
+  border-left: 3px solid var(--gold);
+  padding: 0 0 0 22px;
+  margin: 0 0 44px 0;
+}
+
+.ritual-box .ritual-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 12px 0;
+}
+
+.ritual-box p {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #3d1a0a;
+  margin: 0 0 14px 0;
+}
+
+.ritual-box p:last-child { margin-bottom: 0; }
+
+.glossario-box {
+  background: var(--ink);
+  padding: 28px 32px;
+  margin: 0 0 36px 0;
+}
+
+.glossario-box .glossario-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(184,134,11,0.25);
+}
+
+.glossario-item { margin-bottom: 20px; }
+.glossario-item:last-child { margin-bottom: 0; }
+
+.glossario-termo {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+.glossario-def {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--mist);
+}
+
+.assinatura {
+  background: var(--ink);
+  padding: 36px 40px;
+  text-align: center;
+}
+
+.assinatura .ornamento {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(184,134,11,0.4);
+  margin: 0 0 18px 0;
+}
+
+.assinatura .fecho {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--cream);
+  margin: 0 0 20px 0;
+}
+
+.assinatura .marca {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
 /* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
 .article-nav {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 40px 60px;
+  padding: 32px 40px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--cream-deep);
-  padding-top: 32px;
   gap: 20px;
 }
 
@@ -262,6 +540,15 @@ body::before {
 
 .footer-brand span { color: var(--gold-light); }
 
+.footer-brand-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 8px 0;
+}
+
 .footer-manifesto {
   font-family: 'IM Fell English', serif;
   font-size: 12px;
@@ -315,14 +602,11 @@ body::before {
 
 /* ══ RESPONSIVE ══ */
 @media (max-width: 700px) {
-  .masthead-top-bar,
-  .masthead-main,
-  .masthead-nav { padding-left: 20px; padding-right: 20px; }
-  .article-wrapper,
-  .breadcrumb,
-  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .masthead-top-bar, .masthead-main, .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper, .breadcrumb, .article-nav { padding-left: 20px; padding-right: 20px; }
   .footer-inner { grid-template-columns: 1fr; }
   .journal-footer { padding: 30px 20px; }
+  .drop-cap::first-letter { font-size: 2.2rem; }
 }
 </style>
 </head>
@@ -331,14 +615,14 @@ body::before {
 <!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
-    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
-    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+    <span class="masthead-date">EU SOU NÓS · Atelier Dévico · Dévico Mineral</span>
+    <em class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</em>
   </div>
   <div class="masthead-main">
     <div class="masthead-rule-top"></div>
-    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico</div>
     <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
-    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <p class="masthead-subtitle">O diário de mineralogia do Eu Sou Nós Atelier Dévico</p>
     <div class="masthead-rule-ornament">
       <div class="rule-line"></div>
       <span class="rule-diamond">◆</span>
@@ -346,13 +630,12 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
+    <a href="https://eusounos.com/produtos" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
-    <a href="index.html#campo">Campo Energético</a>
-    <a href="index.html#glossario">Glossário</a>
     <a href="index.html#artigos">Artigos</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="index.html#glossario">Glossário</a>
   </nav>
 </header>
 
@@ -365,113 +648,172 @@ body::before {
 
 <!-- ══ CONTEÚDO DO ARTIGO ══ -->
 <div class="article-wrapper">
+
   <!-- KICKER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Mineralogia Profunda &middot; 8 min de leitura</p>
+  <p class="article-kicker">Mineralogia · Feldspatos · Fenômenos Ópticos</p>
 
-<!-- TÍTULO -->
-<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">Labradorita</span> não tem cor.<br/>Ela <em style="font-weight: 400; color: #7a0000;">cria</em> cor.<br/>E essa distinção muda tudo.</h2>
+  <!-- TÍTULO -->
+  <h1 class="article-title">A cor que levou milhões de anos<br>para aprender a <em>aparecer.</em></h1>
 
-<!-- LEAD IM FELL -->
-<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">O azul que você vê não está no mineral. Está na física de ondas entre as lamelas de exsolução internas. Dois materiais, uma fronteira, uma interferência construtiva que produz exatamente aquele comprimento de onda.</p>
+  <!-- SUBTÍTULO / FICHA -->
+  <p class="article-subtitle">Feldspato plagioclásio &nbsp;·&nbsp; (Na,Ca)(Al,Si)₄O₈ &nbsp;·&nbsp; Sistema triclínico</p>
 
-<!-- BYLINE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+  <!-- LEAD -->
+  <p class="article-lead">Você gira uma <span class="mineral-name">LABRADORITA</span> alguns graus e algo desaparece. O azul elétrico que parecia ocupar a pedra inteira se apaga. O verde some. O dourado deixa de existir. Sob outro ângulo, resta uma matéria cinza, escura ou translúcida que parece não conter nenhuma daquelas cores. Então a luz retorna à posição certa. E tudo reaparece.</p>
 
-<!-- FICHA MINERAL -->
-<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">(Na,Ca)(Al,Si)₄O₈</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Sistema</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Triclínico</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Dureza</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">6–6,5 Mohs</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Terceiro Olho &middot; Coronário</span>
-</div>
+  <!-- BYLINE -->
+  <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
-<!-- LINHA GRADIENTE -->
-<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+  <!-- FICHA MINERAL -->
+  <div class="ficha-mineral">
+    <span class="ficha-label">Mineral</span>
+    <span class="ficha-value">Feldspato plagioclásio</span>
+    <span class="ficha-label">Fórmula</span>
+    <span class="ficha-value">(Na,Ca)(Al,Si)₄O₈</span>
+    <span class="ficha-label">Sistema</span>
+    <span class="ficha-value">Triclínico</span>
+    <span class="ficha-label">Fenômeno</span>
+    <span class="ficha-value">Labradorescência</span>
 
-<!-- ABERTURA COM DROP CAP -->
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">Q</span>uando a luz encontra a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span> no ângulo certo, algo acontece dentro do mineral. Não na superfície. Não é pigmento. Não é reflexo. É um evento físico que requer condições precisas para existir. E quando não existe esse ângulo, a pedra parece cinza. Comum. Sem nada de especial.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">Isso é fundamental para entender a leitura energética da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span>. Um mineral que cria realidade em relação. Que só mostra o que tem quando as condições são certas. Não é um objeto estático. É uma presença responsiva. E essa responsividade é o que ela ensina a quem a carrega.</p>
-
-<!-- SEÇÃO: FÍSICA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A física da labradorescência</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span> pertence ao grupo dos feldspatos plagioclásios, solução sólida entre albita (<span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">NaAlSi₃O₈</span>) e anortita (<span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">CaAl₂Si₂O₈</span>). Sua estrutura interna contém lamelas de exsolução. Duas fases de feldspato com índices de refração ligeiramente distintos que se alternaram durante o lento resfriamento do mineral ao longo de milhões de anos.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Quando a luz atravessa essa estrutura, ela se divide nessa fronteira entre as lamelas. Parte reflete em uma superfície, parte na outra. As duas ondas se reencontram e interferem entre si. Se a espessura das lamelas for exatamente certa para o comprimento de onda do azul (aproximadamente 450–495 nanômetros), esse azul é amplificado. Os outros comprimentos de onda são suprimidos.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A cor que aparece depende diretamente da espessura das lamelas: lamelas mais espessas produzem vermelho e dourado, lamelas mais finas produzem azul e violeta. É por isso que a Spectrolite finlandesa apresenta o espectro completo em uma única pedra. Cada zona de cor é uma zona de espessura diferente, registrada na rocha ao longo de centenas de milhões de anos de resfriamento lento.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 32px 0;">Isso é interferência construtiva. O mesmo fenômeno que cria as cores das asas de borboleta, das penas de beija-flor e da superfície das bolhas de sabão. Em todos esses casos, não há pigmento. Há estrutura. A cor é um evento, não uma propriedade fixa.</p>
-
-<!-- PULLQUOTE -->
-<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"Um mineral que só mostra o que tem quando as condições são certas não é um objeto estático. É uma presença responsiva. E essa responsividade é exatamente o que ela ensina a quem a carrega."</p>
-</div>
-
-<!-- SEÇÃO: INUIT -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O que os Inuit sabiam antes</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span> foi formalmente descrita pela mineralogia ocidental em 1770, por Morávios em missão na península do Labrador, no Canadá. Daí o nome. Mas os Inuit da região já a conheciam há muito mais tempo. Para eles, as auroras boreais tinham sido aprisionadas dentro da pedra por um guerreiro ancestral que golpeou a costa com sua lança para liberá-las ao céu. Algumas ficaram dentro da rocha.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A narrativa é mais precisa do que parece: a labradorescência e as auroras boreais são criadas pelo mesmo tipo de fenômeno. Interferência de luz em condições específicas. Os Inuit não tinham a terminologia da óptica moderna, mas observaram a correspondência. Isso é conhecimento.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Um dado que o mercado de cristais raramente menciona: a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span> foi encontrada nas amostras de rocha lunar trazidas pelas missões Apollo. O feldspato plagioclásio é um dos minerais mais abundantes na crosta da Lua. A pedra que você carrega pertence à mesma família mineral que compõe o satélite que ilumina a noite.</p>
-
-<!-- SEÇÃO: PROCEDÊNCIA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Procedência e campo</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span> existe em vários países, e os campos diferem conforme a origem. De Madagascar vem a labradorescência azul-dourada intensa, fundo cinza-escuro translúcido. A mais valorizada para joalheria. Da Finlândia, a Spectrolite, com espectro completo de cores em uma só pedra: verde, azul, vermelho e dourado. Excepcionalmente rara. Do Canadá, onde o mineral foi descoberto, tons mais austeros e azuis mais contidos.</p>
-
-<!-- SEÇÃO: CAMPO ENERGÉTICO -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 36px 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A leitura energética</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span> é o mineral das camadas. Do que não é visível na primeira leitura. Para quem percebe além do óbvio, lê entrelinhas, sente antes de saber. Chakra do terceiro olho e coronário em ativação simultânea. Percepção expandida com conexão ao campo mais elevado.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Não é um mineral de aterramento. É um mineral de expansão. Por isso é especialmente relevante para quem já tem raiz e busca abertura, não para quem precisa de estabilidade como base.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 32px 0;">Para momentos de transição onde a clareza ainda não chegou mas a percepção já alcança além. Períodos em que você sente que algo está mudando antes de saber o quê, ou vê padrões antes de conseguir nomeá-los.</p>
-
-<!-- PARA QUEM · BLOCO BORDÔ -->
-<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem percebe antes de entender.<br/>Para quem sente que algo está mudando antes de saber o quê."</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">Você não é impulsiva.<br/>Você percebe em camadas que os outros ainda não alcançaram.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Terceiro Olho &middot; Coronário</p>
-</div>
-
-<!-- SEÇÃO: ATELIER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ela no Atelier</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Cada <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Labradorita</span> que entra numa peça passa primeiro pelo processo de seleção: buscamos a labradorescência de qualidade, o fundo de translucidez adequada, a ausência de fraturas que comprometam a estrutura.</p>
-
-<!-- PREPARAÇÃO RITUAL -->
-<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
-  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Um gesto de dedicação consciente que confia à peça o propósito de expansão da percepção com discernimento.</p>
-</div>
-
-<!-- CTA · GABINETE MINERAL -->
-<div style="background: #faf6ef; border: 1px solid #b8860b; padding: 3px; margin-bottom: 0;">
-  <div style="border: 1px solid rgba(184,134,11,0.4); padding: 28px 24px; text-align: center;">
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0 0 14px 0;">Gabinete Mineral · Espécime nº 01</p>
-    <p style="font-family: 'Playfair Display',serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.14em; color: #1a0f0a; margin: 0 0 6px 0;">LABRADORITA</p>
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 10px; letter-spacing: 1px; color: #6b4226; margin: 0 0 18px 0;">(Na,Ca)(Al,Si)₄O₈ &middot; Madagascar</p>
-    <div style="width: 40px; height: 1px; background: #b8860b; margin: 0 auto 18px auto;"></div>
-    <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.7; color: #3d1a0a; margin: 0 0 22px 0;">"Eu pareço a mesma de sempre até o momento<br/>em que alguém olha do ângulo certo."</p>
-    <a href="https://eusounos.com/search/?q=labradorita" style="display: inline-block; font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #7a0000; border: 1px solid #7a0000; padding: 10px 22px; text-decoration: none;">Ver no Atelier →</a>
   </div>
-</div>
 
-<!-- ASSINATURA -->
-<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Labradorita</span> é mostrar<br/>o que só aparece no ângulo certo.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
-</div>
+  <!-- LINHA GRADIENTE -->
+  <div class="gradiente-linha"></div>
+
+  <!-- ABERTURA COM DROP CAP -->
+  <p class="body-p drop-cap">Durante muito tempo, seria fácil contar essa história dizendo apenas que a <span class="mineral-name">LABRADORITA</span> "muda conforme você olha". A matéria conta algo muito mais extraordinário. As cores que vemos estão relacionadas a estruturas internas formadas durante a história de resfriamento do feldspato, em escalas de apenas dezenas a centenas de nanômetros. O espetáculo começa muito antes da luz.</p>
+
+  <!-- SEÇÃO: A COR NÃO ESTÁ ONDE PARECE ESTAR -->
+  <p class="section-label">A cor não está onde parece estar</p>
+
+  <p class="body-p">A <span class="mineral-name">LABRADORITA</span> pertence à série dos feldspatos plagioclásios, cuja composição varia entre componentes ricos em sódio e cálcio. Nem toda labradorita apresenta labradorescência intensa. Nos materiais fenomenais, sua estrutura pode desenvolver intercrescimentos extremamente finos por um processo chamado exsolução.</p>
+
+  <p class="body-p">Durante a história térmica do feldspato, uma matéria inicialmente mais homogênea passa a desenvolver regiões lamelares de composições ligeiramente diferentes. Na <span class="mineral-name">LABRADORITA</span> iridescente, uma dessas nanotexturas recebe um nome específico:</p>
+
+  <div class="pullquote">
+    <p>intercrescimento de Bøggild.</p>
+  </div>
+
+  <p class="body-p">Estudos gemológicos descrevem lamelas mais cálcicas com aproximadamente 70 a 200 nanômetros, alternadas com lamelas mais sódicas em torno de 50 a 100 nanômetros. Um nanômetro é um milionésimo de milímetro. Você não vê essas camadas. Vê o que elas fazem com a luz.</p>
+
+  <p class="body-p">Quando a luz encontra essa arquitetura interna, determinadas ondas são reforçadas e outras enfraquecidas. O resultado é a iridescência característica que chamamos de labradorescência. Aquele azul não precisa existir como pigmento azul dentro da pedra. É estrutura transformada em percepção.</p>
+
+  <!-- SEÇÃO: NANÔMETROS QUE MUDAM UMA COR INTEIRA -->
+  <p class="section-label">Alguns nanômetros podem mudar uma cor inteira</p>
+
+  <p class="body-p">Aqui a <span class="mineral-name">LABRADORITA</span> fica ainda mais extraordinária. A cor observada está relacionada à periodicidade e à espessura dessas estruturas internas. Em estudos recentes, periodicidades combinadas próximas de 150 nanômetros estão associadas à iridescência azul, enquanto estruturas acima de aproximadamente 250 nanômetros podem produzir regiões vermelhas, com outras cores espectrais aparecendo entre esses extremos.</p>
+
+  <div class="bloco-escuro">
+    <p>Azul.<br>Verde.<br>Amarelo.<br>Laranja.<br>Vermelho.</p>
+    <p>Não são necessariamente cinco pigmentos escondidos na pedra. São diferentes respostas ópticas produzidas por uma arquitetura que nossos olhos jamais conseguiriam enxergar diretamente.</p>
+  </div>
+
+  <p class="body-p">E existe outro detalhe ainda mais delicado. Dentro de um mesmo cristal, pesquisadores encontraram regiões vermelhas apenas cerca de 2 a 3 mol.% mais cálcicas que regiões azuis. Pequenas diferenças composicionais podem estar associadas a mudanças cromáticas enormes para os nossos olhos.</p>
+
+  <p class="body-p">Uma diferença quase invisível na matéria pode separar um território azul de um vermelho.</p>
+
+  <!-- SEÇÃO: A PEDRA GUARDA A MEMÓRIA -->
+  <p class="section-label">A pedra guarda a memória de como esfriou</p>
+
+  <p class="body-p">Essas estruturas não são decoração acrescentada depois. Elas pertencem à própria história do mineral. A labradorescência está relacionada a estruturas formadas por exsolução durante a evolução térmica do feldspato. O resfriamento e as condições geológicas permitem que componentes originalmente mais misturados se reorganizem em domínios extremamente finos.</p>
+
+  <p class="body-p">Quando uma <span class="mineral-name">LABRADORITA</span> explode em azul sob a luz, você não está observando apenas um efeito bonito. Está vendo uma consequência visível de processos que aconteceram dentro da matéria durante sua história geológica. A luz apenas torna essa história perceptível.</p>
+
+  <!-- SEÇÃO: SPECTROLITE -->
+  <p class="section-label">SPECTROLITE · uma outra maneira de encontrar a luz</p>
+
+  <p class="body-p">Na Finlândia encontramos um material particularmente conhecido: <span class="mineral-name">SPECTROLITE</span>, nome comercial associado a labradorita finlandesa de labradorescência intensa e ampla variedade de cores. Alguns exemplares possuem corpo muito escuro devido à presença de inclusões opacas. Esse contraste pode fazer a iridescência parecer muito próxima da superfície. Em materiais mais transparentes, o fenômeno pode parecer surgir de regiões mais profundas da pedra.</p>
+
+  <p class="body-p">A mesma família mineral pode, portanto, produzir experiências visuais espacialmente muito diferentes. Uma parece acender a cor perto da superfície. Outra parece guardá-la dentro.</p>
+
+  <div class="bloco-escuro">
+    <p>Isso não significa que minerais de diferentes procedências possuam, por consequência geológica, "campos energéticos diferentes". A geologia pode explicar diferenças de composição, estrutura e aparência. A percepção energética pertence a outra investigação.</p>
+  </div>
+
+  <!-- SEÇÃO: E AINDA NÃO SABEMOS TUDO -->
+  <p class="section-label">E ainda não sabemos tudo</p>
+
+  <p class="body-p">Apesar de décadas de estudo, a estrutura exata de alguns desses intercrescimentos ainda não está completamente resolvida. Analisar individualmente lamelas dessa escala é tecnicamente difícil, e o número de exemplares investigados em detalhe continua limitado.</p>
+
+  <p class="body-p">Existe algo importante nisso. Podemos conhecer composição. Observar nanotexturas. Relacionar estruturas e cores. Construir modelos para explicar o fenômeno. E ainda encontrar perguntas abertas dentro de uma pedra que seguramos na mão.</p>
+
+  <div class="pullquote">
+    <p>Mistério não precisa começar onde a ciência termina. Às vezes ele existe dentro da própria ciência, naquilo que ela ainda está aprendendo a compreender.</p>
+  </div>
+
+  <!-- SEÇÃO: MATÉRIA & CAMPO -->
+  <p class="section-label gold">Matéria &amp; Campo</p>
+
+  <p class="body-p">Em práticas cristaloterápicas contemporâneas, a <span class="mineral-name">LABRADORITA</span> é frequentemente associada a percepção, intuição, proteção, transformação e expansão da consciência. Essas associações pertencem ao campo energético e simbólico.</p>
+
+  <p class="body-p">A labradorescência não comprova proteção energética. A exsolução não demonstra transformação psíquica. Uma propriedade óptica não se converte automaticamente em evidência espiritual.</p>
+
+  <p class="body-p">Mas separar esses campos não significa impedir que conversem. Há uma imagem particularmente fértil na própria matéria: a <span class="mineral-name">LABRADORITA</span> não cria sua estrutura quando a luz chega. A estrutura já estava ali. A luz apenas oferece as condições em que conseguimos perceber algo que antes permanecia invisível aos nossos olhos.</p>
+
+  <div class="bloco-burgundy">
+    <p>Na leitura dévica, podemos nos aproximar dessa matéria sem dizer que a física prova a espiritualidade.</p>
+    <p>Podemos simplesmente perguntar:</p>
+    <p>quantas coisas existem antes que sejamos capazes de percebê-las?</p>
+    <p>Talvez existam momentos em que alguma parte de nós já mudou, embora ainda não tenhamos linguagem para reconhecê-la.</p>
+    <p>Uma percepção que chegou antes da explicação.<br>Uma mudança interna ainda sem testemunhas.<br>Algo verdadeiro que não precisa permanecer visível o tempo inteiro para existir.</p>
+    <p>A <span style="font-variant:small-caps;letter-spacing:0.08em;">LABRADORITA</span> não demonstra nada disso. Ela oferece uma matéria diante da qual pensar.</p>
+  </div>
+
+  <!-- SEÇÃO: APRENDA A OLHAR -->
+  <p class="section-label">Aprenda a olhar uma LABRADORITA</p>
+
+  <p class="body-p">Não procure apenas "a pedra com mais azul". Movimente-a lentamente sob uma fonte de luz. Observe onde o fenômeno aparece. Quanto da superfície ele ocupa. Se existem limites definidos entre cores diferentes. Se o corpo permanece cinza, escuro ou translúcido quando o flash desaparece. Se a labradorescência parece próxima da superfície ou emergir de maior profundidade. E quantas manifestações diferentes aquele mesmo exemplar produz conforme muda a relação entre pedra, luz e observador.</p>
+
+  <p class="body-p">Uma <span class="mineral-name">LABRADORITA</span> extraordinária não precisa permanecer espetacular em qualquer posição. Parte de sua natureza está justamente no acontecimento. Você não olha apenas para uma cor. Você encontra as condições em que ela consegue existir para os seus olhos.</p>
+
+  <!-- GLOSSÁRIO DÉVICO -->
+  <div class="glossario-box">
+    <p class="glossario-titulo">Glossário Dévico</p>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Labradorescência</p>
+      <p class="glossario-def">Fenômeno óptico característico de determinadas labradoritas, relacionado à interação da luz com estruturas internas formadas durante processos de exsolução.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Exsolução</p>
+      <p class="glossario-def">Processo pelo qual uma fase mineral inicialmente mais homogênea pode separar-se, durante sua história térmica, em regiões ou fases de composições diferentes.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Intercrescimento de Bøggild</p>
+      <p class="glossario-def">Nanotextura de exsolução associada à labradorescência de determinados feldspatos plagioclásios, formada por lamelas alternadas de composições ligeiramente diferentes.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Spectrolite</p>
+      <p class="glossario-def">Nome comercial associado à labradorita finlandesa, especialmente conhecida pela intensidade e variedade cromática de sua labradorescência.</p>
+    </div>
+  </div>
+
+  <!-- NO ATELIER -->
+  <p class="section-label">No Atelier</p>
+
+  <div class="ritual-box">
+    <p class="ritual-label">Como escolhemos · Como preparamos</p>
+    <p>Cada <span class="mineral-name">LABRADORITA</span> é escolhida individualmente. Observamos a qualidade da matéria, sua integridade, o desenho natural do exemplar e, principalmente, como a labradorescência responde ao movimento e à luz. Uma fotografia não consegue contar completamente essa pedra. Ela precisa ser movimentada. Descoberta. Encontrada de novo.</p>
+    <p>Depois da criação manual, a obra permanece no Atelier para sua preparação dévica. Ela é colocada sobre nossa placa de cobre com o Cubo de Metatron, onde conduzimos nosso ritual de ativação com presença e intenção direcionadas à relação entre mineral, obra e propósito.</p>
+    <p>Essa é uma prática energética própria do Eu Sou Nós. Não pretende transformar a mineralogia em prova espiritual. Parte da matéria como ela é.</p>
+  </div>
+
+  <!-- CTA -->
+  <div style="background: var(--ink); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 2px;">
+    <span style="font-family: 'IM Fell English',serif; font-style: italic; color: var(--cream); font-size: 1rem;">Ver peças com <span class="mineral-name" style="color:var(--gold-light);">LABRADORITA</span> disponíveis no Atelier →</span>
+    <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 8px 16px; text-decoration: none;" href="https://eusounos.com/search/?q=labradorita" target="_blank">Ver Peças</a>
+  </div>
+
+  <!-- PARA GUARDAR -->
+  <div class="assinatura">
+    <p class="ornamento">◆ ◆ ◆</p>
+    <p class="fecho">Você não vê as camadas.<br>Vê o que elas fazem com a luz.<br><br>Talvez seja justamente isso que torne a <span style="font-variant:small-caps;letter-spacing:0.08em;color:var(--gold-light);">LABRADORITA</span> tão difícil de esquecer.<br>Ela não se entrega inteira num único olhar.<br><br>E algumas matérias parecem continuar existindo conosco<br>justamente porque nunca terminamos de descobri-las.</p>
+    <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+  </div>
+
 </div>
 
 <!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
@@ -485,30 +827,32 @@ body::before {
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Dévico <span>Mineral</span></div>
-      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e história. Aqui, nenhum desses elementos é separado dos outros. Ciência e tradição habitam o mesmo registro."</p>
+      <div class="footer-brand">Eu Sou <span>Nós</span></div>
+      <p class="footer-brand-sub">Atelier Dévico · Dévico Mineral</p>
+      <p class="footer-manifesto">"Honrar o sagrado também exige honrar a verdade."</p>
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
       <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
+      <a class="footer-link" href="hematita.html">HEMATITA: o ferro que colore a Terra</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: matéria &amp; campo</a>
       <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">A mina lendária do AMETRINO</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO · gema bicolor</a>
       <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
       <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
       <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">A KUNZITA e a fragilidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR e o vulcão</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA: fragilidade e profundidade</a>
+      <a class="footer-link" href="pirita.html">A PIRITA e a geometria sagrada</a>
+      <a class="footer-link" href="larimar.html">O LARIMAR: nasceu do fogo</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
       <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://eusounos.com" target="_blank">Peça Personalizada</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
-      <a class="footer-link" href="https://tiktok.com/@eu.sou.nos" target="_blank">TikTok</a>
+      <a class="footer-link" href="https://tiktok.com/@eusounos" target="_blank">TikTok</a>
     </div>
   </div>
   <div class="footer-bottom">
