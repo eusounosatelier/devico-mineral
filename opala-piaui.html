@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A OPALA DO PIAUÍ e o que o mundo não sabe sobre o Nordeste mineralógico · Dévico Mineral</title>
-<meta name="description" content="O Nordeste era oceano. A Opala do Piauí é o registro dessa geologia. Play-of-color, física das cores e leitura energética.">
+<title>OPALA DO PIAUÍ: a pedra que não precisou cristalizar para organizar um arco-íris — Dévico Mineral</title>
+<meta name="description" content="SiO₂·nH₂O · Mineralóide. A OPALA do Piauí, em Pedro II, não é cristal — é sílica hidratada. O play-of-color nasce de estruturas submicroscópicas ordenadas, não de pigmento.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -20,325 +20,115 @@
   --mist: #c9b99a;
   --white: #fefcf8;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
-/* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-}
-
-.masthead-top-bar {
-  background: var(--burgundy);
-  padding: 6px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(184,134,11,0.4);
-}
-
-.masthead-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245,234,216,0.6);
-}
-
-.masthead-tagline-top {
-  font-family: 'IM Fell English', serif;
-  font-size: 10px;
-  font-style: italic;
-  color: var(--gold-light);
-  letter-spacing: 1px;
-}
-
-.masthead-main {
-  padding: 20px 40px 0;
-  text-align: center;
-}
-
-.masthead-rule-top {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
-  margin-bottom: 14px;
-}
-
-.masthead-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 8px;
-}
-
-.masthead-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(28px, 5vw, 56px);
-  font-weight: 700;
-  color: var(--cream);
-  line-height: 0.95;
-  letter-spacing: -1px;
-  margin-bottom: 4px;
-  text-decoration: none;
-  display: block;
-}
-
+body { background: var(--paper); color: var(--ink); font-family: 'Libre Baskerville', Georgia, serif; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
+.masthead { background: var(--ink); padding: 0; }
+.masthead-top-bar { background: var(--burgundy); padding: 6px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(184,134,11,0.4); }
+.masthead-date { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,234,216,0.6); }
+.masthead-tagline-top { font-family: 'IM Fell English', serif; font-size: 10px; font-style: italic; color: var(--gold-light); letter-spacing: 1px; }
+.masthead-main { padding: 20px 40px 0; text-align: center; }
+.masthead-rule-top { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent); margin-bottom: 14px; }
+.masthead-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.masthead-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(28px, 5vw, 56px); font-weight: 700; color: var(--cream); line-height: 0.95; letter-spacing: -1px; margin-bottom: 4px; text-decoration: none; display: block; }
 .masthead-title span { color: var(--gold-light); }
-
-.masthead-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(11px, 1.5vw, 14px);
-  font-style: italic;
-  color: var(--mist);
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-.masthead-rule-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.rule-line {
-  flex: 1;
-  max-width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
+.masthead-subtitle { font-family: 'IM Fell English', serif; font-size: clamp(11px, 1.5vw, 14px); font-style: italic; color: var(--mist); letter-spacing: 2px; margin-bottom: 14px; }
+.masthead-rule-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.rule-line { flex: 1; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 .rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
 .rule-diamond { color: var(--gold); font-size: 10px; }
-
-.masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
-  padding: 10px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.masthead-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--mist);
-  text-decoration: none;
-  transition: color 0.2s;
-  padding: 3px 0;
-  border-bottom: 1px solid transparent;
-}
-
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-.masthead-nav a.active {
-  color: var(--gold);
-  border-bottom-color: rgba(184,134,11,0.4);
-}
-
-/* ══ BREADCRUMB ══ */
-.breadcrumb {
-  max-width: 800px;
-  margin: 32px auto 0;
-  padding: 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.breadcrumb a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.masthead-nav { background: transparent; border-top: 1px solid rgba(184,134,11,0.15); padding: 10px 40px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+.masthead-nav a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); text-decoration: none; transition: color 0.2s; padding: 3px 0; border-bottom: 1px solid transparent; }
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.masthead-nav a.destaque { color: var(--gold-light); border-bottom-color: rgba(184,134,11,0.4); }
+.breadcrumb { max-width: 800px; margin: 32px auto 0; padding: 0 40px; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); display: flex; align-items: center; gap: 10px; }
+.breadcrumb a { color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--burgundy); }
 .breadcrumb-sep { color: var(--gold); font-size: 8px; }
 .breadcrumb-current { color: var(--burgundy); }
-
-/* ══ ARTIGO ══ */
-.article-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 40px 60px;
-}
-
-/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
-.article-nav {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 40px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--cream-deep);
-  padding-top: 32px;
-  gap: 20px;
-}
-
-.article-nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.2s;
-}
-
+.article-wrapper { max-width: 800px; margin: 0 auto; padding: 40px 40px 60px; }
+.article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 18px 0; }
+.article-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(26px, 4vw, 46px); line-height: 1.08; color: var(--ink); margin: 0 0 10px 0; letter-spacing: -0.5px; }
+.article-title em { font-style: italic; color: var(--burgundy); font-weight: 400; }
+.article-subtitle { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); margin: 0 0 28px 0; }
+.article-lead { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid var(--gold); padding-left: 20px; margin: 0 0 10px 0; }
+.article-byline { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); margin: 0 0 32px 0; }
+.ficha-mineral { background: var(--ink); padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline; }
+.ficha-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7); }
+.ficha-value { font-family: monospace; font-size: 11px; font-weight: bold; color: var(--cream); margin-right: 12px; }
+.gradiente-linha { height: 2px; background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy)); margin-bottom: 36px; }
+.drop-cap::first-letter { font-family: 'Cinzel Decorative', serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: var(--burgundy); }
+.body-p { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0; }
+.mineral-name { font-variant: small-caps; letter-spacing: 0.08em; color: var(--burgundy); }
+.section-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid var(--cream-deep); }
+.section-label.gold { color: var(--gold); border-top-color: rgba(184,134,11,0.3); }
+.pullquote { background: var(--cream-dark); border-left: 4px solid var(--burgundy); padding: 22px 28px; margin: 0 0 36px 0; }
+.pullquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; line-height: 1.75; color: var(--ink); margin: 0; }
+.bloco-escuro { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-escuro p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 12px 0; }
+.bloco-escuro p:last-child { margin-bottom: 0; }
+.bloco-burgundy { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-burgundy p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.bloco-burgundy p:last-child { margin-bottom: 0; }
+.lista-espectral { background: var(--ink); padding: 24px 32px; margin: 0 0 36px 0; }
+.lista-espectral p { font-family: 'Cinzel Decorative', serif; font-size: 1rem; line-height: 2.2; color: var(--cream); margin: 0; letter-spacing: 2px; }
+.dado-box { background: var(--ink); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 0 0 36px 0; }
+.dado-box .dado-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.7); margin: 0 0 14px 0; }
+.dado-box p { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.8; color: var(--mist); margin: 0 0 8px 0; }
+.dado-box p:last-child { margin-bottom: 0; }
+.divisor-camadas { margin: 36px 0; border: none; border-top: 1px solid var(--cream-deep); }
+.ritual-box { border-left: 3px solid var(--gold); padding: 0 0 0 22px; margin: 0 0 44px 0; }
+.ritual-box .ritual-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 12px 0; }
+.ritual-box p { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0 0 14px 0; }
+.ritual-box p:last-child { margin-bottom: 0; }
+.glossario-box { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.glossario-box .glossario-titulo { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin: 0 0 20px 0; padding-bottom: 10px; border-bottom: 1px solid rgba(184,134,11,0.25); }
+.glossario-item { margin-bottom: 20px; }
+.glossario-item:last-child { margin-bottom: 0; }
+.glossario-termo { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; }
+.glossario-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.75; color: var(--mist); }
+.assinatura { background: var(--ink); padding: 36px 40px; text-align: center; }
+.assinatura .ornamento { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0; }
+.assinatura .fecho { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: var(--cream); margin: 0 0 20px 0; }
+.assinatura .marca { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); }
+.article-nav { max-width: 800px; margin: 0 auto; padding: 32px 40px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--cream-deep); gap: 20px; }
+.article-nav-link { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--burgundy); text-decoration: none; transition: color 0.2s; }
 .article-nav-link:hover { color: var(--gold); }
-
-.article-nav-center {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.article-nav-center { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .article-nav-center:hover { color: var(--burgundy); }
-
-/* ══ FOOTER ══ */
-.journal-footer {
-  background: var(--ink);
-  border-top: 3px solid var(--burgundy);
-  padding: 40px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-brand {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
+.journal-footer { background: var(--ink); border-top: 3px solid var(--burgundy); padding: 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
 .footer-brand span { color: var(--gold-light); }
-
-.footer-manifesto {
-  font-family: 'IM Fell English', serif;
-  font-size: 12px;
-  font-style: italic;
-  color: var(--mist);
-  line-height: 1.7;
-}
-
-.footer-col-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(184,134,11,0.3);
-}
-
-.footer-link {
-  display: block;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  color: var(--mist);
-  text-decoration: none;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-
+.footer-brand-sub { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 8px 0; }
+.footer-manifesto { font-family: 'IM Fell English', serif; font-size: 12px; font-style: italic; color: var(--mist); line-height: 1.7; }
+.footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184,134,11,0.3); }
+.footer-link { display: block; font-family: 'Libre Baskerville', serif; font-size: 12px; color: var(--mist); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 .footer-link:hover { color: var(--cream); }
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(184,134,11,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-copy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(180,160,130,0.5);
-}
-
-/* ══ RESPONSIVE ══ */
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(184,134,11,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(180,160,130,0.5); }
 @media (max-width: 700px) {
-  .masthead-top-bar,
-  .masthead-main,
-  .masthead-nav { padding-left: 20px; padding-right: 20px; }
-  .article-wrapper,
-  .breadcrumb,
-  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .masthead-top-bar, .masthead-main, .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper, .breadcrumb, .article-nav { padding-left: 20px; padding-right: 20px; }
   .footer-inner { grid-template-columns: 1fr; }
   .journal-footer { padding: 30px 20px; }
+  .drop-cap::first-letter { font-size: 2.2rem; }
 }
 </style>
 </head>
 <body>
 
-<!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
-    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
-    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+    <span class="masthead-date">EU SOU NÓS · Atelier Dévico · Dévico Mineral</span>
+    <em class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</em>
   </div>
   <div class="masthead-main">
     <div class="masthead-rule-top"></div>
-    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico</div>
     <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
-    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <p class="masthead-subtitle">O diário de mineralogia do Eu Sou Nós Atelier Dévico</p>
     <div class="masthead-rule-ornament">
       <div class="rule-line"></div>
       <span class="rule-diamond">◆</span>
@@ -346,161 +136,270 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
+    <a href="https://www.eusounos.com/produtos/" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
-    <a href="index.html#campo">Campo Energético</a>
-    <a href="index.html#glossario">Glossário</a>
     <a href="index.html#artigos">Artigos</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="index.html#glossario">Glossário</a>
   </nav>
 </header>
 
-<!-- ══ BREADCRUMB ══ -->
 <div class="breadcrumb">
   <a href="index.html">Dévico Mineral</a>
   <span class="breadcrumb-sep">◆</span>
   <span class="breadcrumb-current">OPALA DO PIAUÍ</span>
 </div>
 
-<!-- ══ CONTEÚDO DO ARTIGO ══ -->
 <div class="article-wrapper">
-  <!-- KICKER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Origens &amp; Minas &middot; 9 min de leitura</p>
 
-<!-- TÍTULO -->
-<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">Opala do Piauí</span><br/>e o que o mundo não sabe<br/>sobre o <em style="font-weight: 400; color: #7a0000;">Nordeste mineralógico.</em></h2>
+  <p class="article-kicker">Mineralogia &amp; Origens &middot; 10 min de leitura</p>
 
-<!-- LEAD -->
-<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">O Brasil tem um dos mais ricos patrimônios mineralógicos do planeta. E a maioria das pessoas não sabe. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala do Piauí</span> é um dos exemplos mais belos dessa riqueza silenciosa: um play-of-color único, uma geologia específica e um campo que não existe em nenhum outro lugar.</p>
+  <h1 class="article-title">A pedra que não precisou<br>cristalizar para organizar<br><em>um arco-íris.</em></h1>
 
-<!-- BYLINE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+  <p class="article-subtitle">SiO₂·nH₂O &nbsp;·&nbsp; Sílica hidratada &nbsp;·&nbsp; Mineralóide &nbsp;·&nbsp; Pedro II, Piauí, Brasil</p>
 
-<!-- FICHA MINERAL -->
-<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">SiO₂·nH₂O</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Estrutura</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Amorfa</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Teor de água</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">6–10%</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Origem</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Pedro II, Piauí</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Sacral &middot; Coronário</span>
-</div>
+  <p class="article-lead">Existe uma estranheza escondida dentro da <span class="mineral-name">OPALA</span>. Ela é colocada ao lado de quartzos, turmalinas, feldspatos e tantas outras gemas. É lapidada. Colecionada. Transformada em joia. Mas estruturalmente existe uma diferença fundamental: a <span class="mineral-name">OPALA</span> não possui a estrutura cristalina periódica convencional de um mineral cristalino como o <span class="mineral-name">QUARTZO</span>. Por isso, é normalmente classificada como mineralóide.</p>
 
-<!-- LINHA GRADIENTE -->
-<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+  <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
-<!-- ABERTURA COM DROP CAP -->
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">O</span> mundo fala de Opala australiana. De Opala etíope. De Opala mexicana. Raramente se fala da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala do Piauí</span>. E quando se fala, é com menos entusiasmo do que merece. Esse silêncio não é sobre qualidade. É sobre desconhecimento de um território mineralógico que está sendo descoberto, lentamente, por quem sabe olhar.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">Sessenta a oitenta milhões de anos atrás, o que hoje é o sertão do Piauí era o fundo de um oceano interior. A sílica dissolvida nessa água antiga migrou lentamente pelos arenitos sedimentares, preenchendo cavidades, depositando camada sobre camada, formando microesferas com precisão nanométrica. O município de Pedro II guarda esse arquivo geológico. E é de lá que vem cada <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala</span> que entra no Atelier.</p>
-
-<!-- SEÇÃO: O QUE FAZ UMA OPALA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O que faz uma Opala ser Opala</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala</span> é dióxido de silício hidratado. <span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">SiO₂·nH₂O</span>. É o único mineral gemológico amorfo. sem estrutura cristalina definida. O que ela tem é uma organização de microesferas de sílica com diâmetro de 150 a 300 nanômetros, empacotadas em camadas.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Quando essas microesferas estão organizadas em tamanho e arranjo uniformes, a luz que as atravessa sofre difração. Divide-se em comprimentos de onda específicos e cria o play-of-color: o jogo de cores que dança dentro da pedra conforme o ângulo. Não é pigmento. Não é reflexo. É física acontecendo no interior de um material formado há dezenas de milhões de anos.</p>
-
-<!-- SEÇÃO: NANÔMETROS -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O play-of-color: nanômetros que criam magia</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">O mecanismo é de precisão extraordinária. Microesferas de 150nm criam difração no comprimento de onda violeta. De 200nm: azul. De 250nm: verde. De 300nm: vermelho. O vermelho é o mais raro. por isso opalas com play-of-color vermelho intenso são as mais valorizadas no mercado gemológico mundial.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 32px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala do Piauí</span> é conhecida por seu play-of-color de base clara ou branca, com jogos cromáticos que variam do azul ao verde com flashes de amarelo e, nas peças mais raras, vermelho. Cada pedra é um espectro diferente. impossível de replicar em qualquer outra pedra do mundo.</p>
-
-<!-- PULLQUOTE -->
-<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"Você está olhando para algo que a geologia de um lugar específico criou uma única vez. O oceano que existia aqui há 60 milhões de anos deixou essa assinatura na rocha."</p>
-</div>
-
-<!-- SEÇÃO: CUIDADOS -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Cuidados específicos</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala</span> contém água em sua estrutura. entre 6 e 10% do seu peso. Isso a torna sensível a variações de umidade. Sol direto prolongado pode desidratar a pedra e causar craqueamento. Ambientes muito secos pedem atenção. Não mergulhar em água. a entrada em excesso pode comprometer a estrutura interna.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Perfumes e cremes podem penetrar pela estrutura porosa e alterar o play-of-color permanentemente. Aplicar antes de colocar a peça. Guardar em local com umidade adequada, longe de fontes de calor direto.</p>
-
-<!-- SEÇÃO: CAMPO ENERGÉTICO -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A leitura energética</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala do Piauí</span> trabalha primariamente nos chakras sacral e coronário. A dualidade criativa que o mineral expressa também em sua formação: nascida da deposição sedimentar. processo lento, paciente, acumulativo. mas criando fenômeno óptico que transcende a matéria. O play-of-color como luz pura emergindo do que parecia inerte.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">É o mineral do artista, do sensitivo, de quem está em processo criativo ativo. Não estabiliza. Flui. Não ancora. Expande. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala</span> amplifica o que já está em movimento. Para quem está construindo em silêncio, depositando camadas que o mundo ainda não vê. e acredita antes de ver o resultado.</p>
-
-<!-- PARA QUEM. BLOCO BORDÔ -->
-<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem está criando algo que ainda não sabe como vai ficar.<br/>Para quem acredita antes de ver."</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">A mesma paciência que o oceano teve<br/>depositando camada por camada por milhões de anos.<br/>Você também está fazendo isso.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Sacral &middot; Coronário</p>
-</div>
-
-<!-- SEÇÃO: ATELIER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ela no Atelier</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Cada <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Opala do Piauí</span> que entra numa peça passa por seleção rigorosa de play-of-color, translucidez e integridade estrutural. Buscamos pedras com espectro cromático vivo e base limpa.</p>
-
-<!-- PREPARAÇÃO RITUAL -->
-<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
-  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Um gesto de dedicação consciente que confia à peça o propósito de amplificação do que já está em movimento em quem a carrega.</p>
-</div>
-
-<!-- CTA · GABINETE MINERAL -->
-<div style="background: #faf6ef; border: 1px solid #b8860b; padding: 3px; margin-bottom: 0;">
-  <div style="border: 1px solid rgba(184,134,11,0.4); padding: 28px 24px; text-align: center;">
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0 0 14px 0;">Gabinete Mineral · Espécime nº 04</p>
-    <p style="font-family: 'Playfair Display',serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.14em; color: #1a0f0a; margin: 0 0 6px 0;">OPALA DO PIAUÍ</p>
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 10px; letter-spacing: 1px; color: #6b4226; margin: 0 0 18px 0;">SiO₂·nH₂O · Pedro II, Brasil</p>
-    <div style="width: 40px; height: 1px; background: #b8860b; margin: 0 auto 18px auto;"></div>
-    <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.7; color: #3d1a0a; margin: 0 0 22px 0;">"O sertão que guarda<br/>fogo de água dentro da pedra."</p>
-    <a href="https://eusounos.com/search/?q=opala" style="display: inline-block; font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #7a0000; border: 1px solid #7a0000; padding: 10px 22px; text-decoration: none;">Ver no Atelier →</a>
+  <div class="ficha-mineral">
+    <span class="ficha-label">Composição</span>
+    <span class="ficha-value">SiO₂·nH₂O</span>
+    <span class="ficha-label">Classificação</span>
+    <span class="ficha-value">Mineralóide · sílica hidratada</span>
+    <span class="ficha-label">Estrutura</span>
+    <span class="ficha-value">Não cristalina (ausência de periodicidade cristalina tridimensional)</span>
+    <span class="ficha-label">Fenômeno óptico</span>
+    <span class="ficha-value">Play-of-color (nas preciosas)</span>
+    <span class="ficha-label">Procedência</span>
+    <span class="ficha-value">Pedro II · Piauí · Brasil</span>
+    <span class="ficha-label">Indicação Geográfica</span>
+    <span class="ficha-value">Reconhecida no Brasil</span>
   </div>
-</div>
 
-<!-- ASSINATURA -->
-<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Opala do Piauí</span> é amplificar<br/>o que já está em movimento.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
-</div>
+  <div class="gradiente-linha"></div>
+
+  <!-- ABERTURA -->
+  <p class="body-p drop-cap">E justamente dentro dessa matéria não cristalina pode surgir uma organização tão precisa que a luz branca se separa em cores espectrais.</p>
+
+  <div class="lista-espectral">
+    <p>Vermelho.</p>
+    <p>Laranja.</p>
+    <p>Verde.</p>
+    <p>Azul.</p>
+    <p>Violeta.</p>
+  </div>
+
+  <p class="body-p">Não porque alguém colocou essas cores ali. Porque estruturas menores do que conseguimos enxergar aprenderam a organizar a passagem da luz.</p>
+
+  <p class="body-p">E no Brasil existe um lugar onde essa história adquiriu uma identidade própria: Pedro II, Piauí.</p>
+
+  <!-- SEÇÃO: ELA PARECE CONTER COR -->
+  <p class="section-label">Ela parece conter cor. Na verdade, está fazendo algo com a luz.</p>
+
+  <p class="body-p">O fenômeno mais desejado da opala preciosa recebe um nome: play-of-color. Para compreendê-lo precisamos abandonar por um instante aquilo que nossos olhos dizem.</p>
+
+  <p class="body-p">Quando vemos um flash vermelho numa <span class="mineral-name">OPALA</span>, parece intuitivo imaginar que existe alguma substância vermelha naquele ponto. Não necessariamente. A opala preciosa possui estruturas de sílica submicroscópicas suficientemente uniformes e ordenadas para interagir com a luz. A luz atravessa essa organização e sofre difração. Diferentes comprimentos de onda tornam-se visíveis em diferentes condições. A cor aparece como fenômeno.</p>
+
+  <p class="body-p">O GIA oferece uma escala maravilhosa para compreender o tamanho desse universo: esferas de sílica próximas de 0,1 micrômetro estão relacionadas ao violeta; próximas de 0,2 micrômetro, ao vermelho. Tamanhos intermediários produzem outras regiões do espectro.</p>
+
+  <div class="dado-box">
+    <p class="dado-kicker">Escala</p>
+    <p>0,2 micrômetro são 200 nanômetros.</p>
+    <p>Você jamais verá essas estruturas a olho nu. Mas pode segurar uma <span style="font-variant:small-caps;letter-spacing:0.08em;">OPALA</span> e assistir ao resultado delas.</p>
+  </div>
+
+  <!-- SEÇÃO: NEM TODA OPALA -->
+  <p class="section-label">Nem toda OPALA produz esse espetáculo</p>
+
+  <p class="body-p">Aqui encontramos uma distinção essencial. Opala preciosa apresenta play-of-color. Opala comum não. Ambas continuam sendo opala. Portanto, não basta existir sílica hidratada. Para que apareça aquele espetáculo espectral, a organização interna precisa apresentar as condições necessárias para interagir com a luz dessa maneira.</p>
+
+  <p class="body-p">Isso produz uma inversão fascinante: a <span class="mineral-name">OPALA</span> não possui uma rede cristalina periódica convencional como o <span class="mineral-name">QUARTZO</span>. Mas determinadas opalas conseguem desenvolver ordem em outra escala, através da organização de suas estruturas de sílica.</p>
+
+  <div class="pullquote">
+    <p>Uma matéria sem rede cristalina convencional pode esconder organização suficiente para decompor a luz. A diferença parece pequena. Mineralogicamente, muda tudo.</p>
+  </div>
+
+  <!-- SEÇÃO: EXISTE ÁGUA DENTRO DESSA HISTÓRIA -->
+  <p class="section-label">E existe água dentro dessa história</p>
+
+  <p class="body-p">A fórmula aproximada da <span class="mineral-name">OPALA</span> é SiO₂·nH₂O. Sílica hidratada. O teor de água é variável e pode chegar a valores consideráveis. O GIA registra que opalas podem conter até aproximadamente 20% de água.</p>
+
+  <p class="body-p">Isso não significa que a pedra esteja "viva". Também não significa que ela "respire". Essas são metáforas que já encontramos no universo dos cristais e que precisamos distinguir da mineralogia. Mas retirar a metáfora não empobrece a <span class="mineral-name">OPALA</span>. Porque sua relação com a água é real. Água participou de sua formação e permanece associada à sua estrutura. E essa presença tem consequências práticas.</p>
+
+  <p class="body-p">Opalas não devem ser submetidas a calor intenso ou condições extremamente secas, porque mudanças relacionadas à água podem contribuir para fissuras e danos em determinados materiais. Algumas variedades apresentam ainda hidrofanismo: são suficientemente porosas para absorver líquido, podendo mudar temporariamente de aparência e até aumentar de peso. Mas isso não deve ser generalizado para toda <span class="mineral-name">OPALA</span>. Hidrofana é uma propriedade de determinadas opalas, não uma definição da espécie inteira.</p>
+
+  <!-- SEÇÃO: PEDRO II -->
+  <p class="section-label">Pedro II</p>
+
+  <p class="body-p">Agora atravessamos o Atlântico imaginário criado pelo domínio australiano da palavra "opala" e chegamos ao Nordeste brasileiro. Pedro II, Piauí. Em 2024, Gems &amp; Gemology, publicação do GIA, voltou sua atenção à produção brasileira e descreveu Pedro II como a mais importante fonte de opala do Brasil.</p>
+
+  <p class="body-p">As ocorrências estão distribuídas por uma região de aproximadamente 20 quilômetros de diâmetro ao redor do município. Isso corrige uma afirmação que circula com frequência. Não devemos dizer: "Pedro II é o único depósito de opala gemológica do Brasil." Não é. Há ocorrências em vários estados brasileiros. O extraordinário não precisa do exagero: Pedro II abriga as reservas mais importantes e é a principal referência brasileira em opala preciosa.</p>
+
+  <!-- SEÇÃO: HOUVE UMA ERA DE OURO -->
+  <p class="section-label">Houve uma era de ouro da OPALA brasileira</p>
+
+  <p class="body-p">Segundo o levantamento publicado pelo GIA, garimpeiros locais situam as primeiras descobertas de opala preciosa na região no final da década de 1930. Depois veio uma explosão. Nas décadas de 1960 e 1970, período descrito como uma espécie de era de ouro da opala brasileira, mais de 30 operações de mineração estiveram ativas na região. No início dos anos 1980, mais de dois terços já haviam sido abandonadas. Hoje a extração permanece relativamente pequena e majoritariamente manual.</p>
+
+  <div class="bloco-escuro">
+    <p>A <span style="font-variant:small-caps;letter-spacing:0.08em;">OPALA DO PIAUÍ</span> não é apenas uma ocorrência geológica brasileira.</p>
+    <p>É também uma história de território. Garimpo. Trabalho. Ascensão. Declínio. Comunidade. E permanência.</p>
+  </div>
+
+  <!-- SEÇÃO: A OPALA APARECE ENTRE DUAS GEOLOGIAS -->
+  <p class="section-label">E a OPALA aparece entre duas geologias</p>
+
+  <p class="body-p">As fotografias e observações publicadas pelo GIA mostram opala de Pedro II ocorrendo de maneiras diferentes. Ela pode preencher veios nas rochas sedimentares. Mas também aparece como camadas finas associadas a diques intrusivos mais escuros. Isso é visualmente extraordinário porque podemos ver a <span class="mineral-name">OPALA</span> antes de ela virar aquela gema isolada que reconhecemos numa joia.</p>
+
+  <p class="body-p">A pedra existe dentro de uma história geológica maior. Uma faixa luminosa entre outras matérias. Uma precipitação de sílica ocupando espaços que existiam na rocha. A joia é o último capítulo. A geologia escreveu quase todo o livro antes de chegarmos.</p>
+
+  <!-- SEÇÃO: UMA HISTÓRIA ECONÔMICA DENTRO DOS FRAGMENTOS -->
+  <p class="section-label">Existe ainda uma história econômica dentro dos fragmentos</p>
+
+  <p class="body-p">Nem toda <span class="mineral-name">OPALA</span> extraída possui espessura ou qualidade adequada para se transformar numa gema individual de alto valor. Segundo o GIA, operadores locais permitem que moradores utilizem pequenos fragmentos provenientes dos rejeitos da mineração para produzir mosaicos. A venda desses trabalhos gera renda complementar para a comunidade.</p>
+
+  <p class="body-p">De repente, aquilo que poderia ser chamado apenas de "resto" ganha outra vida econômica e artesanal. E existe uma ironia especialmente pertinente ao Eu Sou Nós: o valor da matéria não termina necessariamente onde termina a lapidação tradicional. Um fragmento pequeno demais para determinada joia ainda pode participar de outra criação.</p>
+
+  <!-- SEÇÃO: UMA GEMA BRASILEIRA VENDIDA COMO AUSTRALIANA -->
+  <p class="section-label">Uma gema brasileira vendida como australiana</p>
+
+  <p class="body-p">E encontramos algo que toca diretamente o problema da procedência. Garimpeiros relataram ao GIA que <span class="mineral-name">OPALAS</span> brasileiras algumas vezes são comercializadas no mercado como australianas. Isso é extraordinariamente revelador. Durante décadas, "Austrália" adquiriu enorme valor de origem no mercado internacional da <span class="mineral-name">OPALA</span>. A qualidade do material brasileiro pode ser suficientemente alta para circular dentro desse universo, mas sua identidade geográfica acaba apagada.</p>
+
+  <p class="body-p">Pedro II respondeu a isso também institucionalmente. A <span class="mineral-name">OPALA</span> de Pedro II possui Indicação Geográfica brasileira, destinada justamente a reconhecer sua relação com o território e proteger sua identidade de origem.</p>
+
+  <div class="pullquote">
+    <p>Saber de onde a matéria veio também é uma maneira de impedir que sua história seja roubada.</p>
+  </div>
+
+  <!-- SEÇÃO: CADA MOVIMENTO PRODUZ OUTRA OPALA -->
+  <p class="section-label">Cada movimento produz outra OPALA</p>
+
+  <p class="body-p">Há algo particular em possuir uma opala preciosa. Você não termina de conhecê-la numa fotografia. O play-of-color depende da relação entre estrutura, iluminação e ângulo de observação. Uma mesma região pode apresentar cores diferentes conforme a gema é movimentada. Por isso, avaliar uma <span class="mineral-name">OPALA</span> envolve literalmente movê-la. Observar extensão do play-of-color. Intensidade. Quantidade de cores. Padrão. Transparência. Cor de fundo. Como o fenômeno responde em diferentes direções.</p>
+
+  <p class="body-p">Uma fotografia congela justamente aquilo que essa matéria faz de mais extraordinário: acontecer. Talvez por isso vídeos sejam tão importantes quando mostramos nossas <span class="mineral-name">OPALAS</span> no Atelier. Não é apenas marketing. É uma forma mais fiel de apresentar um fenômeno óptico dependente de movimento.</p>
+
+  <!-- DIVISOR -->
+  <hr class="divisor-camadas">
+
+  <!-- SEÇÃO: MATÉRIA & CAMPO -->
+  <p class="section-label gold">Matéria &amp; Campo</p>
+
+  <p class="body-p">Em diferentes sistemas contemporâneos de cristaloterapia, a <span class="mineral-name">OPALA</span> recebeu associações com criatividade, sensibilidade, expressão emocional e amplificação. Essas interpretações pertencem ao campo energético. Não são consequência demonstrada da água. Nem da difração. Nem da ausência de uma rede cristalina convencional.</p>
+
+  <p class="body-p">Mas a matéria oferece uma imagem que podemos contemplar sem transformá-la em prova. A <span class="mineral-name">OPALA</span> preciosa consegue produzir uma multiplicidade cromática extraordinária a partir de uma organização que permanece invisível. O que percebemos muda conforme ela se move. Uma cor desaparece. Outra ocupa seu lugar. Nenhuma delas precisa ser falsa porque não permanece.</p>
+
+  <div class="bloco-burgundy">
+    <p>No campo dévico, talvez exista uma pergunta aí:</p>
+    <p>por que exigimos permanência para reconhecer verdade?</p>
+    <p>Existem sentimentos que aparecem apenas em determinadas relações. Partes nossas que emergem sob certas condições. Desejos que só conseguimos nomear quando alguma coisa muda de posição.</p>
+    <p>A <span style="font-variant:small-caps;letter-spacing:0.08em;">OPALA</span> não demonstra nada disso. Mas oferece uma matéria extraordinária diante da qual pensar. Aquilo que muda quando você muda o ângulo não precisa ser ilusão. Às vezes é fenômeno.</p>
+  </div>
+
+  <!-- SEÇÃO: APRENDA A OLHAR -->
+  <p class="section-label">Aprenda a olhar uma OPALA</p>
+
+  <p class="body-p">Não pergunte primeiro: "quantas cores ela tem?" Movimente-a lentamente. Observe quanto da superfície apresenta play-of-color. Veja se os flashes são intensos ou discretos. Procure padrões. Observe a cor de fundo. Compare luzes diferentes. Veja se determinadas cores desaparecem e outras surgem conforme o ângulo.</p>
+
+  <p class="body-p">Em uma <span class="mineral-name">OPALA DO PIAUÍ</span> bruta, procure também aquilo que uma lapidação normalmente elimina: a relação entre opala e rocha hospedeira. Ali você não está vendo apenas uma gema antes de ser lapidada. Está vendo parte do contexto em que ela existia. E, para nós, isso importa. Porque nem toda matéria precisa perder sua geologia para adquirir valor.</p>
+
+  <!-- GLOSSÁRIO DÉVICO -->
+  <div class="glossario-box">
+    <p class="glossario-titulo">Glossário Dévico</p>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">OPALA</p>
+      <p class="glossario-def">Sílica hidratada, geralmente representada por SiO₂·nH₂O. Diferentemente de minerais cristalinos como o QUARTZO, não apresenta uma rede cristalina periódica convencional.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Mineralóide</p>
+      <p class="glossario-def">Substância natural semelhante a um mineral, mas que não satisfaz todos os critérios utilizados para minerais cristalinos. A OPALA é um exemplo clássico.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Play-of-color</p>
+      <p class="glossario-def">Fenômeno óptico da opala preciosa produzido pela interação e difração da luz em estruturas ordenadas de sílica em escala submicroscópica.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Opala preciosa</p>
+      <p class="glossario-def">Opala que apresenta play-of-color.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Opala comum</p>
+      <p class="glossario-def">Opala que não apresenta play-of-color.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Hidrofanismo</p>
+      <p class="glossario-def">Propriedade apresentada por determinadas opalas porosas capazes de absorver líquidos, produzindo alterações temporárias em características como aparência e peso.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Indicação Geográfica</p>
+      <p class="glossario-def">Reconhecimento que vincula determinado produto ou serviço a uma origem geográfica e às características ou reputação relacionadas àquele território. A OPALA de Pedro II possui reconhecimento de IG no Brasil.</p>
+    </div>
+  </div>
+
+  <!-- NO ATELIER -->
+  <p class="section-label">No Atelier</p>
+
+  <div class="ritual-box">
+    <p class="ritual-label">Como escolhemos · Como preparamos</p>
+    <p>A seleção de uma <span class="mineral-name">OPALA DO PIAUÍ</span> para o Atelier começa pela qualidade e distribuição do play-of-color. Observamos o comportamento da cor em diferentes ângulos de luz. Avaliamos a integridade aparente do exemplar. E consideramos como a forma natural da pedra pode ser integrada à criação sem esconder aquilo que a torna singular.</p>
+    <p>Fotografar uma opala preciosa honestamente é um desafio. A câmera captura um ângulo. A pedra existe em movimento. Quando possível, registramos em vídeo exatamente por isso: para que quem vai receber a peça possa ver como aquele material específico responde à luz antes de chegar às suas mãos.</p>
+    <p>A criação finalizada passa pelo processo ritual de ativação do Atelier, dentro da prática autoral do Eu Sou Nós. Um gesto consciente de relação entre matéria, intenção e pessoa.</p>
+  </div>
+
+  <!-- CTA -->
+  <div style="background: var(--ink); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 2px;">
+    <span style="font-family: 'IM Fell English',serif; font-style: italic; color: var(--cream); font-size: 1rem;">Ver peças com <span class="mineral-name" style="color:var(--gold-light);">OPALA DO PIAUÍ</span> disponíveis no Atelier →</span>
+    <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 8px 16px; text-decoration: none;" href="https://eusounos.com/search/?q=opala" target="_blank">Ver Peças</a>
+  </div>
+
+  <!-- ASSINATURA -->
+  <div class="assinatura">
+    <p class="ornamento">◆ ◆ ◆</p>
+    <p class="fecho"><span style="font-variant:small-caps;letter-spacing:0.08em;color:var(--gold-light);">A OPALA</span> não precisou cristalizar<br>para organizar um arco-íris.<br><br>E talvez existam coisas em nós<br>que também não precisem de uma forma definitiva<br>para ser reais.<br><br>Algumas verdades aparecem<br>quando o ângulo muda.</p>
+    <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+  </div>
+
 </div>
 
 <!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
 <div class="article-nav">
-  <a href="hematita.html" class="article-nav-link">← Hematita</a>
+  <a href="hematita.html" class="article-nav-link">← HEMATITA</a>
   <a href="index.html" class="article-nav-center">◆ Todos os artigos</a>
-  <a href="turmalina-negra.html" class="article-nav-link">Turmalina Negra →</a>
+  <a href="turmalina-negra.html" class="article-nav-link">TURMALINA NEGRA →</a>
 </div>
 
 <!-- ══ FOOTER ══ -->
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Dévico <span>Mineral</span></div>
-      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e história. Aqui, nenhum desses elementos é separado dos outros. Ciência e tradição habitam o mesmo registro."</p>
+      <div class="footer-brand">Eu Sou <span>Nós</span></div>
+      <p class="footer-brand-sub">Atelier Dévico · Dévico Mineral</p>
+      <p class="footer-manifesto">"Honrar o sagrado também exige honrar a verdade."</p>
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
-      <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
-      <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">A mina lendária do AMETRINO</a>
-      <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
-      <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
-      <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">A KUNZITA e a fragilidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR e o vulcão</a>
+      <a class="footer-link" href="labradorita.html">LABRADORITA</a>
+      <a class="footer-link" href="hematita.html">HEMATITA</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA</a>
+      <a class="footer-link" href="opala-piaui.html">OPALA DO PIAUÍ</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO</a>
+      <a class="footer-link" href="obsidiana-arco-iris.html">OBSIDIANA ARCO-ÍRIS</a>
+      <a class="footer-link" href="calcita-das-fadas.html">CALCITA DAS FADAS</a>
+      <a class="footer-link" href="prophecy-stone.html">PROPHECY STONE</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA</a>
+      <a class="footer-link" href="pirita.html">PIRITA</a>
+      <a class="footer-link" href="larimar.html">LARIMAR</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
-      <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://www.eusounos.com/produtos/" target="_blank">Peças Disponíveis</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
