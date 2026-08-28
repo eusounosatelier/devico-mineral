@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PROPHECY STONE: a pedra que preservou uma forma que já não existe mais · Dévico Mineral</title>
-<meta name="description" content="A PROPHECY STONE é um pseudomorfo: hematita e goethita que assumiram a forma externa de outro mineral. Uma substituição química registrada em rocha do Egito.">
+<title>PROPHECY STONE: ela conservou a forma de um mineral que já não existe ali · Dévico Mineral</title>
+<meta name="description" content="PROPHECY STONE é um nome comercial. Materiais assim comercializados são frequentemente descritos como pseudomorfos envolvendo óxidos de ferro após sulfetos. A matéria mudou. A forma permaneceu.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -71,6 +71,11 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
 .bloco-burgundy { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
 .bloco-burgundy p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
 .bloco-burgundy p:last-child { margin-bottom: 0; }
+.dado-box { background: var(--ink); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 0 0 36px 0; }
+.dado-box .dado-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.7); margin: 0 0 14px 0; }
+.dado-box p { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.8; color: var(--mist); margin: 0 0 8px 0; }
+.dado-box p:last-child { margin-bottom: 0; }
+.divisor-camadas { margin: 36px 0; border: none; border-top: 1px solid var(--cream-deep); }
 .para-quem { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
 .para-quem .para-quem-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0 0 14px 0; }
 .para-quem p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
@@ -85,6 +90,12 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
 .glossario-item:last-child { margin-bottom: 0; }
 .glossario-termo { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; }
 .glossario-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.75; color: var(--mist); }
+.gabinete-box { background: var(--ink); padding: 28px 32px; margin: 0 0 2px 0; }
+.gabinete-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.6); margin: 0 0 10px 0; }
+.gabinete-nome { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin: 0 0 4px 0; }
+.gabinete-formula { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 2px; color: var(--gold-light); margin: 0 0 18px 0; }
+.gabinete-frase { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1rem; line-height: 1.7; color: var(--mist); margin: 0 0 20px 0; border-top: 1px solid rgba(184,134,11,0.2); padding-top: 16px; }
+.gabinete-btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 10px 20px; text-decoration: none; }
 .assinatura { background: var(--ink); padding: 36px 40px; text-align: center; }
 .assinatura .ornamento { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0; }
 .assinatura .fecho { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: var(--cream); margin: 0 0 20px 0; }
@@ -133,7 +144,7 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
     </div>
   </div>
   <nav class="masthead-nav">
-    <a href="https://eusounos.com/produtos" target="_blank" class="destaque">Peças do Atelier</a>
+    <a href="https://www.eusounos.com/produtos/" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
@@ -152,117 +163,120 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
 
   <p class="article-kicker">Geologia &amp; Campo &middot; 8 min de leitura</p>
 
-  <h1 class="article-title">A pedra que preservou<br>uma forma que<br><em>já não existe mais.</em></h1>
+  <h1 class="article-title">Ela conservou a forma<br>de um mineral que<br><em>já não existe ali.</em></h1>
 
-  <p class="article-subtitle">Pseudomorfo &nbsp;·&nbsp; Hematita e goethita &nbsp;·&nbsp; Deserto Ocidental &nbsp;·&nbsp; Egito</p>
+  <p class="article-subtitle">Nome comercial &nbsp;·&nbsp; Material pseudomórfico &nbsp;·&nbsp; Deserto Ocidental · Egito</p>
 
-  <p class="article-lead">Por fora, a <span class="mineral-name">PROPHECY STONE</span> parece uma formação escura com superfície irregular, cheia de protuberâncias e reentrâncias. Por dentro, existe uma história química registrada em rocha: um mineral substituiu outro. A forma permaneceu. A composição não.</p>
+  <p class="article-lead">A aparência irregular da <span class="mineral-name">PROPHECY STONE</span> — suas saliências, reentrâncias, geometrias escuras — pode ser o registro de uma morfologia anterior. A matéria que construiu essa forma pode já não estar ali. O que permanece é a forma que ela deixou quando foi substituída.</p>
 
   <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
   <div class="ficha-mineral">
+    <span class="ficha-label">Nome comercial</span>
+    <span class="ficha-value">PROPHECY STONE</span>
     <span class="ficha-label">Natureza</span>
-    <span class="ficha-value">Pseudomorfo</span>
-    <span class="ficha-label">Composição atual</span>
-    <span class="ficha-value">Hematita (Fe₂O₃) e/ou goethita (FeO·OH)</span>
-    <span class="ficha-label">Forma preservada</span>
-    <span class="ficha-value">Marcassita ou pirita</span>
-    <span class="ficha-label">Origem</span>
+    <span class="ficha-value">Material pseudomórfico / agregado mineral</span>
+    <span class="ficha-label">Mineralogia</span>
+    <span class="ficha-value">Óxidos e oxihidróxidos de ferro após sulfetos de ferro, conforme exemplar e caracterização</span>
+    <span class="ficha-label">Procedência associada</span>
     <span class="ficha-value">Deserto Ocidental · Egito</span>
   </div>
 
   <div class="gradiente-linha"></div>
 
   <!-- ABERTURA -->
-  <p class="body-p drop-cap">O nome "Prophecy Stone" é comercial, não mineralógico. Mas a matéria que ele descreve é extraordinária por razões que independem completamente de qualquer nome. Para entender por que, precisamos de um conceito que está no coração desta pedra: pseudomorfo.</p>
+  <p class="body-p drop-cap"><span class="mineral-name">PROPHECY STONE</span> é um nome comercial contemporâneo, particularmente difundido no mercado metafísico. Não corresponde a uma espécie mineral com identidade própria na nomenclatura científica. Não existe uma fórmula química universal que defina tudo que é comercializado sob esse nome. A identificação mineralógica precisa de um exemplar específico requer caracterização adequada — não basta a etiqueta.</p>
 
-  <!-- SEÇÃO: O QUE É UM PSEUDOMORFO -->
-  <p class="section-label">O que é um pseudomorfo</p>
+  <p class="body-p">Materiais comercializados sob esse nome são frequentemente descritos como pseudomorfos: estruturas que preservam morfologias associadas a minerais anteriores, frequentemente sulfetos de ferro, em materiais hoje compostos predominantemente por óxidos e oxihidróxidos de ferro.</p>
 
-  <p class="body-p">Em mineralogia, um pseudomorfo é um mineral que ocupa a forma externa de outro mineral. A palavra vem do grego: pseudo, falso, e morphe, forma. A aparência exterior sugere um mineral. A composição química interior revela outro.</p>
+  <!-- SEÇÃO: O QUE É PSEUDOMORFISMO -->
+  <p class="section-label">O que é pseudomorfismo</p>
 
-  <p class="body-p">Como isso acontece? Existem diferentes mecanismos. O mais relevante aqui envolve substituição: os componentes de um mineral original são progressivamente substituídos pelos de um novo mineral, enquanto a estrutura externa é parcial ou totalmente preservada. O mineral anterior deixa de existir como tal. Mas deixa um molde.</p>
+  <p class="body-p">Pseudomorfismo é um fenômeno mineralógico em que um material preserva a morfologia externa associada a um mineral anterior, embora sua mineralogia ou composição tenha sido substituída ou transformada.</p>
+
+  <p class="body-p">No pseudomorfismo por substituição, o material mineral original pode sofrer transformação química e mineralógica e ser progressivamente substituído por outro material, enquanto sua morfologia externa permanece parcial ou amplamente preservada. O mineral anterior pode deixar de existir como tal. A forma registra sua presença anterior.</p>
 
   <div class="pullquote">
-    <p>A forma continua. A composição mudou. Aquilo que era permaneceu visível como contorno do que veio depois.</p>
+    <p>A forma pode sobreviver à matéria que originalmente a construiu.</p>
   </div>
 
-  <!-- SEÇÃO: A HISTÓRIA QUÍMICA DA PROPHECY STONE -->
-  <p class="section-label">A história química da PROPHECY STONE</p>
+  <p class="body-p">Você não está olhando apenas para aquilo que a pedra é. Está olhando também para aquilo que ela foi. Forma e composição podem contar tempos diferentes da mesma história.</p>
 
-  <p class="body-p">As <span class="mineral-name">PROPHECY STONES</span> são descritas na literatura especializada como pseudomorfos de hematita e/ou goethita após marcassita ou pirita. Isso significa que a forma que vemos, com suas características protuberâncias e superfície irregular, corresponde à estrutura externa que a marcassita ou pirita original possuía. Mas a composição atual é de óxido ou oxi-hidróxido de ferro.</p>
+  <!-- SEÇÃO: MARCASSITA E PIRITA -->
+  <p class="section-label">MARCASSITA e PIRITA: mesma composição, minerais diferentes</p>
 
-  <p class="body-p">Marcassita e pirita são sulfetos de ferro. São instáveis em determinadas condições ambientais, especialmente sob exposição prolongada a umidade e oxigênio. Quando essa instabilidade se manifesta, os sulfetos podem ser progressivamente alterados. Os produtos dessa transformação incluem óxidos e oxi-hidróxidos de ferro, entre eles hematita e goethita.</p>
+  <p class="body-p">Materiais comercializados como <span class="mineral-name">PROPHECY STONE</span> são frequentemente descritos como pseudomorfos envolvendo óxidos e oxihidróxidos de ferro após sulfetos de ferro, principalmente <span class="mineral-name">MARCASSITA</span>, havendo também referências a <span class="mineral-name">PIRITA</span>. Para compreender essa história, vale uma distinção que a mineralogia torna clara.</p>
+
+  <div class="dado-box">
+    <p class="dado-kicker">Dois minerais, uma composição</p>
+    <p><strong>MARCASSITA</strong> · FeS₂ · sistema ortorrômbico</p>
+    <p><strong>PIRITA</strong> · FeS₂ · sistema cúbico</p>
+    <p>Mesma composição química ideal. Minerais diferentes porque possuem estruturas cristalinas diferentes. Composição não é identidade mineral suficiente. Estrutura também importa.</p>
+  </div>
+
+  <p class="body-p"><span class="mineral-name">MARCASSITA</span> é conhecida por ser menos estável que a <span class="mineral-name">PIRITA</span> sob certas condições ambientais, especialmente quando exposta a umidade e oxigênio por períodos prolongados. Sulfetos de ferro podem sofrer alteração e oxidação, gerando produtos ricos em ferro, incluindo <span class="mineral-name">GOETHITA</span> e <span class="mineral-name">HEMATITA</span>. Esse processo pode ocorrer com preservação parcial da morfologia original — produzindo o que reconhecemos como pseudomorfo.</p>
+
+  <p class="body-p">Dito isso, a composição exata dos materiais comercializados como <span class="mineral-name">PROPHECY STONE</span> pode variar conforme o exemplar. Algumas descrições mencionam predominância de <span class="mineral-name">GOETHITA</span>, outras de <span class="mineral-name">HEMATITA</span>, outras de misturas. O termo <span class="mineral-name">LIMONITA</span> também aparece nas descrições — e merece uma nota.</p>
+
+  <!-- SEÇÃO: LIMONITA -->
+  <p class="section-label">Uma nota sobre LIMONITA</p>
+
+  <p class="body-p"><span class="mineral-name">LIMONITA</span> não é uma espécie mineral de fórmula fixa. É um termo utilizado para agregados e misturas naturais ricos em óxidos e oxihidróxidos hidratados de ferro. Quando aparece nas descrições de materiais como a <span class="mineral-name">PROPHECY STONE</span>, indica uma mistura de fases, não uma composição precisa.</p>
+
+  <!-- SEÇÃO: O DESERTO BRANCO -->
+  <p class="section-label">O Deserto Branco e os corpos escuros</p>
+
+  <p class="body-p">Os materiais comercializados como <span class="mineral-name">PROPHECY STONE</span> são associados ao Deserto Ocidental do Egito, especialmente à região do White Desert — o Deserto Branco — próximo ao oásis de Farafra. Essa região é conhecida por suas formações rochosas claras e por feições erosivas nas quais a ação do vento desempenha papel importante.</p>
+
+  <p class="body-p">Os espécimes conhecidos comercialmente como <span class="mineral-name">PROPHECY STONE</span> são associados à região do White Desert, próximo ao oásis de Farafra, e há exemplares documentados em associação com o Khoman Chalk. Seus tons escuros e formas irregulares criam um contraste visual marcante com a paisagem clara pela qual o Deserto Branco é conhecido. Esse contraste — matéria escura preservada em meio a uma paisagem clara — é parte do que torna esses materiais visualmente extraordinários.</p>
 
   <div class="bloco-escuro">
-    <p>Portanto, aquilo que foi ferro e enxofre tornou-se ferro e oxigênio.</p>
-    <p>A composição mudou. Mas a forma, de alguma maneira, permaneceu reconhecível o suficiente para que a história pudesse ser lida na rocha.</p>
+    <p>Não fabricamos aqui uma cronologia ou uma gênese química específica.</p>
+    <p>O que podemos dizer é que esse contraste existe, que esses materiais foram encontrados nessa paisagem e que sua morfologia preservada é o que os torna mineralogicamente interessantes.</p>
   </div>
 
-  <p class="body-p">As condições específicas em que esse processo ocorreu na região do Deserto Ocidental do Egito, incluindo temperatura, pressão, química do fluido e tempo geológico, determinaram o resultado que hoje seguramos nas mãos. Há algo extraordinário em perceber que aquilo que vemos é o registro de uma transformação, não o estado original da matéria.</p>
+  <!-- SEÇÃO: ORIGEM DO NOME -->
+  <p class="section-label">Sobre o nome "Prophecy Stone"</p>
 
-  <!-- SEÇÃO: O EGITO QUE POUCOS IMAGINAM -->
-  <p class="section-label">O Egito que poucos imaginam</p>
+  <p class="body-p"><span class="mineral-name">PROPHECY STONE</span> é um nome comercial contemporâneo. A origem histórica precisa do nome — quem o criou, quando, em que contexto — não está suficientemente documentada nas fontes confiáveis disponíveis. Não existe descobridor verificado, data estabelecida, tradição antiga documentada ou episódio profético que fundamente o nome.</p>
 
-  <p class="body-p">A procedência egípcia é parte indissociável dessa história. O Deserto Ocidental do Egito, também chamado de Deserto Líbio quando considerada sua extensão além das fronteiras egípcias, é uma região de geologia extraordinária. Sob sua superfície árida existem registros de paleolago, antigos sistemas aquáticos e condições ambientais que nada têm a ver com o deserto que existe hoje.</p>
+  <p class="body-p">O nome pertence ao vocabulário do mercado metafísico contemporâneo. Isso não diminui o material. Mas é importante saber o que o nome é e o que ele não é.</p>
 
-  <p class="body-p">É justamente nesse contexto geológico que determinados minerais sulfetados se formaram e, posteriormente, passaram pelos processos de transformação que produziram os pseudomorfos que chegam até nós. O deserto não é apenas o lugar onde a pedra foi encontrada. É parte integrante de sua história química.</p>
+  <!-- DIVISOR -->
+  <hr class="divisor-camadas">
 
-  <!-- SEÇÃO: O QUE O NOME "PROPHECY" NÃO SIGNIFICA -->
-  <p class="section-label">O que o nome "Prophecy" não significa</p>
+  <!-- SEÇÃO: MATÉRIA & CAMPO -->
+  <p class="section-label gold">Matéria &amp; Campo</p>
 
-  <p class="body-p">É importante ser direto aqui. O nome "Prophecy Stone" é uma denominação comercial. Não corresponde a nenhuma classificação mineralógica estabelecida. Não existe na nomenclatura da IMA (International Mineralogical Association) nem em qualquer catálogo gemológico científico reconhecido.</p>
+  <p class="body-p">Em práticas contemporâneas com minerais, materiais comercializados como <span class="mineral-name">PROPHECY STONE</span> são associados a percepção interior, meditação, visão ampliada, clareza e transformação. Essas associações pertencem ao campo metafísico e simbólico.</p>
 
-  <p class="body-p">Isso não invalida a pedra. Significa que o nome é uma camada interpretativa adicionada ao material, e não uma descrição de sua natureza. A natureza da pedra é: pseudomorfo de hematita e/ou goethita após marcassita ou pirita, proveniente do Deserto Ocidental do Egito.</p>
+  <p class="body-p">Pseudomorfismo não prova profecia. Óxidos e oxihidróxidos de ferro não demonstram clarividência. Transformação química não comprova transformação espiritual. A geologia não diz isso. Nós dizemos isso diante da geologia.</p>
 
-  <p class="body-p">Essa descrição já é suficientemente extraordinária. Não precisamos de "profecia" para que a matéria seja fascinante.</p>
-
-  <div class="pullquote">
-    <p>Uma pedra que preservou a forma de algo que já não existe mais dispensaria qualquer nome amplificado. A mineralogia já entregou algo raro.</p>
-  </div>
-
-  <!-- SEÇÃO: A LEITURA DÉVICA -->
-  <p class="section-label gold">A leitura energética</p>
-
-  <p class="body-p">Em práticas cristaloterápicas contemporâneas, a <span class="mineral-name">PROPHECY STONE</span> é associada a visão, percepção ampliada, acesso a camadas mais profundas de si mesmo e transformação. Essas associações pertencem ao campo espiritual e simbólico.</p>
-
-  <p class="body-p">A geologia não comprova profecia. A substituição química não demonstra capacidade de expansão da percepção. E hematita e goethita não são, por suas propriedades físicas, instrumentos de visão espiritual.</p>
-
-  <p class="body-p">Mas existe uma imagem disponível na própria matéria, e ela é extraordinariamente fértil para uma leitura humana. A <span class="mineral-name">PROPHECY STONE</span> é literalmente uma forma que sobreviveu à transformação da composição que a sustentava.</p>
+  <p class="body-p">Mas a matéria oferece uma imagem que pode ser habitada sem transformá-la em prova. Materiais pseudomórficos preservam a forma de algo que existiu antes. A matéria mudou. A forma permaneceu.</p>
 
   <div class="bloco-burgundy">
-    <p>Aquilo que você reconhece em si como forma, como padrão, como maneira de se mover no mundo, pode persistir mesmo quando a composição interior muda.</p>
-    <p>Não porque transformação seja superficial. Mas porque algumas formas têm profundidade suficiente para atravessar transformações sem se perder completamente.</p>
-    <p>E existe, nessa imagem, uma relação particular com processos de travessia. Com fases em que tudo parece estar mudando de composição enquanto você ainda não sabe qual forma vai emergir do outro lado.</p>
-  </div>
-
-  <!-- SEÇÃO: PERMANECER FORMA DURANTE A TRANSFORMAÇÃO -->
-  <p class="section-label">Permanecer forma durante a transformação</p>
-
-  <p class="body-p">Há momentos em que a sensação é de que não sobrou nada reconhecível. As referências anteriores deixaram de funcionar. O que sustentava certas estruturas não está mais disponível da mesma maneira. A composição interior mudou.</p>
-
-  <p class="body-p">A <span class="mineral-name">PROPHECY STONE</span> não afirma que isso é impossível de atravessar. Ela oferece uma imagem diferente: talvez exista algo que persiste mesmo quando a composição muda. Não como resistência à transformação. Mas como continuidade que a atravessa.</p>
-
-  <div class="pullquote">
-    <p>A matéria não ficou presa na forma antiga. Ela se transformou completamente. E a forma ficou.</p>
+    <p>É possível mudar profundamente de matéria sem perder imediatamente toda a forma que uma história anterior construiu.</p>
+    <p>Isso não é uma propriedade espiritual demonstrada pelo pseudomorfismo.</p>
+    <p>É uma relação que nós reconhecemos diante de sua matéria.</p>
+    <p>A geologia não diz isso. Nós dizemos isso diante da geologia.</p>
   </div>
 
   <!-- PARA QUEM -->
   <div class="para-quem">
     <p class="para-quem-label">◆ Para quem</p>
-    <p>Para quem está em um processo de transformação profunda e ainda não sabe qual forma vai emergir do outro lado.</p>
-    <p>Para quem sente que tudo mudou de composição mas ainda não consegue reconhecer o que permaneceu.</p>
-    <p>A matéria não promete que a forma vai permanecer intacta. Oferece apenas uma imagem: transformação e continuidade podem coexistir.</p>
+    <p>Para quem está atravessando uma transformação profunda e ainda carrega formas antigas enquanto a composição interior já não é a mesma.</p>
+    <p>Para quem já mudou mais do que consegue nomear, mas reconhece nos contornos de si algo que pertencia a uma história anterior.</p>
+    <p>Você não está olhando apenas para aquilo que a pedra é. Está olhando também para aquilo que ela foi.</p>
   </div>
 
   <!-- SEÇÃO: APRENDA A OLHAR -->
   <p class="section-label">Aprenda a olhar uma PROPHECY STONE</p>
 
-  <p class="body-p">Observe a superfície com atenção. As protuberâncias, as reentrâncias, os relevos irregulares: esses são registros da forma original do mineral precursor. Não existem dois exemplares iguais porque o processo de pseudomorfização preservou estruturas únicas em cada espécime.</p>
+  <p class="body-p">Observe a morfologia antes de qualquer outra coisa. As pontas, as saliências, as reentrâncias, as geometrias. Os padrões que aparecem na superfície. Pergunte-se: quem construiu essa geometria? A matéria que vemos hoje ou o mineral que existia antes dela?</p>
 
-  <p class="body-p">Observe também a textura e o brilho. A presença de hematita pode conferir brilho sub-metálico a certas regiões. A goethita pode produzir zonas mais opacas ou com tom levemente acastanhado. Essas diferenças internas são visíveis em muitos exemplares e contam algo sobre a história química específica daquele material.</p>
+  <p class="body-p">Forma e composição podem contar tempos diferentes da mesma história. O que vemos hoje é resultado de um processo que envolveu um material anterior — e esse material anterior pode ter deixado sua morfologia como herança.</p>
 
-  <p class="body-p">E lembre que o nome "Prophecy Stone" descreve uma narrativa cultural construída ao redor de um pseudomorfo. A pedra em si não tem profecia dentro. Tem uma transformação química registrada em rocha. E isso, por si só, é extraordinário.</p>
+  <p class="body-p">Não tente identificar visualmente se o que você segura é predominantemente <span class="mineral-name">HEMATITA</span> ou <span class="mineral-name">GOETHITA</span>. Cor e brilho não são diagnóstico mineralógico confiável. A identificação precisa das fases minerais presentes em um exemplar específico requer caracterização adequada — não pode ser feita apenas pela aparência ou pelo nome comercial.</p>
 
   <!-- GLOSSÁRIO DÉVICO -->
   <div class="glossario-box">
@@ -270,22 +284,32 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
 
     <div class="glossario-item">
       <p class="glossario-termo">Pseudomorfo</p>
-      <p class="glossario-def">Mineral que apresenta a forma externa de outro mineral. A composição química é de um mineral, mas a morfologia corresponde a outro.</p>
+      <p class="glossario-def">Material que preserva a morfologia externa associada a um mineral anterior, embora sua mineralogia ou composição tenha sido substituída ou transformada.</p>
     </div>
 
     <div class="glossario-item">
-      <p class="glossario-termo">Pseudomorfização</p>
-      <p class="glossario-def">Processo pelo qual um mineral original é substituído por outro, com preservação parcial ou total da forma externa original.</p>
+      <p class="glossario-termo">MARCASSITA</p>
+      <p class="glossario-def">FeS₂ · sistema ortorrômbico. Sulfeto de ferro polimórfico da PIRITA: mesma composição química ideal, estrutura cristalina diferente. Conhecida por menor estabilidade em certas condições ambientais.</p>
     </div>
 
     <div class="glossario-item">
-      <p class="glossario-termo">Goethita</p>
-      <p class="glossario-def">Oxi-hidróxido de ferro de fórmula FeO·OH. Mineral comum em zonas de alteração de depósitos ricos em ferro.</p>
+      <p class="glossario-termo">PIRITA</p>
+      <p class="glossario-def">FeS₂ · sistema cúbico. Sulfeto de ferro polimórfico da MARCASSITA: mesma composição química ideal, estrutura cristalina diferente.</p>
     </div>
 
     <div class="glossario-item">
-      <p class="glossario-termo">Marcassita</p>
-      <p class="glossario-def">Sulfeto de ferro de fórmula FeS₂, polimórfico da pirita. Menos estável que a pirita em condições ambientais, tende a se alterar com maior facilidade quando exposta a umidade e oxigênio.</p>
+      <p class="glossario-termo">GOETHITA</p>
+      <p class="glossario-def">FeO(OH). Oxihidróxido de ferro frequentemente encontrado em zonas de alteração de materiais ricos em ferro.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">HEMATITA</p>
+      <p class="glossario-def">Fe₂O₃. Óxido de ferro de sistema trigonal. Pode ocorrer como produto de alteração de sulfetos de ferro.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">LIMONITA</p>
+      <p class="glossario-def">Não é uma espécie mineral de fórmula única. Termo utilizado para agregados e misturas naturais ricos em óxidos e oxihidróxidos hidratados de ferro.</p>
     </div>
   </div>
 
@@ -294,21 +318,24 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
 
   <div class="ritual-box">
     <p class="ritual-label">Como escolhemos · Como preparamos</p>
-    <p>Na <span class="mineral-name">PROPHECY STONE</span>, o que observamos antes de qualquer outra coisa é a integridade do exemplar. A superfície irregular dessas pedras, com suas protuberâncias e reentrâncias características, é exatamente aquilo que precisamos preservar. Ela não é um defeito a ser corrigido. É o registro visível da transformação que tornou essa pedra aquilo que é.</p>
-    <p>Depois da criação manual, a obra permanece no Atelier para sua preparação dévica. Ela é colocada sobre nossa placa de cobre com o Cubo de Metatron, onde conduzimos nosso ritual de ativação com presença e intenção direcionadas à relação entre mineral, obra e propósito.</p>
-    <p>Na <span class="mineral-name">PROPHECY STONE</span>, direcionamos essa preparação à travessia consciente: permanecer reconhecível através da transformação. Não como resistência ao que muda, mas como continuidade que atravessa.</p>
+    <p>Na <span class="mineral-name">PROPHECY STONE</span>, observamos a morfologia de cada exemplar. As geometrias preservadas, a superfície irregular, as formas que existem antes de qualquer intenção humana. Esse é o ponto de partida: o que a matéria já é antes de chegarmos.</p>
+    <p>A criação finalizada passa pelo processo ritual de ativação sobre a geometria sagrada do Cubo de Metatron em placa de cobre, prática autoral do Eu Sou Nós. Na <span class="mineral-name">PROPHECY STONE</span>, a intenção direcionada à travessia consciente: permanecer reconhecível através da transformação. Não como resistência ao que muda, mas como continuidade que atravessa.</p>
+    <p>Esse processo pertence à dimensão ritual do Atelier. Não é uma consequência científica do pseudomorfismo. Não modifica as propriedades mineralógicas do material.</p>
   </div>
 
-  <!-- CTA -->
-  <div style="background: var(--ink); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 2px;">
-    <span style="font-family: 'IM Fell English',serif; font-style: italic; color: var(--cream); font-size: 1rem;">Ver peças com <span class="mineral-name" style="color:var(--gold-light);">PROPHECY STONE</span> disponíveis no Atelier →</span>
-    <a style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 8px 16px; text-decoration: none;" href="https://eusounos.com/search/?q=prophecy%20stone" target="_blank">Ver Peças</a>
+  <!-- GABINETE MINERAL / CTA -->
+  <div class="gabinete-box">
+    <p class="gabinete-kicker">Gabinete Mineral &nbsp;·&nbsp; PROPHECY STONE</p>
+    <p class="gabinete-nome">PROPHECY STONE</p>
+    <p class="gabinete-formula">Nome comercial &nbsp;·&nbsp; Material pseudomórfico &nbsp;·&nbsp; Deserto Ocidental · Egito</p>
+    <p class="gabinete-frase">A composição mudou. A forma ficou. Você não está olhando apenas para aquilo que a pedra é. Está olhando também para aquilo que ela foi.</p>
+    <a href="https://eusounos.com/search/?q=prophecy%20stone" target="_blank" class="gabinete-btn">Ver PROPHECY STONE no Atelier →</a>
   </div>
 
   <!-- ASSINATURA -->
   <div class="assinatura">
     <p class="ornamento">◆ ◆ ◆</p>
-    <p class="fecho">A composição mudou.<br>A forma ficou.<br><br>Talvez essa seja uma das imagens mais honestas<br>que a geologia oferece sobre travessia.<br><br>Você não precisa permanecer o mesmo para permanecer.<br>Precisa encontrar o que em você atravessa.<br><br>Isso não é profecia.<br>É o que a matéria fez durante milhões de anos<br>naquele deserto.</p>
+    <p class="fecho">A matéria mudou.<br>A forma ficou.<br><br>Talvez essa seja uma das imagens mais honestas<br>que a geologia oferece sobre travessia.<br><br>Você não precisa permanecer o mesmo para permanecer.<br>Precisa encontrar o que em você atravessa.<br><br>A geologia não diz isso.<br>Nós dizemos isso diante da geologia.</p>
     <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
   </div>
 
@@ -331,26 +358,25 @@ body::before { content: ''; position: fixed; inset: 0; background-image: url("da
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
-      <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">HEMATITA: o ferro que colore a Terra</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: matéria &amp; campo</a>
-      <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">AMETRINO · gema bicolor</a>
-      <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
-      <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
-      <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">KUNZITA: fragilidade e profundidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria sagrada</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR: nasceu do fogo</a>
+      <a class="footer-link" href="labradorita.html">LABRADORITA</a>
+      <a class="footer-link" href="hematita.html">HEMATITA</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA</a>
+      <a class="footer-link" href="opala-piaui.html">OPALA DO PIAUÍ</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO</a>
+      <a class="footer-link" href="obsidiana-arco-iris.html">OBSIDIANA ARCO-ÍRIS</a>
+      <a class="footer-link" href="calcita-das-fadas.html">CALCITA DAS FADAS</a>
+      <a class="footer-link" href="prophecy-stone.html">PROPHECY STONE</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA</a>
+      <a class="footer-link" href="pirita.html">PIRITA</a>
+      <a class="footer-link" href="larimar.html">LARIMAR</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
-      <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
-      <a class="footer-link" href="https://eusounos.com" target="_blank">Peça Personalizada</a>
+      <a class="footer-link" href="https://www.eusounos.com/produtos/" target="_blank">Peças Disponíveis</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
-      <a class="footer-link" href="https://tiktok.com/@eusounos" target="_blank">TikTok</a>
+      <a class="footer-link" href="https://tiktok.com/@eu.sou.nos" target="_blank">TikTok</a>
     </div>
   </div>
   <div class="footer-bottom">
