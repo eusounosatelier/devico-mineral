@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A HEMATITA é o mineral do sangue, da terra e do retorno ao próprio eixo · Dévico Mineral</title>
-<meta name="description" content="A Hematita é óxido de ferro, o mesmo elemento do sangue. Densidade 5,26 g/cm³. O corpo reconhece antes da mente nomear.">
+<title>HEMATITA: antes do aterramento, existe o peso · Dévico Mineral</title>
+<meta name="description" content="Fe₂O₃, traço vermelho, alta densidade e HEMATITA em Marte. Descubra como o ferro conecta geologia, pigmento, água antiga e presença.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -20,325 +20,119 @@
   --mist: #c9b99a;
   --white: #fefcf8;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
-/* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-}
-
-.masthead-top-bar {
-  background: var(--burgundy);
-  padding: 6px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(184,134,11,0.4);
-}
-
-.masthead-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245,234,216,0.6);
-}
-
-.masthead-tagline-top {
-  font-family: 'IM Fell English', serif;
-  font-size: 10px;
-  font-style: italic;
-  color: var(--gold-light);
-  letter-spacing: 1px;
-}
-
-.masthead-main {
-  padding: 20px 40px 0;
-  text-align: center;
-}
-
-.masthead-rule-top {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
-  margin-bottom: 14px;
-}
-
-.masthead-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 8px;
-}
-
-.masthead-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(28px, 5vw, 56px);
-  font-weight: 700;
-  color: var(--cream);
-  line-height: 0.95;
-  letter-spacing: -1px;
-  margin-bottom: 4px;
-  text-decoration: none;
-  display: block;
-}
-
+body { background: var(--paper); color: var(--ink); font-family: 'Libre Baskerville', Georgia, serif; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
+.masthead { background: var(--ink); padding: 0; }
+.masthead-top-bar { background: var(--burgundy); padding: 6px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(184,134,11,0.4); }
+.masthead-date { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,234,216,0.6); }
+.masthead-tagline-top { font-family: 'IM Fell English', serif; font-size: 10px; font-style: italic; color: var(--gold-light); letter-spacing: 1px; }
+.masthead-main { padding: 20px 40px 0; text-align: center; }
+.masthead-rule-top { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent); margin-bottom: 14px; }
+.masthead-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.masthead-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(28px, 5vw, 56px); font-weight: 700; color: var(--cream); line-height: 0.95; letter-spacing: -1px; margin-bottom: 4px; text-decoration: none; display: block; }
 .masthead-title span { color: var(--gold-light); }
-
-.masthead-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(11px, 1.5vw, 14px);
-  font-style: italic;
-  color: var(--mist);
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-.masthead-rule-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.rule-line {
-  flex: 1;
-  max-width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
+.masthead-subtitle { font-family: 'IM Fell English', serif; font-size: clamp(11px, 1.5vw, 14px); font-style: italic; color: var(--mist); letter-spacing: 2px; margin-bottom: 14px; }
+.masthead-rule-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.rule-line { flex: 1; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 .rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
 .rule-diamond { color: var(--gold); font-size: 10px; }
-
-.masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
-  padding: 10px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.masthead-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--mist);
-  text-decoration: none;
-  transition: color 0.2s;
-  padding: 3px 0;
-  border-bottom: 1px solid transparent;
-}
-
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-.masthead-nav a.active {
-  color: var(--gold);
-  border-bottom-color: rgba(184,134,11,0.4);
-}
-
-/* ══ BREADCRUMB ══ */
-.breadcrumb {
-  max-width: 800px;
-  margin: 32px auto 0;
-  padding: 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.breadcrumb a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.masthead-nav { background: transparent; border-top: 1px solid rgba(184,134,11,0.15); padding: 10px 40px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+.masthead-nav a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); text-decoration: none; transition: color 0.2s; padding: 3px 0; border-bottom: 1px solid transparent; }
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.masthead-nav a.destaque { color: var(--gold-light); border-bottom-color: rgba(184,134,11,0.4); }
+.breadcrumb { max-width: 800px; margin: 32px auto 0; padding: 0 40px; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); display: flex; align-items: center; gap: 10px; }
+.breadcrumb a { color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--burgundy); }
 .breadcrumb-sep { color: var(--gold); font-size: 8px; }
 .breadcrumb-current { color: var(--burgundy); }
-
-/* ══ ARTIGO ══ */
-.article-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 40px 60px;
-}
-
-/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
-.article-nav {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 40px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--cream-deep);
-  padding-top: 32px;
-  gap: 20px;
-}
-
-.article-nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.2s;
-}
-
+.article-wrapper { max-width: 800px; margin: 0 auto; padding: 40px 40px 60px; }
+.article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 18px 0; }
+.article-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(26px, 4vw, 46px); line-height: 1.08; color: var(--ink); margin: 0 0 10px 0; letter-spacing: -0.5px; }
+.article-title em { font-style: italic; color: var(--burgundy); font-weight: 400; }
+.article-subtitle { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); margin: 0 0 28px 0; }
+.article-lead { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid var(--gold); padding-left: 20px; margin: 0 0 10px 0; }
+.article-byline { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); margin: 0 0 32px 0; }
+.ficha-mineral { background: var(--ink); padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline; }
+.ficha-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7); }
+.ficha-value { font-family: monospace; font-size: 11px; font-weight: bold; color: var(--cream); margin-right: 12px; }
+.gradiente-linha { height: 2px; background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy)); margin-bottom: 36px; }
+.drop-cap::first-letter { font-family: 'Cinzel Decorative', serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: var(--burgundy); }
+.body-p { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0; }
+.mineral-name { font-variant: small-caps; letter-spacing: 0.08em; color: var(--burgundy); }
+.section-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid var(--cream-deep); }
+.section-label.gold { color: var(--gold); border-top-color: rgba(184,134,11,0.3); }
+.pullquote { background: var(--cream-dark); border-left: 4px solid var(--burgundy); padding: 22px 28px; margin: 0 0 36px 0; }
+.pullquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; line-height: 1.75; color: var(--ink); margin: 0; }
+.bloco-escuro { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-escuro p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 12px 0; }
+.bloco-escuro p:last-child { margin-bottom: 0; }
+.bloco-burgundy { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-burgundy p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.bloco-burgundy p:last-child { margin-bottom: 0; }
+.dado-box { background: var(--ink); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 0 0 36px 0; }
+.dado-box .dado-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.7); margin: 0 0 14px 0; }
+.dado-box p { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.8; color: var(--mist); margin: 0 0 8px 0; }
+.dado-box p:last-child { margin-bottom: 0; }
+.divisor-camadas { margin: 36px 0; border: none; border-top: 1px solid var(--cream-deep); }
+.ritual-box { border-left: 3px solid var(--gold); padding: 0 0 0 22px; margin: 0 0 44px 0; }
+.ritual-box .ritual-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 12px 0; }
+.ritual-box p { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0 0 14px 0; }
+.ritual-box p:last-child { margin-bottom: 0; }
+.glossario-box { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.glossario-box .glossario-titulo { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin: 0 0 20px 0; padding-bottom: 10px; border-bottom: 1px solid rgba(184,134,11,0.25); }
+.glossario-item { margin-bottom: 20px; }
+.glossario-item:last-child { margin-bottom: 0; }
+.glossario-termo { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; }
+.glossario-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.75; color: var(--mist); }
+.gabinete-box { background: var(--ink); padding: 28px 32px; margin: 0 0 2px 0; }
+.gabinete-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.6); margin: 0 0 10px 0; }
+.gabinete-nome { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin: 0 0 4px 0; }
+.gabinete-formula { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 2px; color: var(--gold-light); margin: 0 0 18px 0; }
+.gabinete-frase { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1rem; line-height: 1.7; color: var(--mist); margin: 0 0 20px 0; border-top: 1px solid rgba(184,134,11,0.2); padding-top: 16px; }
+.gabinete-btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 10px 20px; text-decoration: none; }
+.assinatura { background: var(--ink); padding: 36px 40px; text-align: center; }
+.assinatura .ornamento { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0; }
+.assinatura .fecho { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: var(--cream); margin: 0 0 20px 0; }
+.assinatura .marca { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); }
+.article-nav { max-width: 800px; margin: 0 auto; padding: 32px 40px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--cream-deep); gap: 20px; }
+.article-nav-link { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--burgundy); text-decoration: none; transition: color 0.2s; }
 .article-nav-link:hover { color: var(--gold); }
-
-.article-nav-center {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.article-nav-center { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .article-nav-center:hover { color: var(--burgundy); }
-
-/* ══ FOOTER ══ */
-.journal-footer {
-  background: var(--ink);
-  border-top: 3px solid var(--burgundy);
-  padding: 40px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-brand {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
+.journal-footer { background: var(--ink); border-top: 3px solid var(--burgundy); padding: 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
 .footer-brand span { color: var(--gold-light); }
-
-.footer-manifesto {
-  font-family: 'IM Fell English', serif;
-  font-size: 12px;
-  font-style: italic;
-  color: var(--mist);
-  line-height: 1.7;
-}
-
-.footer-col-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(184,134,11,0.3);
-}
-
-.footer-link {
-  display: block;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  color: var(--mist);
-  text-decoration: none;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-
+.footer-brand-sub { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 8px 0; }
+.footer-manifesto { font-family: 'IM Fell English', serif; font-size: 12px; font-style: italic; color: var(--mist); line-height: 1.7; }
+.footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184,134,11,0.3); }
+.footer-link { display: block; font-family: 'Libre Baskerville', serif; font-size: 12px; color: var(--mist); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 .footer-link:hover { color: var(--cream); }
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(184,134,11,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-copy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(180,160,130,0.5);
-}
-
-/* ══ RESPONSIVE ══ */
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(184,134,11,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(180,160,130,0.5); }
 @media (max-width: 700px) {
-  .masthead-top-bar,
-  .masthead-main,
-  .masthead-nav { padding-left: 20px; padding-right: 20px; }
-  .article-wrapper,
-  .breadcrumb,
-  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .masthead-top-bar, .masthead-main, .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper, .breadcrumb, .article-nav { padding-left: 20px; padding-right: 20px; }
   .footer-inner { grid-template-columns: 1fr; }
   .journal-footer { padding: 30px 20px; }
+  .drop-cap::first-letter { font-size: 2.2rem; }
 }
 </style>
 </head>
 <body>
 
-<!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
-    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
-    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+    <span class="masthead-date">EU SOU NÓS · Atelier Dévico · Dévico Mineral</span>
+    <em class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</em>
   </div>
   <div class="masthead-main">
     <div class="masthead-rule-top"></div>
-    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico</div>
     <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
-    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <p class="masthead-subtitle">O diário de mineralogia do Eu Sou Nós Atelier Dévico</p>
     <div class="masthead-rule-ornament">
       <div class="rule-line"></div>
       <span class="rule-diamond">◆</span>
@@ -346,126 +140,206 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
+    <a href="https://eusounos.com/produtos" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
-    <a href="index.html#campo">Campo Energético</a>
-    <a href="index.html#glossario">Glossário</a>
     <a href="index.html#artigos">Artigos</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="index.html#glossario">Glossário</a>
   </nav>
 </header>
 
-<!-- ══ BREADCRUMB ══ -->
 <div class="breadcrumb">
   <a href="index.html">Dévico Mineral</a>
   <span class="breadcrumb-sep">◆</span>
   <span class="breadcrumb-current">HEMATITA</span>
 </div>
 
-<!-- ══ CONTEÚDO DO ARTIGO ══ -->
 <div class="article-wrapper">
-  <!-- KICKER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Mineralogia Profunda &middot; 7 min de leitura</p>
 
-<!-- TÍTULO -->
-<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;"><span style="font-family: monospace; font-size: 0.6em; color: #7a0000; letter-spacing: 2px;">Fe₂O₃</span><br/>O mineral do sangue,<br/>da terra e do <em style="font-weight: 400; color: #7a0000;">retorno ao próprio eixo.</em></h2>
+  <p class="article-kicker">Mineralogia &amp; Matéria &middot; 9 min de leitura</p>
 
-<!-- LEAD -->
-<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">A mesma química que permite ao sangue carregar oxigênio está cristalizada nesta pedra. Isso não é coincidência poética. É o mecanismo pelo qual a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> faz o que faz no campo de quem a carrega.</p>
+  <h1 class="article-title">Antes de chamarmos de aterramento,<br>existe uma coisa que o corpo<br>realmente percebe: <em>peso.</em></h1>
 
-<!-- BYLINE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+  <p class="article-subtitle">Fe₂O₃ &nbsp;·&nbsp; Óxido de ferro &nbsp;·&nbsp; Sistema trigonal</p>
 
-<!-- FICHA MINERAL -->
-<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Fe₂O₃</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Sistema</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Trigonal</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Densidade</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">5,26 g/cm³</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Dureza</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">5,5–6,5 Mohs</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Raiz</span>
-</div>
+  <p class="article-lead">Pegue uma <span class="mineral-name">HEMATITA</span> na mão. Antes de qualquer significado atribuído a ela, antes de chakra, proteção ou aterramento, existe uma experiência que não depende de crença: ela pesa. Sua densidade é de aproximadamente 5,26 g/cm³. Para o tamanho que ocupa, há muita matéria ali.</p>
 
-<!-- LINHA GRADIENTE -->
-<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+  <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
-<!-- ABERTURA COM DROP CAP -->
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">H</span>á minerais que o corpo reconhece antes da mente nomear. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> é um deles. Quando você a segura, o peso chega primeiro. Uma densidade incomum para o tamanho. O corpo nota. Algo em você sabe, antes de qualquer palavra, que essa pedra tem substância.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">Isso não é sugestão. É física. A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> tem densidade de 5,26 g/cm³. Quase cinco vezes e meia a densidade da água. Esse peso é a primeira mensagem do mineral.</p>
-
-<!-- SEÇÃO: QUÍMICA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A química que conecta pedra e sangue</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> é óxido de ferro. <span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">Fe₂O₃</span>. O ferro é o mesmo elemento central da hemoglobina, a proteína que carrega oxigênio no sangue humano. Quando dizemos que a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> ancora o corpo físico e fortalece a vitalidade, não estamos falando de uma correspondência simbólica. Estamos falando de uma ressonância química com o elemento que literalmente sustenta a vida no corpo humano.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">O pó de <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> é vermelho. Por isso o nome vem do grego haima, "sangue". A superfície em brilho metálico é prateada. A alma do mineral é vermelha como ferro oxidado. Isso não escapou às culturas antigas que trabalharam com ela por milênios.</p>
-
-<!-- SEÇÃO: HISTÓRIA -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O que a história registra</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> é um dos minerais mais documentados na arqueologia. Guerreiros de diversas culturas a carregavam em batalha. Não por superstição, mas porque observaram seus efeitos no campo de quem a usa. Os egípcios a usavam em amuletos de proteção. Na Mesopotâmia, cilindros-selantes de <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> eram usados por sacerdotes e governantes como instrumentos de poder e autoridade.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Um dado que raramente aparece no mercado de cristais: o pigmento ocre vermelho mais antigo conhecido pela humanidade é a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> em pó. Pinturas rupestres de 73 mil anos encontradas na África do Sul usavam esse mesmo óxido de ferro. O mineral que você carrega foi o primeiro instrumento de expressão humana documentado.</p>
-
-<!-- PULLQUOTE -->
-<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"A <span style="font-variant: small-caps; letter-spacing: 0.08em;">Hematita</span> não acalma por sedação. Acalma por organização. Ela não silencia os pensamentos. Os estrutura em hierarquia de importância. Clareza, não silêncio."</p>
-</div>
-
-<!-- SEÇÃO: SISTEMA NERVOSO -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O sistema nervoso e a Hematita</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> não acalma por sedação. Esse ponto é importante. Ela não induz relaxamento nem adormece o sistema nervoso. O que ela faz é diferente e mais preciso: organização.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Para quem tem o sistema nervoso em dispersão. ansiedade que vem de excesso de estímulo e de atividade mental desorganizada. a <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> cria um efeito que quem a usa descreve consistentemente como "voltar para o corpo". O peso do mineral sobre a pele, a densidade no campo, a frequência de <span style="background: #1a0f0a; color: #b8860b; font-family: monospace; font-size: 11px; padding: 1px 5px;">Fe₂O₃</span> em contato com o campo bioelétrico humano. Algo se reorganiza.</p>
-
-<!-- SEÇÃO: BRASIL -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">O Brasil como maior produtor mundial</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Minas Gerais é o maior polo de extração de <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> de qualidade joalheira do mundo. A Serra dos Carajás, no Pará, tem as maiores reservas de minério de ferro do planeta. O Brasil não apenas conhece esse mineral. Tem uma relação geológica profunda com ele.</p>
-
-<!-- PARA QUEM. BLOCO BORDÔ -->
-<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem vive mais na cabeça do que nas pernas.<br/>Para quem dispersa com facilidade e perde o fio do que estava fazendo."</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">Para quem está encarnando um projeto. trazendo algo da ideia para a ação.<br/>Para terapeutas que precisam retornar ao próprio eixo após sessões.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Raiz</p>
-</div>
-
-<!-- SEÇÃO: ATELIER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como preparamos a Hematita no Atelier</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Cada peça com <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Hematita</span> passa por preparação ritual antes de qualquer fio ser dado. A intenção que direcionamos: retorno ao eixo, permanência no corpo físico, estrutura que possibilita movimento.</p>
-
-<!-- PREPARAÇÃO RITUAL -->
-<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
-  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Você não recebe apenas o mineral. Recebe o campo preparado com esse propósito. Um gesto de dedicação consciente que confia à peça o propósito de retorno ao eixo e presença no corpo físico.</p>
-</div>
-
-<!-- CTA · GABINETE MINERAL -->
-<div style="background: #faf6ef; border: 1px solid #b8860b; padding: 3px; margin-bottom: 0;">
-  <div style="border: 1px solid rgba(184,134,11,0.4); padding: 28px 24px; text-align: center;">
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0 0 14px 0;">Gabinete Mineral · Espécime nº 02</p>
-    <p style="font-family: 'Playfair Display',serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.14em; color: #1a0f0a; margin: 0 0 6px 0;">HEMATITA</p>
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 10px; letter-spacing: 1px; color: #6b4226; margin: 0 0 18px 0;">Fe₂O₃ · Sistema Trigonal</p>
-    <div style="width: 40px; height: 1px; background: #b8860b; margin: 0 auto 18px auto;"></div>
-    <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.7; color: #3d1a0a; margin: 0 0 22px 0;">"O mineral que a humanidade usa<br/>há 73 mil anos para voltar ao chão."</p>
-    <a href="https://eusounos.com/search/?q=hematita" style="display: inline-block; font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #7a0000; border: 1px solid #7a0000; padding: 10px 22px; text-decoration: none;">Ver no Atelier →</a>
+  <div class="ficha-mineral">
+    <span class="ficha-label">Fórmula</span>
+    <span class="ficha-value">Fe₂O₃</span>
+    <span class="ficha-label">Classe</span>
+    <span class="ficha-value">Óxido</span>
+    <span class="ficha-label">Sistema</span>
+    <span class="ficha-value">Trigonal</span>
+    <span class="ficha-label">Densidade</span>
+    <span class="ficha-value">aprox. 5,26 g/cm³</span>
+    <span class="ficha-label">Traço</span>
+    <span class="ficha-value">Vermelho a vermelho-acastanhado</span>
   </div>
-</div>
 
-<!-- ASSINATURA -->
-<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O da <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Hematita</span> é ser o peso<br/>que retorna ao próprio eixo.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
-</div>
+  <div class="gradiente-linha"></div>
+
+  <!-- ABERTURA -->
+  <p class="body-p drop-cap">É uma propriedade física simples, mas talvez seja uma das melhores maneiras de começar a conhecer esta pedra. Porque a <span class="mineral-name">HEMATITA</span> passou séculos cercada por associações com corpo, sangue, força e Terra. E existe uma história real por baixo de tudo isso. Ela começa com ferro.</p>
+
+  <!-- SEÇÃO: O VERMELHO ESCONDIDO DENTRO DO METAL -->
+  <p class="section-label">O vermelho escondido dentro do metal</p>
+
+  <p class="body-p">A <span class="mineral-name">HEMATITA</span> pode aparecer cinza-aço. Negra. Metálica. Prateada. Às vezes sua superfície parece não conter nenhum vermelho. Então fazemos um dos testes mineralógicos mais simples. Riscamos o mineral sobre uma superfície apropriada. O traço aparece vermelho a vermelho-acastanhado.</p>
+
+  <p class="body-p">Essa característica é tão marcante que está ligada ao próprio nome do mineral. <span class="mineral-name">HEMATITA</span> deriva de uma antiga referência grega ao sangue, relacionada à coloração vermelha de seu pó. A superfície pode enganar. O traço revela outra coisa.</p>
+
+  <div class="pullquote">
+    <p>Existe algo particularmente bonito nisso: uma pedra que parece metálica e escura carrega vermelho quando transformada em pó. Não é metáfora. É mineralogia.</p>
+  </div>
+
+  <!-- SEÇÃO: O FERRO DA PEDRA E O FERRO DO CORPO -->
+  <p class="section-label">O ferro da pedra e o ferro do corpo</p>
+
+  <p class="body-p">A fórmula da <span class="mineral-name">HEMATITA</span> é Fe₂O₃. Óxido de ferro. O ferro também é essencial para a vida humana e participa de estruturas biológicas fundamentais, entre elas a hemoglobina que transporta oxigênio pelo sangue.</p>
+
+  <p class="body-p">Mas é importante fazer uma distinção. Não temos <span class="mineral-name">HEMATITA</span> no sangue. O ferro presente na <span class="mineral-name">HEMATITA</span> e o ferro utilizado pelo organismo são o mesmo elemento químico, inserido em estruturas e ambientes químicos completamente diferentes. A relação é elemental. Não material.</p>
+
+  <div class="bloco-escuro">
+    <p>Ainda assim, é extraordinário perceber que um elemento capaz de participar da coloração de rochas e solos também ocupa um papel indispensável na bioquímica da vida.</p>
+    <p>O mesmo elemento. Histórias químicas radicalmente diferentes.</p>
+  </div>
+
+  <!-- SEÇÃO: A TERRA FICOU VERMELHA POR CAUSA DO FERRO -->
+  <p class="section-label">A Terra ficou vermelha por causa do ferro</p>
+
+  <p class="body-p">Grande parte dos tons vermelhos, ocres e ferruginosos que reconhecemos em paisagens, solos e rochas está associada a minerais de ferro. <span class="mineral-name">HEMATITA</span> participa dessa história. Mas ela não está sozinha. Outros óxidos e oxi-hidróxidos de ferro também contribuem para essas colorações.</p>
+
+  <p class="body-p">Por isso, dizer simplesmente que "todo vermelho da Terra é <span class="mineral-name">HEMATITA</span>" seria bonito demais para ser verdadeiro. A geologia é mais complexa. E mais interessante. Em determinados ambientes, ferro é mobilizado, oxidado, precipitado e incorporado a diferentes fases minerais. A <span class="mineral-name">HEMATITA</span> é uma delas.</p>
+
+  <!-- SEÇÃO: ANTES DE ESCREVERMOS PALAVRAS -->
+  <p class="section-label">Antes de escrevermos palavras, já escrevíamos com ferro</p>
+
+  <p class="body-p">Óxidos de ferro ricos em <span class="mineral-name">HEMATITA</span> participam de uma história muito antiga da produção humana de pigmentos. O vermelho mineral foi triturado, preparado e utilizado como ocre em diferentes contextos arqueológicos muito antes do desenvolvimento da escrita.</p>
+
+  <p class="body-p">Isso cria uma relação extraordinária entre matéria e expressão. Antes de transformarmos <span class="mineral-name">HEMATITA</span> em joia, coleção ou objeto de estudo, seres humanos já transformavam materiais ricos em óxidos de ferro em marca. Cor sobre superfície. Registro. Presença deixada para alguém que ainda não havia nascido.</p>
+
+  <div class="pullquote">
+    <p>Antes da escrita, a matéria já deixava marcas.</p>
+  </div>
+
+  <!-- SEÇÃO: E ENTÃO ENCONTRAMOS HEMATITA EM MARTE -->
+  <p class="section-label">E então encontramos HEMATITA em Marte</p>
+
+  <p class="body-p">Em 2004, o rover Opportunity, da NASA, pousou em Meridiani Planum. A região não havia sido escolhida ao acaso. Observações orbitais já haviam identificado concentrações de <span class="mineral-name">HEMATITA</span> cristalina na superfície. Na Terra, determinados depósitos desse mineral estão relacionados a processos envolvendo água. A NASA queria descobrir o que aquela <span class="mineral-name">HEMATITA</span> estava contando.</p>
+
+  <p class="body-p">E encontrou pequenas esferas espalhadas pelas rochas e pelo solo. Elas receberam um apelido inesperadamente delicado: <em>blueberries</em>. Mirtilos. Não eram frutas marcianas. Eram concreções ricas em <span class="mineral-name">HEMATITA</span>. As evidências reunidas pelo Opportunity ajudaram a demonstrar que Meridiani Planum havia sido alterada por água líquida no passado.</p>
+
+  <div class="bloco-escuro">
+    <p>Durante milênios, seres humanos utilizaram materiais ricos em <span style="font-variant:small-caps;letter-spacing:0.08em;">HEMATITA</span> para deixar marcas na Terra.</p>
+    <p>Milhares de anos depois, procuramos <span style="font-variant:small-caps;letter-spacing:0.08em;">HEMATITA</span> em outro planeta para tentar ler as marcas que a água deixou ali.</p>
+    <p>A mesma espécie mineral aparece nos dois extremos da história: uma matéria com a qual deixamos registros e uma matéria que aprendemos a ler como registro.</p>
+  </div>
+
+  <!-- SEÇÃO: NÃO É SIMPLESMENTE A PEDRA MAGNÉTICA -->
+  <p class="section-label">Não: HEMATITA não é simplesmente "a pedra magnética"</p>
+
+  <p class="body-p">Existe uma confusão frequente no mercado ornamental. <span class="mineral-name">HEMATITA</span> pura não apresenta a forte atração por um ímã comum que muitas pessoas esperam de uma "pedra de ferro". Quando um material vendido como <span class="mineral-name">HEMATITA</span> responde intensamente ao magnetismo, podem existir outras explicações, incluindo presença de <span class="mineral-name">MAGNETITA</span>, misturas mineralógicas ou materiais comerciais que não correspondem à <span class="mineral-name">HEMATITA</span> natural que o nome sugere.</p>
+
+  <p class="body-p">Isso é especialmente importante em contas e pulseiras vendidas como "hematita magnética". Magnetismo forte não deve ser usado como confirmação de que uma peça é <span class="mineral-name">HEMATITA</span> natural.</p>
+
+  <!-- DIVISOR -->
+  <hr class="divisor-camadas">
+
+  <!-- SEÇÃO: MATÉRIA & CAMPO -->
+  <p class="section-label gold">Matéria &amp; Campo</p>
+
+  <p class="body-p">Em práticas contemporâneas com minerais, a <span class="mineral-name">HEMATITA</span> é frequentemente associada a aterramento, presença, estabilidade, proteção e ao chakra raiz. Essas associações pertencem ao campo espiritual e simbólico.</p>
+
+  <p class="body-p">Sua densidade não demonstra aterramento energético. O ferro de sua composição não prova fortalecimento do sangue. Fe₂O₃ em contato com o corpo não estabelece, por si, qualquer mecanismo conhecido de reorganização do sistema nervoso ou do chamado campo bioelétrico humano. A mineralogia não precisa provar a experiência espiritual para que possamos falar das duas com honestidade.</p>
+
+  <p class="body-p">Na leitura dévica do Atelier, a <span class="mineral-name">HEMATITA</span> permanece profundamente relacionada à presença e ao retorno ao corpo. Mas talvez possamos compreender essa relação de outra maneira. Antes de qualquer interpretação energética, ela oferece uma experiência material imediata: peso.</p>
+
+  <p class="body-p">Há momentos em que passamos tempo demais vivendo alguns centímetros à frente de nós mesmos. No que pode acontecer. No que precisamos resolver. Na conversa que ainda não ocorreu. No cenário que criamos antes da realidade chegar. E existem momentos em que não precisamos de mais expansão. Precisamos voltar. Para o corpo. Para o lugar. Para aquilo que existe agora.</p>
+
+  <div class="bloco-burgundy">
+    <p>A <span style="font-variant:small-caps;letter-spacing:0.08em;">HEMATITA</span> não prova que consegue fazer isso por nós.</p>
+    <p>Ela oferece uma matéria diante da qual lembrar do peso de estar aqui.</p>
+  </div>
+
+  <!-- SEÇÃO: NEM TUDO QUE PESA NOS AFUNDA -->
+  <p class="section-label">Nem tudo que pesa nos afunda</p>
+
+  <p class="body-p">Peso adquiriu uma reputação estranha. Queremos nos sentir leves. Livres. Sem carga. Mas existe um peso que não oprime. O peso do corpo sobre o chão. O peso de uma decisão finalmente assumida. O peso de estar presente o suficiente para não fugir daquilo que precisa ser vivido.</p>
+
+  <div class="pullquote">
+    <p>A matéria da HEMATITA permite uma pergunta: e se algumas coisas não precisarem ficar mais leves? E se precisarem apenas encontrar onde repousar?</p>
+  </div>
+
+  <p class="body-p">Não é uma conclusão da mineralogia. É uma leitura humana diante de uma pedra cuja densidade pode ser sentida antes mesmo de conhecermos seu nome.</p>
+
+  <!-- SEÇÃO: APRENDA A OLHAR -->
+  <p class="section-label">Aprenda a olhar uma HEMATITA</p>
+
+  <p class="body-p">Não procure apenas brilho metálico. Observe a densidade. Pegue um exemplar de tamanho semelhante a outro mineral e compare o peso na mão. Veja se a superfície é metálica, submetálica ou terrosa. Procure regiões vermelhas ou castanhas.</p>
+
+  <p class="body-p">Se estiver diante de um espécime apropriado e o teste puder ser realizado sem danificá-lo, o traço vermelho-acastanhado é uma característica mineralógica particularmente importante. E não confunda aparência com identidade. Uma <span class="mineral-name">HEMATITA</span> pode parecer quase negra. O pó conta outra história.</p>
+
+  <p class="body-p">Também não utilize magnetismo forte como prova de autenticidade. <span class="mineral-name">HEMATITA</span> natural e materiais vendidos comercialmente como "hematita magnética" não são necessariamente a mesma coisa.</p>
+
+  <!-- GLOSSÁRIO DÉVICO -->
+  <div class="glossario-box">
+    <p class="glossario-titulo">Glossário Dévico</p>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">HEMATITA</p>
+      <p class="glossario-def">Espécie mineral composta por óxido de ferro, Fe₂O₃, pertencente ao sistema cristalino trigonal.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Traço</p>
+      <p class="glossario-def">Cor apresentada pelo pó de um mineral quando produzido sobre uma superfície apropriada. Na HEMATITA, é caracteristicamente vermelho a vermelho-acastanhado.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Densidade</p>
+      <p class="glossario-def">Relação entre massa e volume. A HEMATITA possui densidade elevada, em torno de 5,26 g/cm³.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Óxido de Ferro</p>
+      <p class="glossario-def">Composto formado por ferro e oxigênio. HEMATITA é Fe₂O₃. Existem outros óxidos e oxi-hidróxidos de ferro com estruturas e propriedades diferentes.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Concreção</p>
+      <p class="glossario-def">Massa mineral formada por precipitação e cimentação em torno de um núcleo ou dentro de sedimentos. As chamadas "blueberries" observadas em Marte incluem concreções ricas em HEMATITA.</p>
+    </div>
+  </div>
+
+  <!-- NO ATELIER -->
+  <p class="section-label">No Atelier</p>
+
+  <div class="ritual-box">
+    <p class="ritual-label">Como trabalhamos · Como preparamos</p>
+    <p>Trabalhamos com <span class="mineral-name">HEMATITA</span> observando primeiro aquilo que pertence à própria matéria: forma, brilho, densidade, textura e particularidades de cada exemplar. A criação artesanal não precisa apagar essas características para transformá-la em joia.</p>
+    <p>Depois de finalizada, cada criação passa pelo processo ritual de ativação sobre a geometria sagrada do Cubo de Metatron em placa de cobre, prática autoral do Eu Sou Nós Atelier Dévico. Na dimensão ritual do Atelier, a intenção associada à <span class="mineral-name">HEMATITA</span> pode ser direcionada à presença, aterramento e sustentação. Essa prática pertence ao campo espiritual do Atelier. Ela não modifica a composição Fe₂O₃ nem constitui uma propriedade mineralógica da <span class="mineral-name">HEMATITA</span>.</p>
+  </div>
+
+  <!-- GABINETE MINERAL / CTA -->
+  <div class="gabinete-box">
+    <p class="gabinete-kicker">Gabinete Mineral &nbsp;·&nbsp; HEMATITA</p>
+    <p class="gabinete-nome">HEMATITA</p>
+    <p class="gabinete-formula">Fe₂O₃ &nbsp;·&nbsp; Óxido de ferro</p>
+    <p class="gabinete-frase">Antes de atribuirmos aterramento à HEMATITA, existe uma coisa que o corpo realmente percebe: peso.</p>
+    <a href="https://eusounos.com/search/?q=hematita" target="_blank" class="gabinete-btn">Ver HEMATITA no Atelier →</a>
+  </div>
+
+  <!-- ASSINATURA -->
+  <div class="assinatura">
+    <p class="ornamento">◆ ◆ ◆</p>
+    <p class="fecho">Antes de atribuirmos aterramento à <span style="font-variant:small-caps;letter-spacing:0.08em;color:var(--gold-light);">HEMATITA</span>,<br>existe uma coisa que o corpo realmente percebe: peso.<br><br>Talvez presença não seja permanecer imóvel.<br>Talvez seja conseguir ocupar por inteiro o lugar onde já estamos.<br><br>E poucas pedras tornam a matéria tão impossível de ignorar.</p>
+    <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+  </div>
+
 </div>
 
 <!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
@@ -479,26 +353,27 @@ body::before {
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Dévico <span>Mineral</span></div>
-      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e história. Aqui, nenhum desses elementos é separado dos outros. Ciência e tradição habitam o mesmo registro."</p>
+      <div class="footer-brand">Eu Sou <span>Nós</span></div>
+      <p class="footer-brand-sub">Atelier Dévico · Dévico Mineral</p>
+      <p class="footer-manifesto">"Honrar o sagrado também exige honrar a verdade."</p>
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
-      <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
-      <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">A mina lendária do AMETRINO</a>
-      <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
-      <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
-      <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">A KUNZITA e a fragilidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR e o vulcão</a>
+      <a class="footer-link" href="labradorita.html">LABRADORITA</a>
+      <a class="footer-link" href="hematita.html">HEMATITA</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA</a>
+      <a class="footer-link" href="opala-piaui.html">OPALA DO PIAUÍ</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO</a>
+      <a class="footer-link" href="obsidiana-arco-iris.html">OBSIDIANA ARCO-ÍRIS</a>
+      <a class="footer-link" href="calcita-das-fadas.html">CALCITA DAS FADAS</a>
+      <a class="footer-link" href="prophecy-stone.html">PROPHECY STONE</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA</a>
+      <a class="footer-link" href="pirita.html">PIRITA</a>
+      <a class="footer-link" href="larimar.html">LARIMAR</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
-      <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://www.eusounos.com/produtos/" target="_blank">Peças Disponíveis</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
