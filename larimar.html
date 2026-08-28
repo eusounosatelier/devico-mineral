@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O LARIMAR: nasceu do fogo vulcânico. Parece o mar. · Dévico Mineral</title>
-<meta name="description" content="A pectolita existe no mundo todo, sempre branca. Na República Dominicana, o cobre substituiu o cálcio e criou o azul. Uma única vez. Um único lugar.">
+<title>LARIMAR: nasceu numa história vulcânica. Parece o mar. · Dévico Mineral</title>
+<meta name="description" content="O LARIMAR é uma pectolita azul da República Dominicana formada em rochas vulcânicas alteradas. Descubra a geologia por trás de sua cor e padrões.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -20,325 +20,123 @@
   --mist: #c9b99a;
   --white: #fefcf8;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.4;
-}
-
-/* ══ MASTHEAD ══ */
-.masthead {
-  background: var(--ink);
-  padding: 0;
-}
-
-.masthead-top-bar {
-  background: var(--burgundy);
-  padding: 6px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(184,134,11,0.4);
-}
-
-.masthead-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(245,234,216,0.6);
-}
-
-.masthead-tagline-top {
-  font-family: 'IM Fell English', serif;
-  font-size: 10px;
-  font-style: italic;
-  color: var(--gold-light);
-  letter-spacing: 1px;
-}
-
-.masthead-main {
-  padding: 20px 40px 0;
-  text-align: center;
-}
-
-.masthead-rule-top {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent);
-  margin-bottom: 14px;
-}
-
-.masthead-kicker {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 8px;
-}
-
-.masthead-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(28px, 5vw, 56px);
-  font-weight: 700;
-  color: var(--cream);
-  line-height: 0.95;
-  letter-spacing: -1px;
-  margin-bottom: 4px;
-  text-decoration: none;
-  display: block;
-}
-
+body { background: var(--paper); color: var(--ink); font-family: 'Libre Baskerville', Georgia, serif; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 1000; opacity: 0.4; }
+.masthead { background: var(--ink); padding: 0; }
+.masthead-top-bar { background: var(--burgundy); padding: 6px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(184,134,11,0.4); }
+.masthead-date { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,234,216,0.6); }
+.masthead-tagline-top { font-family: 'IM Fell English', serif; font-size: 10px; font-style: italic; color: var(--gold-light); letter-spacing: 1px; }
+.masthead-main { padding: 20px 40px 0; text-align: center; }
+.masthead-rule-top { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold), transparent); margin-bottom: 14px; }
+.masthead-kicker { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.masthead-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(28px, 5vw, 56px); font-weight: 700; color: var(--cream); line-height: 0.95; letter-spacing: -1px; margin-bottom: 4px; text-decoration: none; display: block; }
 .masthead-title span { color: var(--gold-light); }
-
-.masthead-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(11px, 1.5vw, 14px);
-  font-style: italic;
-  color: var(--mist);
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-.masthead-rule-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.rule-line {
-  flex: 1;
-  max-width: 200px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
+.masthead-subtitle { font-family: 'IM Fell English', serif; font-size: clamp(11px, 1.5vw, 14px); font-style: italic; color: var(--mist); letter-spacing: 2px; margin-bottom: 14px; }
+.masthead-rule-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.rule-line { flex: 1; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 .rule-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
 .rule-diamond { color: var(--gold); font-size: 10px; }
-
-.masthead-nav {
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(184,134,11,0.3);
-  padding: 10px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.masthead-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--mist);
-  text-decoration: none;
-  transition: color 0.2s;
-  padding: 3px 0;
-  border-bottom: 1px solid transparent;
-}
-
-.masthead-nav a:hover {
-  color: var(--gold-light);
-  border-bottom-color: var(--gold);
-}
-
-.masthead-nav a.active {
-  color: var(--gold);
-  border-bottom-color: rgba(184,134,11,0.4);
-}
-
-/* ══ BREADCRUMB ══ */
-.breadcrumb {
-  max-width: 800px;
-  margin: 32px auto 0;
-  padding: 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.breadcrumb a {
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.masthead-nav { background: transparent; border-top: 1px solid rgba(184,134,11,0.15); padding: 10px 40px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+.masthead-nav a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); text-decoration: none; transition: color 0.2s; padding: 3px 0; border-bottom: 1px solid transparent; }
+.masthead-nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold); }
+.masthead-nav a.destaque { color: var(--gold-light); border-bottom-color: rgba(184,134,11,0.4); }
+.breadcrumb { max-width: 800px; margin: 32px auto 0; padding: 0 40px; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); display: flex; align-items: center; gap: 10px; }
+.breadcrumb a { color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .breadcrumb a:hover { color: var(--burgundy); }
 .breadcrumb-sep { color: var(--gold); font-size: 8px; }
 .breadcrumb-current { color: var(--burgundy); }
-
-/* ══ ARTIGO ══ */
-.article-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 40px 60px;
-}
-
-/* ══ NAVEGAÇÃO ENTRE ARTIGOS ══ */
-.article-nav {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 40px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--cream-deep);
-  padding-top: 32px;
-  gap: 20px;
-}
-
-.article-nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--burgundy);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.2s;
-}
-
+.article-wrapper { max-width: 800px; margin: 0 auto; padding: 40px 40px 60px; }
+.article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 18px 0; }
+.article-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(26px, 4vw, 46px); line-height: 1.08; color: var(--ink); margin: 0 0 10px 0; letter-spacing: -0.5px; }
+.article-title em { font-style: italic; color: var(--burgundy); font-weight: 400; }
+.article-subtitle { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); margin: 0 0 28px 0; }
+.article-lead { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid var(--gold); padding-left: 20px; margin: 0 0 10px 0; }
+.article-byline { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--mist); margin: 0 0 32px 0; }
+.ficha-mineral { background: var(--ink); padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline; }
+.ficha-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7); }
+.ficha-value { font-family: monospace; font-size: 11px; font-weight: bold; color: var(--cream); margin-right: 12px; }
+.gradiente-linha { height: 2px; background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy)); margin-bottom: 36px; }
+.drop-cap::first-letter { font-family: 'Cinzel Decorative', serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: var(--burgundy); }
+.body-p { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0; }
+.mineral-name { font-variant: small-caps; letter-spacing: 0.08em; color: var(--burgundy); }
+.section-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--burgundy); margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid var(--cream-deep); }
+.section-label.gold { color: var(--gold); border-top-color: rgba(184,134,11,0.3); }
+.pullquote { background: var(--cream-dark); border-left: 4px solid var(--burgundy); padding: 22px 28px; margin: 0 0 36px 0; }
+.pullquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; line-height: 1.75; color: var(--ink); margin: 0; }
+.bloco-escuro { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-escuro p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 12px 0; }
+.bloco-escuro p:last-child { margin-bottom: 0; }
+.bloco-burgundy { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.bloco-burgundy p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.bloco-burgundy p:last-child { margin-bottom: 0; }
+.dado-box { background: var(--ink); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 0 0 36px 0; }
+.dado-box .dado-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.7); margin: 0 0 14px 0; }
+.dado-box p { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.8; color: var(--mist); margin: 0 0 8px 0; }
+.dado-box p:last-child { margin-bottom: 0; }
+.divisor-camadas { margin: 36px 0; border: none; border-top: 1px solid var(--cream-deep); }
+.para-quem { background: var(--burgundy); padding: 28px 32px; margin: 0 0 36px 0; }
+.para-quem .para-quem-label { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0 0 14px 0; }
+.para-quem p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.8; color: var(--cream); margin: 0 0 10px 0; }
+.para-quem p:last-child { margin-bottom: 0; }
+.ritual-box { border-left: 3px solid var(--gold); padding: 0 0 0 22px; margin: 0 0 44px 0; }
+.ritual-box .ritual-label { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 12px 0; }
+.ritual-box p { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0 0 14px 0; }
+.ritual-box p:last-child { margin-bottom: 0; }
+.glossario-box { background: var(--ink); padding: 28px 32px; margin: 0 0 36px 0; }
+.glossario-box .glossario-titulo { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin: 0 0 20px 0; padding-bottom: 10px; border-bottom: 1px solid rgba(184,134,11,0.25); }
+.glossario-item { margin-bottom: 20px; }
+.glossario-item:last-child { margin-bottom: 0; }
+.glossario-termo { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; }
+.glossario-def { font-family: 'Libre Baskerville', serif; font-size: 12px; line-height: 1.75; color: var(--mist); }
+.gabinete-box { background: var(--ink); padding: 28px 32px; margin: 0 0 2px 0; }
+.gabinete-kicker { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: rgba(184,134,11,0.6); margin: 0 0 10px 0; }
+.gabinete-nome { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin: 0 0 4px 0; }
+.gabinete-formula { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 2px; color: var(--gold-light); margin: 0 0 18px 0; }
+.gabinete-frase { font-family: 'IM Fell English', serif; font-style: italic; font-size: 1rem; line-height: 1.7; color: var(--mist); margin: 0 0 20px 0; border-top: 1px solid rgba(184,134,11,0.2); padding-top: 16px; }
+.gabinete-btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 10px 20px; text-decoration: none; }
+.assinatura { background: var(--ink); padding: 36px 40px; text-align: center; }
+.assinatura .ornamento { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0; }
+.assinatura .fecho { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: var(--cream); margin: 0 0 20px 0; }
+.assinatura .marca { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); }
+.article-nav { max-width: 800px; margin: 0 auto; padding: 32px 40px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--cream-deep); gap: 20px; }
+.article-nav-link { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--burgundy); text-decoration: none; transition: color 0.2s; }
 .article-nav-link:hover { color: var(--gold); }
-
-.article-nav-center {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--stone);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
+.article-nav-center { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .article-nav-center:hover { color: var(--burgundy); }
-
-/* ══ FOOTER ══ */
-.journal-footer {
-  background: var(--ink);
-  border-top: 3px solid var(--burgundy);
-  padding: 40px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.footer-brand {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 8px;
-}
-
+.journal-footer { background: var(--ink); border-top: 3px solid var(--burgundy); padding: 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+.footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
 .footer-brand span { color: var(--gold-light); }
-
-.footer-manifesto {
-  font-family: 'IM Fell English', serif;
-  font-size: 12px;
-  font-style: italic;
-  color: var(--mist);
-  line-height: 1.7;
-}
-
-.footer-col-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(184,134,11,0.3);
-}
-
-.footer-link {
-  display: block;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
-  color: var(--mist);
-  text-decoration: none;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-
+.footer-brand-sub { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 8px 0; }
+.footer-manifesto { font-family: 'IM Fell English', serif; font-size: 12px; font-style: italic; color: var(--mist); line-height: 1.7; }
+.footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(184,134,11,0.3); }
+.footer-link { display: block; font-family: 'Libre Baskerville', serif; font-size: 12px; color: var(--mist); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 .footer-link:hover { color: var(--cream); }
-
-.footer-bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(184,134,11,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-copy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(180,160,130,0.5);
-}
-
-/* ══ RESPONSIVE ══ */
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(184,134,11,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: rgba(180,160,130,0.5); }
 @media (max-width: 700px) {
-  .masthead-top-bar,
-  .masthead-main,
-  .masthead-nav { padding-left: 20px; padding-right: 20px; }
-  .article-wrapper,
-  .breadcrumb,
-  .article-nav { padding-left: 20px; padding-right: 20px; }
+  .masthead-top-bar, .masthead-main, .masthead-nav { padding-left: 20px; padding-right: 20px; }
+  .article-wrapper, .breadcrumb, .article-nav { padding-left: 20px; padding-right: 20px; }
   .footer-inner { grid-template-columns: 1fr; }
   .journal-footer { padding: 30px 20px; }
+  .drop-cap::first-letter { font-size: 2.2rem; }
 }
 </style>
 </head>
 <body>
 
-<!-- ══ MASTHEAD ══ -->
 <header class="masthead">
   <div class="masthead-top-bar">
-    <span class="masthead-date">Abril · 2026 · Volume I · Edição de Abertura</span>
-    <span class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</span>
+    <span class="masthead-date">EU SOU NÓS · Atelier Dévico · Dévico Mineral</span>
+    <em class="masthead-tagline-top">Do mineral ao campo. Da forma à frequência.</em>
   </div>
   <div class="masthead-main">
     <div class="masthead-rule-top"></div>
-    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico · Registro Mineral</div>
+    <div class="masthead-kicker">Eu Sou Nós · Atelier Dévico</div>
     <a href="index.html" class="masthead-title">Dévico<br><span>Mineral</span></a>
-    <p class="masthead-subtitle">O diário de mineralogia que ninguém havia escrito ainda</p>
+    <p class="masthead-subtitle">O diário de mineralogia do Eu Sou Nós Atelier Dévico</p>
     <div class="masthead-rule-ornament">
       <div class="rule-line"></div>
       <span class="rule-diamond">◆</span>
@@ -346,161 +144,236 @@ body::before {
     </div>
   </div>
   <nav class="masthead-nav">
+    <a href="https://www.eusounos.com/produtos/" target="_blank" class="destaque">Peças do Atelier</a>
     <a href="index.html">Início</a>
     <a href="index.html#mineralogia">Mineralogia</a>
     <a href="index.html#origens">Origens</a>
-    <a href="index.html#campo">Campo Energético</a>
-    <a href="index.html#glossario">Glossário</a>
     <a href="index.html#artigos">Artigos</a>
-    <a href="https://eusounos.com" target="_blank">Peças do Atelier</a>
+    <a href="index.html#glossario">Glossário</a>
   </nav>
 </header>
 
-<!-- ══ BREADCRUMB ══ -->
 <div class="breadcrumb">
   <a href="index.html">Dévico Mineral</a>
   <span class="breadcrumb-sep">◆</span>
   <span class="breadcrumb-current">LARIMAR</span>
 </div>
 
-<!-- ══ CONTEÚDO DO ARTIGO ══ -->
 <div class="article-wrapper">
-  <!-- KICKER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 18px 0;">Origens &amp; Minas &middot; 8 min de leitura</p>
 
-<!-- TÍTULO -->
-<h2 style="font-family: 'Playfair Display',serif; font-weight: 900; font-size: clamp(26px,4vw,42px); line-height: 1.1; color: #1a0f0a; margin: 0 0 24px 0;">O <span style="font-variant: small-caps; letter-spacing: 0.05em; color: #7a0000;">LARIMAR</span>:<br/>nasceu do fogo vulcânico.<br/><em style="font-weight: 400; color: #7a0000;">Parece o mar.</em></h2>
+  <p class="article-kicker">Mineralogia &amp; Origens &middot; 9 min de leitura</p>
 
-<!-- LEAD -->
-<p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #6b4226; border-left: 3px solid #b8860b; padding-left: 20px; margin: 0 0 10px 0;">A pectolita existe em outros lugares do mundo. Sempre branca. Sempre cinza. Em um único ponto do planeta, numa cratera vulcânica extinta na República Dominicana, o cobre substituiu o cálcio em sua estrutura durante a atividade vulcânica. Esse evento geoquímico específico nunca se repetiu em nenhum outro lugar. E criou o azul que parece o mar do Caribe.</p>
+  <h1 class="article-title">Nasceu numa história<br>vulcânica.<br><em>Parece o mar.</em></h1>
 
-<!-- BYLINE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #c9b99a; margin: 0 0 32px 0;">Por Patrícia &middot; Atelier Dévico</p>
+  <p class="article-subtitle">PECTOLITA AZUL &nbsp;·&nbsp; NaCa₂Si₃O₈(OH) &nbsp;·&nbsp; Sierra de Bahoruco · República Dominicana</p>
 
-<!-- FICHA MINERAL -->
-<div style="background: #1a0f0a; padding: 16px 22px; display: flex; flex-wrap: wrap; gap: 6px 20px; margin-bottom: 36px; align-items: baseline;">
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Mineral</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Pectolita azul</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Composição</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">NaCa₂Si₃O₈(OH) + Cu</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Origem única</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8; margin-right: 12px;">Barahona · República Dominicana</span>
-  <span style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.7);">Chakra</span>
-  <span style="font-family: monospace; font-size: 11px; font-weight: bold; color: #f5ead8;">Garganta &middot; Cardíaco</span>
-</div>
+  <p class="article-lead">A aparência do <span class="mineral-name">LARIMAR</span> produz uma associação quase imediata com água. Seus tons azuis e azul-esverdeados, os padrões que lembram ondas, a superfície que parece conter profundidade. Mas sua história mineral foi escrita dentro de rochas vulcânicas alteradas, não no fundo do mar.</p>
 
-<!-- LINHA GRADIENTE -->
-<div style="height: 2px; background: linear-gradient(90deg,#7a0000,#b8860b,#7a0000); margin-bottom: 36px;"></div>
+  <p class="article-byline">Por Patrícia &nbsp;·&nbsp; Atelier Dévico</p>
 
-<!-- ABERTURA COM DROP CAP -->
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;"><span style="font-family: 'Cinzel Decorative',serif; font-size: 2.8rem; font-weight: 400; float: left; line-height: 0.88; margin: 7px 10px 0 0; color: #7a0000;">N</span>a Serra de Bahoruco, no sudoeste da República Dominicana, há uma mina a dez quilômetros da cidade de Barahona. Chama-se Los Chupaderos. É a única mina de <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> no mundo. Não porque ninguém tenha procurado em outros lugares. Mas porque as condições geológicas que criaram o <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> foram tão específicas que nunca se repetiram.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0; clear: both;">A pectolita é um mineral de silicato de cálcio e sódio encontrado em muitos países. Sua cor natural é branca a cinza. O azul do <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> não é da pectolita. É do cobre. Durante a atividade vulcânica que formou a região sul da ilha de Hispaniola, há entre 5 e 23 milhões de anos, fluidos ricos em cobre percolaram pela rocha em formação. O cobre substituiu o cálcio na estrutura da pectolita. Esse evento geoquímico ocorreu uma única vez, nesse único lugar.</p>
-
-<!-- SEÇÃO: QUÍMICA DO AZUL -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Por que o azul só existe aqui</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">O cobre é responsável pela coloração azul em vários minerais: na Turquesa, na Azurita, na Malaquita. Em cada caso, o mecanismo é o mesmo. os elétrons do cobre absorvem comprimentos de onda específicos da luz e refletem o azul ou o verde. No <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span>, o cobre não forma um mineral separado. Substitui o cálcio dentro da estrutura da pectolita, criando uma variação que em gemologia é chamada de substituição isomórfica.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">A intensidade do azul depende da concentração de cobre. As pedras com azul mais profundo, chamadas "Volcanic Blue" na classificação gemológica, têm maior concentração de cobre na estrutura. As mais claras, quase brancas, têm menos. A qualidade do <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> é determinada pela intensidade e uniformidade do azul: quanto mais profundo e saturado, mais raro e valioso.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Um dado que circula pouco: os gases vulcânicos que empurraram os minerais para a superfície ainda continuam esse processo lentamente. Pedras de <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> são encontradas até hoje nas praias da região, carregadas pelos rios que descem da Serra de Bahoruco ao mar. Foi assim que a pedra foi redescoberta na década de 1970.</p>
-
-<!-- PULLQUOTE -->
-<div style="background: #f5ead8; border-left: 4px solid #7a0000; padding: 22px 28px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.75; color: #1a0f0a; margin: 0;">"O <span style="font-variant: small-caps; letter-spacing: 0.08em;">Larimar</span> não parece o mar por acidente. Nasceu do fogo vulcânico, foi carregado pelos rios até o mar, e foi encontrado numa praia. Do vulcão à água. Do fogo ao mar. Esse é o percurso geológico desta pedra."</p>
-</div>
-
-<!-- SEÇÃO: OS DOIS MIGUÉIS -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A história dos dois Miguéis</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Em 1916, o padre Miguel Domingo Fuertes Loren, pároco de Barahona, encontrou a pedra azul nas montanhas e solicitou ao governo dominicano licença para explorar a mina. Sua descoberta foi registrada, mas não levou a exploração comercial. O registro ficou nos arquivos do Ministério de Mineração.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Sessenta anos depois, em 1974, outro Miguel. Miguel Méndez encontrou pedras azuis numa praia da República Dominicana, carregadas pelos rios desde as montanhas de Bahoruco. Pesquisou, rastreou a origem até a mesma região do padre, e deu à pedra o nome que ela carrega até hoje: juntou o nome de sua filha, Larissa, com a palavra espanhola mar. Larimar.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">Dois homens chamados Miguel, separados por seis décadas, encontraram a mesma pedra. O padre encontrou a origem. O pesquisador encontrou o mar. E o mineral carrega até hoje o nome que une os dois. a filha e o mar.</p>
-
-<!-- SEÇÃO: QUALIDADE -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Qualidade e como reconhecer</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">O <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> de qualidade tem azul profundo e uniforme, com as veias brancas características que lembram espuma do mar. A classificação vai do branco (menor concentração de cobre, menor valor) ao Volcanic Blue (azul profundo, maior concentração, mais raro). Falsificações em vidro azul ou plástico são comuns no mercado turístico. O teste simples: riscar a pedra numa superfície de porcelana. O <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> real deixa traço branco. O vidro não risca a porcelana.</p>
-
-<!-- SEÇÃO: CAMPO ENERGÉTICO -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">A leitura energética</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Chakra da garganta e cardíaco em comunicação. O <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> trabalha com a expressão do que é sentido. a ponte entre o coração e a voz. Para quem sente profundamente mas tem dificuldade de nomear. Para quem sabe o que quer dizer mas as palavras chegam erradas ou não chegam.</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 36px 0;">É também um mineral de calma estrutural. não a calma da sedação, mas a calma do mar em profundidade. Na superfície pode haver movimento. No fundo, quietude. O <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> acessa a quietude que existe independente do que acontece na superfície.</p>
-
-<!-- PARA QUEM. BLOCO BORDÔ -->
-<div style="background: #7a0000; padding: 28px 32px; margin: 0 0 36px 0;">
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 1.15rem; line-height: 1.8; color: #f5ead8; margin: 0 0 12px 0;">"Para quem sente o mar inteiro dentro<br/>e ainda não encontrou as palavras<br/>para contar o que é isso."</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-size: 0.98rem; line-height: 1.7; color: rgba(245,234,216,0.75); margin: 0 0 14px 0;">Na superfície pode haver movimento.<br/>No fundo, quietude.<br/>O Larimar acessa o fundo.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(184,134,11,0.8); margin: 0;">◆ Chakra Garganta &middot; Cardíaco</p>
-</div>
-
-<!-- SEÇÃO: ATELIER -->
-<p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #7a0000; margin: 0 0 16px 0; padding-top: 8px; border-top: 1px solid #c9b99a;">Como trabalhamos com ele no Atelier</p>
-
-<p style="font-family: 'Libre Baskerville',Georgia,serif; font-size: 1.05rem; line-height: 1.95; color: #3d1a0a; margin: 0 0 22px 0;">Cada <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #7a0000;">Larimar</span> que entra no Atelier passa por seleção de azul, veias e integridade estrutural. Buscamos o azul com profundidade real, não o branco lavado. A pedra é delicada e porosa. cuidados com perfumes, cremes e mergulho prolongado em água são necessários para preservar a cor.</p>
-
-<!-- PREPARAÇÃO RITUAL -->
-<div style="border-left: 3px solid #b8860b; padding: 0 0 0 22px; margin: 0 0 44px 0;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8860b; margin: 0 0 12px 0;">Preparação Ritual</p>
-  <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.85; color: #3d1a0a; margin: 0;">Cada peça é preparada com intenção específica antes de qualquer fio ser dado. Um gesto de dedicação consciente que confia à peça o propósito de expressão do que é sentido. A voz encontrando o coração.</p>
-</div>
-
-<!-- CTA · GABINETE MINERAL -->
-<div style="background: #faf6ef; border: 1px solid #b8860b; padding: 3px; margin-bottom: 0;">
-  <div style="border: 1px solid rgba(184,134,11,0.4); padding: 28px 24px; text-align: center;">
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 7px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0 0 14px 0;">Gabinete Mineral · Espécime nº 11</p>
-    <p style="font-family: 'Playfair Display',serif; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.14em; color: #1a0f0a; margin: 0 0 6px 0;">LARIMAR</p>
-    <p style="font-family: 'Montserrat',sans-serif; font-size: 10px; letter-spacing: 1px; color: #6b4226; margin: 0 0 18px 0;">NaCa₂Si₃O₈(OH) · Barahona, Rep. Dominicana</p>
-    <div style="width: 40px; height: 1px; background: #b8860b; margin: 0 auto 18px auto;"></div>
-    <p style="font-family: 'IM Fell English',serif; font-style: italic; font-size: 1.05rem; line-height: 1.7; color: #3d1a0a; margin: 0 0 22px 0;">"Nasceu do fogo vulcânico.<br/>Parece o mar."</p>
-    <a href="https://eusounos.com/search/?q=larimar" style="display: inline-block; font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #7a0000; border: 1px solid #7a0000; padding: 10px 22px; text-decoration: none;">Ver no Atelier →</a>
+  <div class="ficha-mineral">
+    <span class="ficha-label">Nome gemológico</span>
+    <span class="ficha-value">LARIMAR</span>
+    <span class="ficha-label">Mineralogia predominante</span>
+    <span class="ficha-value">PECTOLITA azul</span>
+    <span class="ficha-label">Pectolita</span>
+    <span class="ficha-value">NaCa₂Si₃O₈(OH)</span>
+    <span class="ficha-label">Natureza</span>
+    <span class="ficha-value">Material gemológico de origem hidrotermal</span>
+    <span class="ficha-label">Procedência</span>
+    <span class="ficha-value">Sierra de Bahoruco · Barahona · República Dominicana</span>
   </div>
-</div>
 
-<!-- ASSINATURA -->
-<div style="background: #1a0f0a; padding: 36px 40px; text-align: center; margin-top: 2px;">
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 5px; text-transform: uppercase; color: rgba(184,134,11,0.4); margin: 0 0 18px 0;">◆ ◆ ◆</p>
-  <p style="font-family: 'Playfair Display',serif; font-style: italic; font-weight: 400; font-size: 1.1rem; line-height: 1.9; color: #f5ead8; margin: 0 0 20px 0;">Tudo no universo tem um propósito.<br/>O do <span style="font-variant: small-caps; letter-spacing: 0.08em; color: #b8860b;">Larimar</span> é ser o mar<br/>que nasceu do fogo<br/>e ainda assim ficou azul.</p>
-  <p style="font-family: 'Montserrat',sans-serif; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; color: #b8860b; margin: 0;">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
-</div>
+  <div class="gradiente-linha"></div>
+
+  <!-- ABERTURA -->
+  <p class="body-p drop-cap">O contraste entre aparência e origem é o coração desta pedra. A origem de uma coisa não determina necessariamente a aparência que ela terá quando terminar de se formar. O <span class="mineral-name">LARIMAR</span> é um exemplo extraordinário disso. Nem tudo carrega na aparência o ambiente que participou de sua formação.</p>
+
+  <!-- SEÇÃO: O QUE É O LARIMAR -->
+  <p class="section-label">O que é o LARIMAR</p>
+
+  <p class="body-p"><span class="mineral-name">LARIMAR</span> é o nome gemológico e comercial dado ao material azul a azul-esverdeado rico em <span class="mineral-name">PECTOLITA</span> encontrado na República Dominicana. A <span class="mineral-name">PECTOLITA</span> é um inossilicato de cálcio e sódio de fórmula NaCa₂Si₃O₈(OH), que normalmente ocorre incolor, branca ou fracamente colorida. O material dominicano é particularmente reconhecido pelos tons azuis e azul-esverdeados e pelos padrões visuais que associamos às ondas do mar.</p>
+
+  <p class="body-p">Estudos recentes descrevem associações com outros minerais além da <span class="mineral-name">PECTOLITA</span>, incluindo natrolita, prehnita, calcita, clorita e outros. O <span class="mineral-name">LARIMAR</span> não é portanto uma espécie mineral pura e isolada — é um material gemológico caracterizado predominantemente pela <span class="mineral-name">PECTOLITA</span> azul da República Dominicana.</p>
+
+  <!-- SEÇÃO: O AZUL — UMA HISTÓRIA AINDA EM INVESTIGAÇÃO -->
+  <p class="section-label">O azul: uma história mineralógica ainda em investigação</p>
+
+  <p class="body-p">Durante décadas, o cobre ocupou o centro da explicação para o azul do <span class="mineral-name">LARIMAR</span>. A presença de Cu²⁺ foi proposta como responsável pela coloração e há trabalhos que encontraram cobre associado ao material. Mas a pesquisa mineralógica mais recente tornou essa história muito mais interessante.</p>
+
+  <p class="body-p">Um estudo publicado em Minerals em 2023, utilizando análise química por LA-ICP-MS, encontrou evidências de que vanádio e ferro têm papel importante na geração dos tons azul-celeste e verde. A mesma pesquisa demonstrou algo ainda mais surpreendente: a orientação das fibras radiais de <span class="mineral-name">PECTOLITA</span> influencia a saturação aparente da cor e o padrão visual semelhante às ondas do mar.</p>
+
+  <p class="body-p">Pesquisa publicada em 2024 no Journal of South American Earth Sciences mostra uma mineralização ainda mais complexa, com variações químicas e ambientais durante a formação das pectolitas verde, azul e branca. O azul que parecia ter uma explicação simples revelou uma arquitetura muito mais rica.</p>
+
+  <div class="pullquote">
+    <p>Não substituímos uma certeza simplificada por outra. O conhecimento sobre a cor do LARIMAR está em construção — e isso é parte da história.</p>
+  </div>
+
+  <!-- SEÇÃO: AS ONDAS QUE EXISTEM NA ESTRUTURA -->
+  <p class="section-label">As ondas que existem na estrutura</p>
+
+  <p class="body-p">Aqui está o dado científico mais surpreendente do <span class="mineral-name">LARIMAR</span>. Chamaram a pedra de <span class="mineral-name">LARIMAR</span> porque sua aparência lembrava o Caribe. Décadas depois, a mineralogia começou a explicar por que algumas dessas "ondas" realmente aparecem diante dos nossos olhos.</p>
+
+  <p class="body-p">A <span class="mineral-name">PECTOLITA</span> do <span class="mineral-name">LARIMAR</span> apresenta estrutura fibrosa ou radial em escala microscópica. Pesquisa de 2023 demonstrou que a orientação dessas fibras modifica a maneira como a luz atravessa o material — influenciando a saturação visual e produzindo os padrões que reconhecemos como ondas ou movimentos de água.</p>
+
+  <div class="bloco-escuro">
+    <p>O desenho não foi pintado sobre a pedra.</p>
+    <p>Ele emerge da arquitetura microscópica da <span style="font-variant:small-caps;letter-spacing:0.08em;">PECTOLITA</span> e da maneira como a luz atravessa suas fibras orientadas.</p>
+    <p>A aparência marinha do <span style="font-variant:small-caps;letter-spacing:0.08em;">LARIMAR</span> tem uma explicação que está dentro da própria matéria.</p>
+  </div>
+
+  <!-- SEÇÃO: UMA HISTÓRIA VULCÂNICA -->
+  <p class="section-label">Uma história vulcânica</p>
+
+  <p class="body-p">O <span class="mineral-name">LARIMAR</span> ocorre associado a rochas vulcânicas alteradas da Serra de Bahoruco, na província de Barahona, no sudoeste da República Dominicana. A área de mineração é conhecida por denominações como Los Chupaderos, Los Checheses, Las Filipinas — sendo Las Filipinas Larimar Mine uma das referências contemporâneas na literatura científica.</p>
+
+  <p class="body-p">Pesquisa de 2024 indica que a formação da <span class="mineral-name">PECTOLITA</span> envolveu circulação de fluidos hidrotermais de baixa temperatura, estimada em valores inferiores a aproximadamente 170 °C, com fluidos relacionados às rochas vulcânicas posteriormente misturados com águas meteóricas. As pectolitas ocorrem preenchendo cavidades, veios e espaços nas rochas vulcânicas alteradas.</p>
+
+  <p class="body-p">O caminho é, portanto: vulcanismo → rochas basálticas → alteração e circulação hidrotermal → precipitação da <span class="mineral-name">PECTOLITA</span>. Não é lava que diretamente produz o <span class="mineral-name">LARIMAR</span>. É um processo de fluidos circulando e precipitando mineral em espaços abertos dentro de rochas que o vulcanismo havia construído.</p>
+
+  <div class="pullquote">
+    <p>Uma aparência de mar. Uma origem em rochas de fogo. Essa tensão entre aparência e gênese é o que torna o LARIMAR extraordinário como objeto de contemplação.</p>
+  </div>
+
+  <!-- SEÇÃO: DOIS MIGUÉIS E UMA PEDRA -->
+  <p class="section-label">Dois Miguéis e uma pedra que voltou a aparecer</p>
+
+  <p class="body-p">Em 22 de novembro de 1916, o sacerdote Miguel Domingo Fuertes Loren comunicou às autoridades a existência de uma pedra verde-azulada encontrada na região do rio Bahoruco. Essa data é reconhecida oficialmente pela República Dominicana, que instituiu o 22 de novembro como o Dia Nacional do Larimar.</p>
+
+  <p class="body-p">Em 1974, a pedra voltou à atenção. Miguel Méndez e Norman Rilling, ligado ao Peace Corps dos Estados Unidos, encontraram pedras azuis numa praia da região e investigaram sua origem. A documentação dominicana atribui a Miguel Méndez a criação do nome: ele combinou Larissa, o nome de sua filha, com a palavra mar.</p>
+
+  <p class="body-p"><span class="mineral-name">Larimar</span>. A filha e o mar. Um nome que captura a aparência da pedra sem descrever nada de sua geologia. O que, por acaso, é exatamente o ponto.</p>
+
+  <!-- SEÇÃO: PROCEDÊNCIA E IDENTIDADE -->
+  <p class="section-label">Procedência e identidade</p>
+
+  <p class="body-p">O depósito dominicano é excepcionalmente reconhecido. Fontes governamentais da República Dominicana reconhecem o <span class="mineral-name">LARIMAR</span> como material característico e patrimônio mineral do país. O material azul a azul-esverdeado rico em <span class="mineral-name">PECTOLITA</span> que chamamos de <span class="mineral-name">LARIMAR</span> é caracteristicamente associado à República Dominicana na literatura gemológica e científica.</p>
+
+  <p class="body-p">A identificação segura de um exemplar não deve depender de testes domésticos capazes de danificar a peça. Procedência verificada, características gemológicas conhecidas e, quando necessário, análise profissional são os critérios confiáveis.</p>
+
+  <!-- SEÇÃO: VARIAÇÕES VISUAIS -->
+  <p class="section-label">Variações visuais</p>
+
+  <p class="body-p">O <span class="mineral-name">LARIMAR</span> apresenta variações de branco, azul-claro, azul-intenso e azul-esverdeado a verde. Essas variações estão associadas a diferenças na composição química e nas condições de formação — como mostrado na pesquisa de 2024 sobre as pectolitas verde, azul e branca da mesma região. A valorização comercial está geralmente associada ao azul mais intenso e à distribuição das cores, mas não existe uma escala gemológica universal padronizada para isso.</p>
+
+  <!-- APRENDA A OLHAR -->
+  <p class="section-label">Aprenda a olhar um LARIMAR</p>
+
+  <p class="body-p">Observe as variações entre regiões azuis, brancas e esverdeadas no mesmo exemplar. Procure os padrões fibrosos ou radiais que produzem o efeito visual de ondas. Mude o ângulo de observação e veja como a saturação e os padrões se alteram — isso é consequência direta da orientação microscópica das fibras de <span class="mineral-name">PECTOLITA</span>.</p>
+
+  <p class="body-p">Observe a relação entre as regiões mais azuis e as regiões mais claras. Os contornos não são pintados. Eles emergem de variações mineralógicas dentro da mesma pedra. E cada exemplar registra condições específicas de seu processo de formação, o que significa que não existem dois iguais.</p>
+
+  <!-- DIVISOR -->
+  <hr class="divisor-camadas">
+
+  <!-- SEÇÃO: MATÉRIA & CAMPO -->
+  <p class="section-label gold">Matéria &amp; Campo</p>
+
+  <p class="body-p">Em práticas contemporâneas com minerais, o <span class="mineral-name">LARIMAR</span> é associado ao chakra da garganta e ao chakra cardíaco — à expressão do que se sente, à comunicação, à integração entre sentir e dizer, e a uma forma de calma que não é superficial mas estrutural. Essas associações pertencem ao campo espiritual e simbólico.</p>
+
+  <p class="body-p">A geologia não demonstra nenhum desses efeitos. A cor azul não prova capacidade de expressão. A estrutura fibrosa não evidencia calma. A origem vulcânica não constitui um mecanismo de transformação espiritual.</p>
+
+  <p class="body-p">Mas a matéria oferece uma imagem que pode ser habitada sem transformá-la em prova. O <span class="mineral-name">LARIMAR</span> tem uma aparência que não corresponde à sua gênese. Parece água. Veio do fogo. E dentro dessa aparência de mar existem estruturas microscópicas que produzem justamente aquilo que nossos olhos reconhecem como ondas.</p>
+
+  <div class="bloco-burgundy">
+    <p>Na leitura dévica, essa tensão entre aparência e origem pode ser uma imagem fértil.</p>
+    <p>O ambiente que participou da formação de algo não determina necessariamente como esse algo vai aparecer ao mundo.</p>
+    <p>E aquilo que parece calmo na superfície pode ter nascido de um processo muito diferente.</p>
+    <p>O <span style="font-variant:small-caps;letter-spacing:0.08em;">LARIMAR</span> não demonstra isso. Ele oferece uma matéria diante da qual pensar.</p>
+  </div>
+
+  <!-- PARA QUEM -->
+  <div class="para-quem">
+    <p class="para-quem-label">◆ Para quem</p>
+    <p>Para quem sente profundamente e está aprendendo a encontrar as palavras.</p>
+    <p>Para quem carrega uma história de origem intensa e desenvolveu uma presença que não revela imediatamente esse percurso.</p>
+    <p>Não porque o LARIMAR "trabalhe" com isso. Mas porque sua matéria oferece uma imagem honesta: aparência e gênese não precisam ser iguais.</p>
+  </div>
+
+  <!-- GLOSSÁRIO DÉVICO -->
+  <div class="glossario-box">
+    <p class="glossario-titulo">Glossário Dévico</p>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">LARIMAR</p>
+      <p class="glossario-def">Nome gemológico e comercial dado ao material azul a azul-esverdeado rico em pectolita encontrado na República Dominicana. Nome criado por Miguel Méndez, combinando Larissa e mar.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Pectolita</p>
+      <p class="glossario-def">Inossilicato de cálcio e sódio de fórmula NaCa₂Si₃O₈(OH). Normalmente ocorre incolor, branca ou fracamente colorida. A variedade azul dominicana é o LARIMAR.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Origem hidrotermal</p>
+      <p class="glossario-def">Formação por circulação de fluidos quentes no interior de rochas. No caso do LARIMAR, fluidos de baixa temperatura precipitaram a pectolita em cavidades e veios de rochas vulcânicas alteradas.</p>
+    </div>
+
+    <div class="glossario-item">
+      <p class="glossario-termo">Estrutura fibrosa/radial</p>
+      <p class="glossario-def">Forma de crescimento mineral em que os cristais se desenvolvem como fibras orientadas. Na pectolita do LARIMAR, essa orientação influencia a aparência visual, incluindo os padrões que lembram ondas.</p>
+    </div>
+  </div>
+
+  <!-- NO ATELIER -->
+  <p class="section-label">No Atelier</p>
+
+  <div class="ritual-box">
+    <p class="ritual-label">Como escolhemos · Como preparamos</p>
+    <p>A seleção de um <span class="mineral-name">LARIMAR</span> para o Atelier começa pela leitura da pedra como ela é: observamos a intensidade e distribuição da cor azul, os padrões fibrosos, a relação entre regiões mais intensas e mais claras, e a integridade do exemplar. Cada pedra conta uma história própria de formação.</p>
+    <p>A criação finalizada passa pelo processo ritual de ativação sobre a geometria sagrada do Cubo de Metatron em placa de cobre — prática autoral do Eu Sou Nós. No <span class="mineral-name">LARIMAR</span>, a intenção direcionada à expressão consciente: integrar o que se sente com o que se consegue dizer. Esse processo pertence à dimensão ritual do Atelier e não modifica as propriedades mineralógicas da <span class="mineral-name">PECTOLITA</span>.</p>
+  </div>
+
+  <!-- GABINETE MINERAL / CTA -->
+  <div class="gabinete-box">
+    <p class="gabinete-kicker">Gabinete Mineral &nbsp;·&nbsp; LARIMAR</p>
+    <p class="gabinete-nome">LARIMAR</p>
+    <p class="gabinete-formula">PECTOLITA AZUL &nbsp;·&nbsp; NaCa₂Si₃O₈(OH)<br>Sierra de Bahoruco &nbsp;·&nbsp; República Dominicana</p>
+    <p class="gabinete-frase">Uma aparência de mar. Uma origem em rochas de fogo. E dentro dessa aparência, estruturas microscópicas que produzem justamente aquilo que nossos olhos reconhecem como ondas.</p>
+    <a href="https://eusounos.com/search/?q=larimar" target="_blank" class="gabinete-btn">Ver LARIMAR no Atelier →</a>
+  </div>
+
+  <!-- ASSINATURA -->
+  <div class="assinatura">
+    <p class="ornamento">◆ ◆ ◆</p>
+    <p class="fecho">Parece o mar.<br>Nasceu em rochas vulcânicas.<br><br>E o que reconhecemos como ondas na superfície<br>existe porque as fibras microscópicas da <span style="font-variant:small-caps;letter-spacing:0.08em;color:var(--gold-light);">PECTOLITA</span><br>orientam a luz de uma maneira específica.<br><br>A aparência tem uma explicação.<br>A explicação é ainda mais bonita do que a metáfora.</p>
+    <p class="marca">◇ Eu Sou Nós &middot; Atelier Dévico ◇</p>
+  </div>
+
 </div>
 
 <!-- ══ NAVEGAÇÃO ENTRE ARTIGOS ══ -->
 <div class="article-nav">
-  <a href="pirita.html" class="article-nav-link">← Pirita</a>
+  <a href="pirita.html" class="article-nav-link">← PIRITA</a>
   <a href="index.html" class="article-nav-center">◆ Todos os artigos</a>
-  <a href="index.html" class="article-nav-link">Início →</a>
+  <a href="index.html" class="article-nav-link">Todos os artigos →</a>
 </div>
 
 <!-- ══ FOOTER ══ -->
 <footer class="journal-footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Dévico <span>Mineral</span></div>
-      <p class="footer-manifesto">"Cada mineral tem nome, fórmula, origem e história. Aqui, nenhum desses elementos é separado dos outros. Ciência e tradição habitam o mesmo registro."</p>
+      <div class="footer-brand">Eu Sou <span>Nós</span></div>
+      <p class="footer-brand-sub">Atelier Dévico · Dévico Mineral</p>
+      <p class="footer-manifesto">"Honrar o sagrado também exige honrar a verdade."</p>
     </div>
     <div>
       <div class="footer-col-title">Artigos</div>
-      <a class="footer-link" href="labradorita.html">A LABRADORITA não tem cor</a>
-      <a class="footer-link" href="hematita.html">A HEMATITA é o mineral do sangue</a>
-      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA: piezoeletricidade</a>
-      <a class="footer-link" href="opala-piaui.html">A OPALA DO PIAUÍ e o Nordeste</a>
-      <a class="footer-link" href="ametrino.html">A mina lendária do AMETRINO</a>
-      <a class="footer-link" href="obsidiana-arco-iris.html">A OBSIDIANA ARCO-ÍRIS</a>
-      <a class="footer-link" href="calcita-das-fadas.html">A CALCITA DAS FADAS</a>
-      <a class="footer-link" href="prophecy-stone.html">A PROPHECY STONE</a>
-      <a class="footer-link" href="kunzita.html">A KUNZITA e a fragilidade</a>
-      <a class="footer-link" href="pirita.html">A PIRITA e a geometria</a>
-      <a class="footer-link" href="larimar.html">O LARIMAR e o vulcão</a>
+      <a class="footer-link" href="labradorita.html">LABRADORITA</a>
+      <a class="footer-link" href="hematita.html">HEMATITA</a>
+      <a class="footer-link" href="turmalina-negra.html">TURMALINA NEGRA</a>
+      <a class="footer-link" href="opala-piaui.html">OPALA DO PIAUÍ</a>
+      <a class="footer-link" href="ametrino.html">AMETRINO</a>
+      <a class="footer-link" href="obsidiana-arco-iris.html">OBSIDIANA ARCO-ÍRIS</a>
+      <a class="footer-link" href="calcita-das-fadas.html">CALCITA DAS FADAS</a>
+      <a class="footer-link" href="prophecy-stone.html">PROPHECY STONE</a>
+      <a class="footer-link" href="kunzita.html">KUNZITA</a>
+      <a class="footer-link" href="pirita.html">PIRITA</a>
+      <a class="footer-link" href="larimar.html">LARIMAR</a>
     </div>
     <div>
       <div class="footer-col-title">Atelier Dévico</div>
-      <a class="footer-link" href="https://eusounos.com" target="_blank">Peças Disponíveis</a>
+      <a class="footer-link" href="https://www.eusounos.com/produtos/" target="_blank">Peças Disponíveis</a>
       <a class="footer-link" href="https://instagram.com/eu.sou.nos" target="_blank">Instagram</a>
       <a class="footer-link" href="https://youtube.com/@eusounos" target="_blank">YouTube</a>
       <a class="footer-link" href="https://pinterest.com/eusounos" target="_blank">Pinterest</a>
